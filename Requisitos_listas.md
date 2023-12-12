@@ -41,14 +41,14 @@ Operaciones:
 	o Notificar mensajes recibidos
 
 	REQUISITO SISTEMA DE GESTION DE ACTIVIDADES
-• Publicación de reseñas
-• Programar actividades
+• Publicación de reseñas X
+• Programar actividades X
 • Consultar calendario
-• Valorar actividad
-	o Puntuar
-	o Dejar reseña
-• Consultar valoraciones
-• Obtener recomendaciones automáticas en base a reseñas
+• Valorar actividad X
+	o Puntuar X
+	o Dejar reseña X
+• Consultar valoraciones X
+• Obtener recomendaciones automáticas en base a reseñas X
 
 	NO SE INCLUYEN COMO REQUISITO FUNCIONAL
 • Administración del sistema
