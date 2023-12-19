@@ -14,7 +14,7 @@ Operaciones:
 	o Exportar información personal
 • Solicitudes de amistad
 
-	REQUISITO SITEMA DE GESTION DE GASTOS
+	REQUISITO SISTEMA DE GESTION DE GASTOS
 • Gestión de gastos
 	o Registro de gastos
 		▪ Configurar participantes
@@ -41,14 +41,14 @@ Operaciones:
 	o Notificar mensajes recibidos
 
 	REQUISITO SISTEMA DE GESTION DE ACTIVIDADES
-• Publicación de reseñas X
-• Programar actividades X
+• Publicación de reseñas
+• Programar actividades
 • Consultar calendario
-• Valorar actividad X
-	o Puntuar X
-	o Dejar reseña X
-• Consultar valoraciones X
-• Obtener recomendaciones automáticas en base a reseñas X
+• Valorar actividad
+	o Puntuar
+	o Dejar reseña
+• Consultar valoraciones
+• Obtener recomendaciones automáticas en base a reseñas
 
 	NO SE INCLUYEN COMO REQUISITO FUNCIONAL
 • Administración del sistema
@@ -56,4 +56,42 @@ Operaciones:
 • Generar informes de análisis de actividades
 • Generar informes de uso de funcionalidades
 
+		CASOS DE USO:
+
+	REQUISITO SISTEMA DE GESTION DE USUARIOS
+		- Registrarse en el sistema
+		- Iniciar sesión en el sistema
+		- Editar perfil
+		- Configurar métodos de pago
+		- Cerrar sesión
+		- Notificar incidencia 
+
+	REQUISITO SISTEMA DE GESTION DE GASTOS
+		- Añadir gasto
+		- Filtrar participantes
+		- Asociar actividad
+		- Calcular balance
+		- Registrar pago
+
+	REQUISITO SISTEMA DE GESTION DE GRUPOS Y CHATS
+		- Creación de grupos de gasto
+		- Chat entre usuarios/grupal
+		- Eliminar grupo de gasto
+		- Organizar actividad grupal
+
+	REQUISITO SISTEMA DE GESTION DE ACTIVIDADES
+		- Crear actividad
+		- Añadir reseña
+		- Consultar calendario
+		- Consultar actividad
+
+
 3.3. Requisitos no funcionales
+
+	- Seguridad y privacidad
+	- Compatibilidad con distintos dispositivos y sistemas operativos
+	- Existencia de una versión web de la aplicación
+	- Interfaz fácil de usar y entender
+	- Soporte de múltiples métodos de pago
+	- Lenguaje accesible
+	- Soporte de múltiples idiomas
