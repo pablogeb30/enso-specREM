@@ -1,6 +1,19 @@
 # Documento que contiene las listas de la práctica anterior con los requisitos obtenidos
 
-3.1. Requisitos de información 
+3.1. Requisitos de información
+
+ 10 OBJETOS IDENTIFICADOS EN LA LISTA DE LA REUNION TFEA
+	
+	• Gasto
+	• Usuario
+	• Actividad
+	• Grupo
+	• Notificación
+	• Reseña
+	• Mensaje
+	• Pago
+	• Chat
+	• Saldo
 
 3.2. Requisitos funcionales
 
