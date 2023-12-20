@@ -37,7 +37,7 @@
 <h1 class="cover">Documento de Requisitos del Sistema</h1>
 <p />
 <h3>Versión 1.0</h3>
-<h3>Fecha 05/12/2023</h3>
+<h3>Fecha 20/12/2023</h3>
 <p />
 <h3>Preparado para:</h3>
 <a href="#ORG-0001" title="OldTravelsa">
@@ -211,6 +211,62 @@ Matrices de trazabilidad</a>
 Reuniones</a>
 </th>
 </tr>
+<tr>
+<th align="left" valign="top">B </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0027">
+Priorización de requisitos</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">B.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0029">
+Lista inicial de requisitos</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">B.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0028">
+Matrices de prioridad para coste y valor</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">B.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0030">
+Índices de consistencia</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">B.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0031">
+Índice de consistencia para valor</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">B.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0032">
+Índice de consistencia para coste</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">B.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0033">
+Diagrama Coste-Valor</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">B.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0034">
+Lista priorizada de requisitos</a>
+</td>
+</tr>
 </table>
 <p />
 <hr size="4" />
@@ -319,12 +375,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="STK-0002" />
+<a name="STK-0004" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">Participante</th>
 <th align="left" valign="top" width="100%">
-Pablo Guerrica-Echevarría Basterrechea </th>
+Aarón García Filgueira</th>
 </tr>
 <tr><th align="left" valign="top">Organización</th>
 <td align="left" valign="top">
@@ -334,7 +390,7 @@ Grupo 2B</a>
 </tr>
 <tr>
 <th align="left" valign="top">Rol</th>
-<td align="left" valign="top" colspan="1">Analista</td>
+<td align="left" valign="top" colspan="1">Asegurador de Calidad</td>
 </tr>
 <tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
 <td align="left" valign="top">Sí</td>
@@ -385,12 +441,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="STK-0004" />
+<a name="STK-0002" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">Participante</th>
 <th align="left" valign="top" width="100%">
-Aarón García Filgueira</th>
+Pablo Guerrica-Echevarría Basterrechea </th>
 </tr>
 <tr><th align="left" valign="top">Organización</th>
 <td align="left" valign="top">
@@ -400,7 +456,7 @@ Grupo 2B</a>
 </tr>
 <tr>
 <th align="left" valign="top">Rol</th>
-<td align="left" valign="top" colspan="1">Asegurador de Calidad</td>
+<td align="left" valign="top" colspan="1">Analista</td>
 </tr>
 <tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
 <td align="left" valign="top">Sí</td>
@@ -455,9 +511,32 @@ Ninguno</td>
 <h2 align="left">1.3 
 Glosario</h2><a name="SEC-0011" />
 <h3 align="left">1.3.1 
-Definiciones</h3><a name="GLO-0005" />
+Definiciones</h3><a name="GLO-0019" />
 <p align="left">
-<b> Importancia1-Vital:</b> Debe cumplirse sí o sí. Si no se alcanza el proyecto deja de tener sentido.</p>
+<b> Actividad:</b> Evento al que acuden diversos usuarios pertencientes a un mismo <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</p>
+<a name="GLO-0015" />
+<p align="left">
+<b> Gasto:</b> Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> realice y desee registrar para solicitar la aportación económica de otros usuarios</p>
+<a name="GLO-0014" />
+<p align="left">
+<b> Grupo de gasto:</b> Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos</p>
+<a name="GLO-0005" />
+<p align="left">
+<b> Importancia1-Vital:</b> Debe cumplirse sí o sí. Si no se alcanza el proyecto deja de tener sentido</p>
+<a name="GLO-0011" />
+<p align="left">
+<b> Importancia2-Importante:</b> El cliente espera que este elemento esté presente y se sentirá 
+<br />francamente decepcionado si no es así</p>
+<a name="GLO-0012" />
+<p align="left">
+<b> Importancia3-Quedaría Bien:</b> El cliente no nos lo ha especificado, pero le aporta valor al proyecto. El cliente se sentirá satisfecho por su presencia.</p>
+<a name="GLO-0018" />
+<p align="left">
+<b> Pago:</b> Saldo de una deuda entre dos usuarios</p>
+<a name="GLO-0013" />
+<p align="left">
+<b> Usuario:</b> Persona física que utiliza la aplicación</p>
 <a name="SEC-0012" />
 <h3 align="left">1.3.2 
 Acrónimos</h3><a name="GLO-0004" />
@@ -465,7 +544,10 @@ Acrónimos</h3><a name="GLO-0004" />
 <b> CApp:</b> CountApp</p>
 <a name="SEC-0013" />
 <h2 align="left">1.4 
-Organización del documento</h2><a name="SEC-0002" />
+Organización del documento</h2><a name="PRG-0016" />
+<p>Este documento de especificación de requisitos organiza su contenido en base a tres secciones principales: visión general, requisitos y matrices de trazabilidad, a mayores del apartado introductorio aquí mostrado y los diversos apéndices. 
+<br />En la sección 2 se presenta el proyecto en el contexto de la interacción con el cliente, constatando unos objetivos y el alcance de la solución diseñada. La sección 3 describe en detalle los tres tipos de requisitos: de información, funcionales y no funcionales. Para los de información se presentan diversas restricciones y los funcionales se complementan de diagramas de casos de uso que muestran el entorno y la interacción del sistema con sus actores. Por último, la sección 4 reúne las dependencias presentes entre diversos elementos elaborados y los apéndices contienen información complementaria necesaria para la completitud del documento.</p>
+<a name="SEC-0002" />
 <h1 align="left">2 
 Visión general</h1><a name="SEC-0014" />
 <h2 align="left">2.1 
@@ -475,10 +557,10 @@ Introducción</h2><a name="PRG-0009" />
 <br />Como consecuencia de esta situación la empresa identifica que se generan algunas malas dinámicas de grupo, llegándose incluso a discusiones, debido al reparto de los gastos generados en dichas actividades. Estas situaciones generan un mal ambiente en el que se
 <br />ven involucradas incluso personas que no tienen un papel directo en la situación y, como resultado, las evaluaciones de satisfacción disminuyen globalmente.
 <br />
-<br />Por ende, OldTravelsa busca alcanzar una solución que le permita evitar los perjuicios anteriormente citados, proponiendo para ello el diseño y creación de una herramienta que permita a sus clientes gestionar grupos de gasto, así como el envío y recibo de mensajes de texto e imágenes, y un sistema de recomendaciones de servicios basado en los gastos imputados en el grupo correspondiente.
+<br />Por ende, OldTravelsa busca alcanzar una solución que le permita evitar los perjuicios anteriormente citados, proponiendo para ello el diseño y creación de una herramienta que permita a sus clientes gestionar grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>, así como el envío y recibo de mensajes de texto e imágenes, y un sistema de recomendaciones de servicios basado en los gastos imputados en el grupo correspondiente.
 <br />Con ello, además de evitar el problema original, pueden mejorar su imagen y calidad de servicio, obteniendo una mejora general de cara al público contratante.
 <br />
-<br />Desde nuestro equipo proponemos pues una solución que cubra las necesidades expuestas por parte del cliente, que englobará un sistema de gestión de usuarios para el uso por parte de la clientela de la empresa, un sistema de gestión de gastos que sirva como medio para la repartición de gastos incurridos durante las actividades realizadas por los usuarios, así como de feedback para el sistema de gestión de actividades, que se encargará de recomendar servicios y puntos de interés a los usuarios. Finalmente, se incluirá un sistema de gestión de chats y grupos, con el objetivo de dotar de comunicación rápida y sencilla entre los usuarios.</p>
+<br />Desde nuestro equipo proponemos pues una solución que cubra las necesidades expuestas por parte del cliente, que englobará un sistema de gestión de usuarios para el uso por parte de la clientela de la empresa, un sistema de gestión de gastos que sirva como medio para la repartición de gastos incurridos durante las actividades realizadas por los usuarios, así como de feedback para el sistema de gestión de actividades, que se encargará de recomendar servicios y puntos de interés a los usuarios. Finalmente, se incluirá un sistema de gestión de chats y grupos, con el objetivo de dotar de comunicación rápida y sencilla entre los usuarios. Se considera esta como la solución más adecuada para el problema presentado debido a que, por un lado se trata de una forma cómoda y amigable de gestionar las casuísticas estudiadas y por otro lado, permite un uso extendido y concurrente posibilitando un crecimiento de las herramientas y métodos desarrollados.</p>
 <a name="SEC-0015" />
 <h2 align="left">2.2 
 Objetivos</h2><a name="OBJ-0002" />
@@ -528,7 +610,7 @@ José Ángel Taboada Gonzalez</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-permitir el registro y eliminación de usuarios, acceder a la configuración sobre privacidad, métodos de pago y demás información personal</em>
+permitir el registro y eliminación de usuarios, acceder a la configuración sobre privacidad, métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> y demás información personal</em>
 </td>
 </tr>
 <tr>
@@ -605,7 +687,7 @@ José Ángel Taboada Gonzalez</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-permitir el registro de un gasto configurando sus particicpantes, calculando automáticamente el balance y registrando una fecha asociada a la operación. También ofrecerá la posibilidad de adjuntar un justificante y/o asociar el gasto a una actividad existinte en el sistema. Para cada gasto se pueden consultar saldos y deudas; y registrar nuevos pagos de deuda.
+permitir el registro de un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> configurando sus particicpantes, calculando automáticamente el balance y registrando una fecha asociada a la operación. También ofrecerá la posibilidad de adjuntar un justificante y/o asociar el <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> a una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> existinte en el sistema. Para cada <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> se pueden consultar saldos y deudas; y registrar nuevos pagos de deuda.
 <br />
 </em>
 </td>
@@ -817,6 +899,8 @@ Alcance de la solución</h2><a name="GRF-0001" />
 <b>Figura 1</b>:
                 
 Diagrama de contexto</p>
+<a name="PRG-0017" />
+<p>El software desarrollado se entregará al cliente en forma de aplicación ejecutable facilitando toda posible abstracción sobre la puesta en marcha del mismo. En cuanto al sistema de almacenamiento de datos, el diseño y construcción de la base de datos y su conexión con la aplicación son responsabilidad del equipo desarrollador, de forma que será la empresa desarrolladora la encargada de la creación y administración de la infraestructura asociada, lo que implica unos costes periódicos a OldTravesa asociados a esta gestión. Por último, será OldTravesa la encargada de presentar la aplicación a sus clientes una vez finalizado el proceso.</p>
 <a name="SEC-0003" />
 <h1 align="left">3 
 Requisitos</h1><a name="SEC-0017" />
@@ -834,7 +918,8 @@ Diagrama E.R.</p>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0001</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Gasto</th>
+<a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">Gasto</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -886,7 +971,7 @@ gastos en el sistema de pagos de la aplicación.
 <ul>
 <li>
 <a name="DAT-0102" />
-Documentan cualquier tipo de pago en una actividad por parte de uno o varios integrantes del grupo.</li>
+Documentan cualquier tipo de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> en una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> por parte de uno o varios integrantes del grupo.</li>
 <li>
 <a name="DAT-0103" />
 Permiten ser justificados adjuntando imágenes de recibos, tickets o facturas.</li>
@@ -926,7 +1011,7 @@ Se calcula automáticamente el saldo de cada integrante, repartiendo equitativame
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -944,7 +1029,8 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0002</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Usuario</th>
+<a href="#GLO-0013" title="Persona física que utiliza la aplicación">Usuario</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -999,10 +1085,10 @@ clientes de la empresa en la aplicación.
 Objeto utilizado en la mayoría de las operaciones de la aplicación.</li>
 <li>
 <a name="DAT-0106" />
-Se pueden crear a partir de credenciales de autenticación: nombre de usuario, correo electrónico y contraseña.</li>
+Se pueden crear a partir de credenciales de autenticación: nombre de <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>, correo electrónico y contraseña.</li>
 <li>
 <a name="DAT-0107" />
-Pueden entrar en grupos de gasto, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada.</li>
+Pueden entrar en grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada.</li>
 </ul>
 </td>
 </tr>
@@ -1036,7 +1122,7 @@ Pueden entrar en grupos de gasto, crear actividades, publicar reseñas, intercamb
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1054,7 +1140,8 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Actividad</th>
+<a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">Actividad</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1112,7 +1199,7 @@ Se pueden asociar a gastos imputados por los participantes.</li>
 Permiten publicar reseñas sobre las mismas y ser puntuadas por los participantes.</li>
 <li>
 <a name="DAT-0110" />
-Cada actividad puede tener múltiples gastos asociados con diferentes integrantes en los mismos.</li>
+Cada <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> puede tener múltiples gastos asociados con diferentes integrantes en los mismos.</li>
 <li>
 <a name="DAT-0111" />
 Se asocia a una ubicación y se puede agregar como evento en el calendario.</li>
@@ -1149,7 +1236,7 @@ Se asocia a una ubicación y se puede agregar como evento en el calendario.</li>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1219,7 +1306,7 @@ grupos de viaje formados en la aplicación.
 <ul>
 <li>
 <a name="DAT-0112" />
-Agrupan a los usuarios que participen en una actividad o compartan gastos.
+Agrupan a los usuarios que participen en una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> o compartan gastos.
 <br />
 </li>
 <li>
@@ -1261,7 +1348,7 @@ Soportan la publicación de avisos a través de un sistema de notificación desde e
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1334,7 +1421,7 @@ notificaciones enviadas y recibidas en la aplicación.
 Se distinguen notificaciones push para dispositivos móviles y notificaciones de escritorio para ordenadores.</li>
 <li>
 <a name="DAT-0116" />
-Informan al usuario sobre eventos comunes o programados, como por ejemplo el comienzo de una actividad o su final, si necesita hacer un pago a otra persona, etc.</li>
+Informan al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> sobre eventos comunes o programados, como por ejemplo el comienzo de una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> o su final, si necesita hacer un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> a otra persona, etc.</li>
 <li>
 <a name="DAT-0117" />
 También incluyen mensajes enviados por anfitriones del grupo, así como avisos de eventos y mensajes entre usuarios.</li>
@@ -1371,7 +1458,7 @@ También incluyen mensajes enviados por anfitriones del grupo, así como avisos de
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1481,7 +1568,7 @@ Aumenta la fiabilidad acerca de la calidad de la aplicación al ofrecer diversos 
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1585,7 +1672,7 @@ Herramienta básica de comunicación entre usuarios de la aplicación.</li>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1603,7 +1690,8 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0008</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Pago</th>
+<a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">Pago</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1658,10 +1746,10 @@ pagos registrados en la aplicación.
 Pueden ser creados por los usuarios especificando la cantidad correspondiente y el beneficiario.</li>
 <li>
 <a name="DAT-0123" />
-Permiten saldar deudas entre usuarios dentro de un grupo de gasto.</li>
+Permiten saldar deudas entre usuarios dentro de un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>.</li>
 <li>
 <a name="DAT-0124" />
-Se permite realizar un pago a través de la aplicación con diferentes métodos de pago.</li>
+Se permite realizar un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> a través de la aplicación con diferentes métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>.</li>
 <li>
 <a name="DAT-0125" />
 La aplicación debe calcular automáticamente los saldos individuales y actualizar los registros de pagos entre usuarios.</li>
@@ -1698,7 +1786,7 @@ La aplicación debe calcular automáticamente los saldos individuales y actualizar
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1757,7 +1845,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-chats de cada usuario en la aplicación.
+chats de cada <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> en la aplicación.
 				</em>
     En concreto:
 </td>
@@ -1805,7 +1893,7 @@ Permite enviar información en múltiples formatos (incluye conversaciones privada
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1875,10 +1963,10 @@ saldos de los usuarios de la aplicación.
 <ul>
 <li>
 <a name="DAT-0128" />
-Refleja el estado financiero individual de cada usuario en un grupo de gasto.</li>
+Refleja el estado financiero individual de cada <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> en un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>.</li>
 <li>
 <a name="DAT-0129" />
-Incluye todas las deudas y cobros individuales del usuario con otros usuarios.</li>
+Incluye todas las deudas y cobros individuales del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> con otros usuarios.</li>
 <li>
 <a name="DAT-0130" />
 Deben representarse de forma clara las deudas y cobros pendientes.</li>
@@ -1915,7 +2003,7 @@ Deben representarse de forma clara las deudas y cobros pendientes.</li>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -1935,7 +2023,8 @@ Restricciones de la información</h3><a name="CRQ-0001" />
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">CRQ-0001</th>
 <th align="left" valign="top" width="100%">
-Pagador de un gasto</th>
+Pagador de un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1972,8 +2061,7 @@ José Ángel Taboada Gonzalez</a>
 <td align="left" valign="top" colspan="1">
 <li>
 <a href="#IRQ-0001" title="Gasto">
-                                [IRQ-0001] 
-Gasto</a>
+                                [IRQ-0001]  Gasto</a>
 </li>
 </td>
 </tr>
@@ -1995,7 +2083,7 @@ los gastos solo pueden tener un pagador.</em>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+<td align="left" valign="top" colspan="1">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -2050,8 +2138,7 @@ José Ángel Taboada Gonzalez</a>
 <td align="left" valign="top" colspan="1">
 <li>
 <a href="#IRQ-0002" title="Usuario">
-                                [IRQ-0002] 
-Usuario</a>
+                                [IRQ-0002]  Usuario</a>
 </li>
 </td>
 </tr>
@@ -2073,7 +2160,7 @@ no puede haber dos usuarios registrados con las misma credenciales.</em>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+<td align="left" valign="top" colspan="1">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -2138,7 +2225,7 @@ Grupo</a>
 <td align="left" valign="top">
 	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
 <em>
-los grupos son creados y gestionados únicamente por un anfitrión en las funciones de añadir, bloquear y eliminar usuarios. Si un usuario no tiene este rol no podrá realizar las acciones mencionadas. </em>
+los grupos son creados y gestionados únicamente por un anfitrión en las funciones de añadir, bloquear y eliminar usuarios. Si un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> no tiene este rol no podrá realizar las acciones mencionadas. </em>
 </td>
 </tr>
 <tr>
@@ -2151,7 +2238,7 @@ los grupos son creados y gestionados únicamente por un anfitrión en las funcione
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+<td align="left" valign="top" colspan="1">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -2216,7 +2303,7 @@ Reseña</a>
 <td align="left" valign="top">
 	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
 <em>
-cada usuario puede escribir una única reseña de la aplicación, aunque esta puede ser modificada a lo largo del tiempo.</em>
+cada <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> puede escribir una única reseña de la aplicación, aunque esta puede ser modificada a lo largo del tiempo.</em>
 </td>
 </tr>
 <tr>
@@ -2229,7 +2316,7 @@ cada usuario puede escribir una única reseña de la aplicación, aunque esta puede
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+<td align="left" valign="top" colspan="1">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -2307,7 +2394,7 @@ solo el administrador del grupo tiene la capacidad de editar o borrar mensajes s
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+<td align="left" valign="top" colspan="1">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -2372,7 +2459,7 @@ Mensaje</a>
 <td align="left" valign="top">
 	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
 <em>
-no se pueden mandar mensajes sin encriptar,  manteniendo así la seguridad y privacidad de los datos de los usuarios.</em>
+los mensajes se deben transmitir encriptados,  manteniendo así la seguridad y privacidad de los datos de los usuarios.</em>
 </td>
 </tr>
 <tr>
@@ -2385,7 +2472,7 @@ no se pueden mandar mensajes sin encriptar,  manteniendo así la seguridad y priv
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+<td align="left" valign="top" colspan="1">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -2407,7 +2494,8 @@ Actores</h3><a name="ACT-0001" />
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">ACT-0001</th>
 <th align="left" valign="top" width="100%">
-Usuario</th>
+<a href="#GLO-0013" title="Persona física que utiliza la aplicación">Usuario</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2448,7 +2536,7 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Descripción</th>
 <td align="left" valign="top">
     Este actor representa
-<em>al viajero de la compañía o a cualquier usuario general de la aplicación.</em>
+<em>al viajero de la compañía o a cualquier <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> general de la aplicación.</em>
 </td>
 </tr>
 <tr>
@@ -2499,7 +2587,7 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Descripción</th>
 <td align="left" valign="top">
     Este actor representa
-<em>el rol que adquiere un usuario en relación a un grupo de gasto creado por él.</em>
+<em>el rol que adquiere un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> en relación a un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> creado por él.</em>
 </td>
 </tr>
 <tr>
@@ -2522,7 +2610,7 @@ Diagrama de sistema</p>
 <a name="SEC-0023" />
 <h4 align="left">3.2.2.1 
 Subsistema usuarios</h4><a name="PRG-0006" />
-<p>El subsistema de usuarios se centra en la gestión de cuentas y perfiles de usuario. Permite a los usuarios llevar a cabo funciones relacionadas con su información personal, sus preferencias y otras configuraciones esenciales que se almacenan en el sistema. </p>
+<p>El subsistema de usuarios se centra en la gestión de cuentas y perfiles de <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>. Permite a los usuarios llevar a cabo funciones relacionadas con su información personal, sus preferencias y otras configuraciones esenciales que se almacenan en el sistema. </p>
 <a name="FRQ-0001" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
@@ -2575,7 +2663,7 @@ Sistema de gestión de usuarios</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-de implementar toda la lógica subyacente a la creación, eliminación y gestión de usuarios de la apliación. También se implementarán aquí todas las opciones relacionadas con preferencias, privacidad, métodos de pago y amistades, entre otros.</em>
+de implementar toda la lógica subyacente a la creación, eliminación y gestión de usuarios de la apliación. También se implementarán aquí todas las opciones relacionadas con preferencias, privacidad, métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> y amistades, entre otros.</em>
 </td>
 </tr>
 <tr>
@@ -2657,13 +2745,13 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-un nuevo usuario desea darse de alta en la aplicación.</em>
+un nuevo <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> desea darse de alta en la aplicación.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario debe de poseer una versión válida de la aplicación instalada en su sistema.</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de poseer una versión válida de la aplicación instalada en su sistema.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="6">Secuencia normal</th>
@@ -2673,8 +2761,7 @@ El usuario debe de poseer una versión válida de la aplicación instalada en su si
 <tr>
 <a name="STP-0070" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 abre la aplcación y selecciona la opción "Registrarse" en el panel de bienvenida.</em>
@@ -2683,8 +2770,7 @@ abre la aplcación y selecciona la opción "Registrarse" en el panel de bienvenida
 <tr>
 <a name="STP-0072" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 acepta los términos y condiciones de uso de la aplicación y los sistemas integrados, así como las polírticas de privacidad establecidas.</em>
@@ -2693,18 +2779,16 @@ acepta los términos y condiciones de uso de la aplicación y los sistemas integra
 <tr>
 <a name="STP-0071" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-introduce los datos requeridos por el sistema, como el nombre completo, la fecha de nacimiento, el nombre de usuario y la contraseña.</em>
+introduce los datos requeridos por el sistema, como el nombre completo, la fecha de nacimiento, el nombre de <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> y la contraseña.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0073" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 valida los datos introducidos a través de una autentificación de dos factores (correo electrónico o SMS).</em>
@@ -2713,8 +2797,7 @@ valida los datos introducidos a través de una autentificación de dos factores (c
 <tr>
 <a name="STP-0074" />
 <td align="center" valign="top">5</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 ingresa al sistema y comienza a usar los servicios.</em>
@@ -2723,7 +2806,7 @@ ingresa al sistema y comienza a usar los servicios.</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-El sistema registra los datos del nuevo usuario y lo añade a la base de datos.</td>
+El sistema registra los datos del nuevo <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> y lo añade a la base de datos.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="4">Excepciones</th>
@@ -2734,7 +2817,7 @@ El sistema registra los datos del nuevo usuario y lo añade a la base de datos.</
 <a name="STX-0010" />
 <td align="center" valign="top">2</td>
 <td>Si<em>
-el usuario no acepta los términos y condiciones de uso o las condiciones de privacidad,
+el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> no acepta los términos y condiciones de uso o las condiciones de privacidad,
                             </em>el
      
     sistema<em>
@@ -2748,7 +2831,7 @@ lo devulve al panel de bienvenida y mustra un mensaje de error</em>,
 <a name="STX-0011" />
 <td align="center" valign="top">3</td>
 <td>Si<em>
-el usuario introduce algún dato no válido ,
+el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> introduce algún dato no válido ,
                             </em>el
      
     sistema<em>
@@ -2812,7 +2895,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Una persona física crea unas credenciales y se registra en el sistema</td>
 </tr>
 </table>
 <p />
@@ -2864,13 +2947,13 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-un usuario ya registrado desea ingresar a la aplicación</em>
+un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> ya registrado desea ingresar a la aplicación</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario debe de estar registrado en el sistema y en la base de datos</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de estar registrado en el sistema y en la base de datos</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -2880,8 +2963,7 @@ El usuario debe de estar registrado en el sistema y en la base de datos</td>
 <tr>
 <a name="STP-0076" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 abre la aplicación y selecciona la opción "Inicar sesión" en el panel de bienvenida</em>
@@ -2890,18 +2972,16 @@ abre la aplicación y selecciona la opción "Inicar sesión" en el panel de bienven
 <tr>
 <a name="STP-0077" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-Introduce su usuario y contraseña en los campos donde se solicita</em>
+Introduce su <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> y contraseña en los campos donde se solicita</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0078" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 ingresa de manera satisfactoria al sistema</em>
@@ -2913,13 +2993,13 @@ ingresa de manera satisfactoria al sistema</em>
 <td>El
      
     sistema<em>
-registra que el usuario está ahora conectado</em>
+registra que el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> está ahora conectado</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario gana acceso a los servicios de la aplicación</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> gana acceso a los servicios de la aplicación</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2930,7 +3010,7 @@ El usuario gana acceso a los servicios de la aplicación</td>
 <a name="STX-0013" />
 <td align="center" valign="top">2</td>
 <td>Si<em>
-se introducen datos incorrectos en los campos usuario o contraseña,
+se introducen datos incorrectos en los campos <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> o contraseña,
                             </em>el
      
     sistema<em>
@@ -2980,7 +3060,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> inicia sesión desde un dispositivo</td>
 </tr>
 </table>
 <p />
@@ -3032,13 +3112,13 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-el usuario desea modificar configuraciones personales de su cuenta</em>
+el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> desea modificar configuraciones personales de su cuenta</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario debe de estar registrado en la aplicación.
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de estar registrado en la aplicación.
 <br />El ussuario debe de haber iniciado sesión de manera satisfactoria.</td>
 </tr>
 <tr>
@@ -3049,8 +3129,7 @@ El usuario debe de estar registrado en la aplicación.
 <tr>
 <a name="STP-0080" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 selecciona la opción de "Editar perfil" dentro del menú de ajustes de la aplicación</em>
@@ -3059,8 +3138,7 @@ selecciona la opción de "Editar perfil" dentro del menú de ajustes de la aplicac
 <tr>
 <a name="STP-0081" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 modifica aquellos campos en los que desea actualizar los datos, ya sea información personal como el teléfono o el email, o configuraciones de privacidad.</em>
@@ -3069,8 +3147,7 @@ modifica aquellos campos en los que desea actualizar los datos, ya sea informaci
 <tr>
 <a name="STP-0082" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 guarda los cambios realizados y pulsa sobre la opción de confirmar</em>
@@ -3099,7 +3176,7 @@ El sistema almacena los cambios indicados y actualiza la información pertinente.
 <a name="STX-0014" />
 <td align="center" valign="top">2</td>
 <td>Si<em>
-alguno de los datos introducidos por el usuario no es válido porque viola alguna restricción,
+alguno de los datos introducidos por el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> no es válido porque viola alguna restricción,
                             </em>el
      
     sistema<em>
@@ -3149,7 +3226,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> edita el teléfono de su perfil</td>
 </tr>
 </table>
 <p />
@@ -3158,7 +3235,8 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0019</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Configurar métodos de pago</th>
+Configurar métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3201,14 +3279,14 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-se selecciona manualmente la opción de registrar un método de pago o se pretende llevar a cabo un pago sin tener un método de pago definido.</em>
+se selecciona manualmente la opción de registrar un método de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> o se pretende llevar a cabo un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> sin tener un método de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> definido.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario debe de estar registrado en el sistema.
-<br />El usuario debe de haber inicado sesión y estar conectado.</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de estar registrado en el sistema.
+<br />El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de haber inicado sesión y estar conectado.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="4">Secuencia normal</th>
@@ -3218,21 +3296,19 @@ El usuario debe de estar registrado en el sistema.
 <tr>
 <a name="STP-0092" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona la opción de añadir un nuevo método de pago en el apartado de configuración del perfil.</em>
+selecciona la opción de añadir un nuevo método de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> en el apartado de configuración del perfil.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0093" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-elige cual de los métodos de pago que están disponibles es el que desea usar para abonar los pagos que vaya a realizar mediante la aplicación.</em>
+elige cual de los métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> que están disponibles es el que desea usar para abonar los pagos que vaya a realizar mediante la aplicación.</em>
 </td>
 </tr>
 <tr>
@@ -3241,7 +3317,7 @@ elige cual de los métodos de pago que están disponibles es el que desea usar par
 <td>El
      
     sistema<em>
-valida los datos introducidos y los almacena en la base de datos para poder emplearlos en la realización de cobros y recargos asociados al usuario.</em>
+valida los datos introducidos y los almacena en la base de datos para poder emplearlos en la realización de cobros y recargos asociados al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>.</em>
 </td>
 </tr>
 <tr>
@@ -3258,11 +3334,11 @@ El sistema almacena la información suministrada por el cliente en la base de dat
 <a name="STX-0016" />
 <td align="center" valign="top">2</td>
 <td>Si<em>
-el método de pago seleccionado es gestionado por una plataforma/empresa externa y no por una entidad bancaria (por ejemplo PayPal o AliPay),
+el método de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> seleccionado es gestionado por una plataforma/empresa externa y no por una entidad bancaria (por ejemplo PayPal o AliPay),
                             </em>el
      
     sistema<em>
-redireccionará al usuario al sistema de incio de sesión de la plataforma correspondiente para poder validar los datos</em>,
+redireccionará al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> al sistema de incio de sesión de la plataforma correspondiente para poder validar los datos</em>,
                             a continuación este caso de uso
                              
                             <em>continúa</em>
@@ -3308,7 +3384,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> añade un método de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> nuevo</td>
 </tr>
 </table>
 <p />
@@ -3360,14 +3436,14 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-la opción de cerrar sesión es invocada desde el menú de configuración de la aplicación por parte de un usuario.</em>
+la opción de cerrar sesión es invocada desde el menú de configuración de la aplicación por parte de un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario debe de estar registrado en el sistema.
-<br />El usuario debe de haber iniciado sesión en la aplicación y estar conectado de manera activa.</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de estar registrado en el sistema.
+<br />El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de haber iniciado sesión en la aplicación y estar conectado de manera activa.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -3377,8 +3453,7 @@ El usuario debe de estar registrado en el sistema.
 <tr>
 <a name="STP-0084" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 se dirije al apartado de configuración desde el menú de la aplicación.</em>
@@ -3387,8 +3462,7 @@ se dirije al apartado de configuración desde el menú de la aplicación.</em>
 <tr>
 <a name="STP-0085" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 selecciona la opción para cerrar sesión en el dispositivo actual.</em>
@@ -3397,8 +3471,7 @@ selecciona la opción para cerrar sesión en el dispositivo actual.</em>
 <tr>
 <a name="STP-0086" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 confirma la acción en el banner pop-up que solicita una segunda confirmación.</em>
@@ -3410,13 +3483,13 @@ confirma la acción en el banner pop-up que solicita una segunda confirmación.</e
 <td>El
      
     sistema<em>
-redirige al usuario a la página de inicio de la aplicación.</em>
+redirige al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> a la página de inicio de la aplicación.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-El sistema registra que el usuario ya no se encuentra activo.</td>
+El sistema registra que el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> ya no se encuentra activo.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -3427,11 +3500,11 @@ El sistema registra que el usuario ya no se encuentra activo.</td>
 <a name="STX-0015" />
 <td align="center" valign="top">3</td>
 <td>Si<em>
-el usuario rechaza el cierre de sesión en la ventana emergente de confirmación,
+el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> rechaza el cierre de sesión en la ventana emergente de confirmación,
                             </em>el
      
     sistema<em>
-anula el cierre de sesión y devuelve al usuario al menú de configuración en el que se encontraba anteriormente</em>,
+anula el cierre de sesión y devuelve al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> al menú de configuración en el que se encontraba anteriormente</em>,
                             a continuación este caso de uso
                              
                             <em>queda sin efecto</em>
@@ -3477,7 +3550,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> cierra sesión en la aplicación desde un dispositivo</td>
 </tr>
 </table>
 <p />
@@ -3529,14 +3602,14 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-un usuario experimenta algún problema o inconveniente y desea reportarlo al equipo de desarrollo/control.</em>
+un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> experimenta algún problema o inconveniente y desea reportarlo al equipo de desarrollo/control.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario debe de estar registrado.
-<br />El usuario debe de estar activo.</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de estar registrado.
+<br />El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de estar activo.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -3546,8 +3619,7 @@ El usuario debe de estar registrado.
 <tr>
 <a name="STP-0088" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 selecciona la opción de notificar incidencia desde el menú de la aplicación.</em>
@@ -3556,8 +3628,7 @@ selecciona la opción de notificar incidencia desde el menú de la aplicación.</em
 <tr>
 <a name="STP-0089" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 completa los datos requeridos por el sistema para conocer cual es el motivo del reporte: Descripción del problema, repercusiones o consecuencias y cualquier archivo adjunto que pueda servir como prueba o apoyo.</em>
@@ -3566,8 +3637,7 @@ completa los datos requeridos por el sistema para conocer cual es el motivo del 
 <tr>
 <a name="STP-0090" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 confirma los datos introducidos y selecciona la opción de "Enviar reporte"</em>
@@ -3579,13 +3649,13 @@ confirma los datos introducidos y selecciona la opción de "Enviar reporte"</em>
 <td>El
      
     sistema<em>
-clasifica el reporte según los datos proporcionados por el usuario, le asigna una prioridad apróximada y envía una notificación al equipo responsable de su revisión.</em>
+clasifica el reporte según los datos proporcionados por el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>, le asigna una prioridad apróximada y envía una notificación al equipo responsable de su revisión.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-El sisitema almacena la incidencia y crea un log con la fecha y el usuario correspondientes.</td>
+El sisitema almacena la incidencia y crea un log con la fecha y el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> correspondientes.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -3640,7 +3710,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> crea y envia una invidencia sobre la aplicación</td>
 </tr>
 </table>
 <p />
@@ -3700,7 +3770,7 @@ Sistema de gestión de gastos</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-permitir al usuario crear un nuevo gasto en un grupo de gasto concreto. Para esto, deberá elegir los miembros implicados y podrá asociar una actividad realizada y un justificante del gasto. El sistema calculará automáticamente el balance de cada miembro y permitirá registrar pagos que reajusten este balance, así como consultar los saldos correspondientes.</em>
+permitir al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> crear un nuevo <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> en un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> concreto. Para esto, deberá elegir los miembros implicados y podrá asociar una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> realizada y un justificante del <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>. El sistema calculará automáticamente el balance de cada miembro y permitirá registrar pagos que reajusten este balance, así como consultar los saldos correspondientes.</em>
 </td>
 </tr>
 <tr>
@@ -3739,7 +3809,8 @@ Diagrama de casos de uso del subsistema gastos</p>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Añadir gasto</th>
+Añadir <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3782,13 +3853,14 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
+un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> selecciona la opción de añadir un nuevo <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
 </em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario ha seleccionado un grupo concreto</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> ha seleccionado un grupo concreto</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="8">Secuencia normal</th>
@@ -3798,11 +3870,10 @@ El usuario ha seleccionado un grupo concreto</td>
 <tr>
 <a name="STP-0004" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona la opción de añandir un gasto.</em>
+selecciona la opción de añandir un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>.</em>
 </td>
 </tr>
 <tr>
@@ -3831,17 +3902,18 @@ Asociar actividad
 <td>El
      
     sistema<em>
-solicita la adición de un justificante de gasto</em>
+solicita la adición de un justificante de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0027" />
 <td align="center" valign="top">5</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-incluye una imagen del justificante de gasto</em>
+incluye una imagen del justificante de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -3857,17 +3929,17 @@ Calcular balance
 <tr>
 <a name="STP-0030" />
 <td align="center" valign="top">7</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-confirma la creación del nuevo gasto</em>
+confirma la creación del nuevo <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Existe un nuevo gasto en el grupo seleccionado</td>
+Existe un nuevo <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> en el grupo seleccionado</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="3">Excepciones</th>
@@ -3878,11 +3950,11 @@ Existe un nuevo gasto en el grupo seleccionado</td>
 <a name="STX-0002" />
 <td align="center" valign="top">2</td>
 <td>Si<em>
-no existen viajeros en el grupo de gasto ,
+no existen viajeros en el <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>,
                             </em>el
      
     sistema<em>
-no permite el registro de dicho gasto.</em>,
+no permite el registro de dicho <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>.</em>,
                             a continuación este caso de uso
                              
                             <em>queda sin efecto</em>
@@ -3892,7 +3964,7 @@ no permite el registro de dicho gasto.</em>,
 <a name="STX-0004" />
 <td align="center" valign="top">4</td>
 <td>Si<em>
-el usuario no desea añadir un justificante de gasto,
+el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> no desea añadir un justificante de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>,
                             </em>
     se realiza el caso de uso
 <a href="&#xA;            #UC-0007">
@@ -3944,7 +4016,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Crear un gasto a repartir entre los miembros del grupo, asociarle una actividad y añadir una imagen del recibo</td>
+Crear un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> a repartir entre los miembros del grupo, asociarle una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> y añadir una imagen del recibo</td>
 </tr>
 </table>
 <p />
@@ -4006,7 +4078,8 @@ Registrar pago</a></td>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-Se ha seleccionado un gasto</td>
+Se ha seleccionado un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -4025,8 +4098,7 @@ muestra una lista de todos los miembros del grupo</em>
 <tr>
 <a name="STP-0007" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 selecciona los miembros del grupo deseados</em>
@@ -4044,8 +4116,7 @@ permite introducir manualmente el porcentaje de participación de cada miembro</e
 <tr>
 <a name="STP-0009" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 confirma los participantes seleccionados</em>
@@ -4109,7 +4180,8 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Seleccionar varios de los participantes de un grupo para que participen en un gasto</td>
+Seleccionar varios de los participantes de un grupo para que participen en un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</td>
 </tr>
 </table>
 <p />
@@ -4118,7 +4190,8 @@ Seleccionar varios de los participantes de un grupo para que participen en un ga
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0005</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Asociar actividad</th>
+Asociar <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -4171,7 +4244,8 @@ Añadir gasto</a></td>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-Se ha seleccionado un gasto</td>
+Se ha seleccionado un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="4">Secuencia normal</th>
@@ -4184,17 +4258,18 @@ Se ha seleccionado un gasto</td>
 <td>El
      
     sistema<em>
-lista las actividades creadas para el grupo de gasto</em>
+lista las actividades creadas para el <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0015" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-elige la actividad deseada para asociarla al gasto</em>
+elige la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> deseada para asociarla al <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -4203,13 +4278,14 @@ elige la actividad deseada para asociarla al gasto</em>
 <td>El
      
     sistema<em>
-actualiza la fecha del gasto como la fecha de realizacion de la actividad</em>
+actualiza la fecha del <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> como la fecha de realizacion de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-El gasto seleccionado tiene una nueva actividad asociada</td>
+El <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> seleccionado tiene una nueva <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> asociada</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -4220,7 +4296,7 @@ El gasto seleccionado tiene una nueva actividad asociada</td>
 <a name="STX-0003" />
 <td align="center" valign="top">1</td>
 <td>Si<em>
-no se elige ninguna actividad de las listadas,
+no se elige ninguna <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> de las listadas,
                             </em>
     se realiza el caso de uso
 <a href="&#xA;            #UC-0006">
@@ -4272,7 +4348,8 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Seleccionar una actividad y asociarla a un gasto</td>
+Seleccionar una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> y asociarla a un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</td>
 </tr>
 </table>
 <p />
@@ -4334,7 +4411,8 @@ Registrar pago</a></td>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-Se ha seleccionado un grupo de gasto</td>
+Se ha seleccionado un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -4347,7 +4425,8 @@ Se ha seleccionado un grupo de gasto</td>
 <td>El
      
     sistema<em>
-obtiene el importe de cada gasto</em>
+obtiene el importe de cada <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -4356,7 +4435,7 @@ obtiene el importe de cada gasto</em>
 <td>El
      
     sistema<em>
-obtiene los miembros del grupo implicados en cada gasto y sus balances</em>
+obtiene los miembros del grupo implicados en cada <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> y sus balances</em>
 </td>
 </tr>
 <tr>
@@ -4365,7 +4444,8 @@ obtiene los miembros del grupo implicados en cada gasto y sus balances</em>
 <td>El
      
     sistema<em>
-calcula los nuevos balances de los participantes en función de su porcentaje de participación en cada gasto</em>
+calcula los nuevos balances de los participantes en función de su porcentaje de participación en cada <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -4380,7 +4460,7 @@ actualiza los balances de los participantes y los notifica</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Cada participante de un gasto tiene un nuevo balance</td>
+Cada participante de un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> tiene un nuevo balance</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -4444,7 +4524,8 @@ Actualizar el balance de cada miembro del grupo en función de los nuevos gastos 
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0008</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Registrar pago</th>
+Registrar <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -4487,13 +4568,15 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
+un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> selecciona la opción de añadir un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>
 </em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-Se ha seleccionado un gasto</td>
+Se ha seleccionado un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="8">Secuencia normal</th>
@@ -4503,21 +4586,20 @@ Se ha seleccionado un gasto</td>
 <tr>
 <a name="STP-0031" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona la opcion de registrar un pago</em>
+selecciona la opcion de registrar un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>
+</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0033" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona un gasto que reflejará el pago a uno de sus participantes</em>
+selecciona un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> que reflejará el <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> a uno de sus participantes</em>
 </td>
 </tr>
 <tr>
@@ -4533,8 +4615,7 @@ Filtrar participantes
 <tr>
 <a name="STP-0034" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 introduce el importe que recibirá cada participante seleccionado</em>
@@ -4543,11 +4624,11 @@ introduce el importe que recibirá cada participante seleccionado</em>
 <tr>
 <a name="STP-0037" />
 <td align="center" valign="top">5</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-Confirma el pago</em>
+Confirma el <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -4572,7 +4653,7 @@ Calcular balance
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Cada participante del pago tiene un nuevo balance</td>
+Cada participante del <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> tiene un nuevo balance</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -4627,14 +4708,14 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Seleccionar un usuario para realizar un pago correspondiente a un importe que ha abonado y actualizar los balances de ambos usuarios</td>
+Seleccionar un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> para realizar un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> correspondiente a un importe que ha abonado y actualizar los balances de ambos usuarios</td>
 </tr>
 </table>
 <p />
 <a name="SEC-0025" />
 <h4 align="left">3.2.2.3 
 Subsistema chat y grupos</h4><a name="PRG-0010" />
-<p>Este subsistema proporciona las principales funcionalidades asociadas a los chats y a los grupos de gasto. Por lo tanto se construyen aquí todas aquellas operaciones relacionadas con el envío y ercepción de mensajes por parte de los usuarios, así como las funcionalidades inherentes a los grupos de gasto enfocadas en administración y uso.</p>
+<p>Este subsistema proporciona las principales funcionalidades asociadas a los chats y a los grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>. Por lo tanto se construyen aquí todas aquellas operaciones relacionadas con el envío y ercepción de mensajes por parte de los usuarios, así como las funcionalidades inherentes a los grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> enfocadas en administración y uso.</p>
 <a name="FRQ-0004" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
@@ -4726,7 +4807,8 @@ Diagrama de casos de uso del subsistema de chat y grupos</p>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0012</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Creación de grupos de gasto</th>
+Creación de grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -4769,14 +4851,15 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-se</em>
+se selecciona la opción de crear un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario debe de estar registrado y haber iniciado sesión en la aplicación.
-<br />El usuario debe estar dado de alta en algún viaje o excursión.</td>
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe de estar registrado y haber iniciado sesión en la aplicación.
+<br />El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> debe estar dado de alta en algún viaje o excursión.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="6">Secuencia normal</th>
@@ -4786,41 +4869,37 @@ El usuario debe de estar registrado y haber iniciado sesión en la aplicación.
 <tr>
 <a name="STP-0060" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona la opción para crear o gestionar un grupo de pago.</em>
+selecciona la opción para crear o gestionar un grupo de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0061" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-establece las opciones para nombrar el grupo, describir su propósito, y establecer parámetros como límites de gasto.</em>
+establece las opciones para nombrar el grupo, describir su propósito, y establecer parámetros como límites de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0062" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona a otros usuarios que formen grupo de su viaje o excursión para ofrecerles formar parte del grupo de gasto.</em>
+selecciona a otros usuarios que formen grupo de su viaje o excursión para ofrecerles formar parte del <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0063" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-que recibe la solicitud inidca que desea aceptar la invitación para unirse al grupo de gasto.</em>
+que recibe la solicitud inidca que desea aceptar la invitación para unirse al <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>.</em>
 </td>
 </tr>
 <tr>
@@ -4835,7 +4914,7 @@ actualiza la lista de miembros del grupo para ofrecer nuevas funcionalidades a l
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Ahora existe un grupo de gasto en el sistema del que forman parte determinados usuarios.</td>
+Ahora existe un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> en el sistema del que forman parte determinados usuarios.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -4846,8 +4925,7 @@ Ahora existe un grupo de gasto en el sistema del que forman parte determinados u
 <a name="STX-0009" />
 <td align="center" valign="top">4</td>
 <td>Si<em>,
-                            </em>el actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+                            </em>el actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 rechaza la inivtación de unión el sistema no actualiza sus funcionalidades ni lo asocia con el grupo</em>,
@@ -4896,7 +4974,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> crea un nuevo <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> y añade a sus integrantes</td>
 </tr>
 </table>
 <p />
@@ -4948,15 +5026,14 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+se selecciona la opción de chat</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
 Los usuarios deben formar parte del mismo viaje o excursión.
-<br />Los usuarios deben formar parte del mismo grupo de gasto.
+<br />Los usuarios deben formar parte del mismo <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>.
 <br />Los usuarios deben tener abierta la conexión para chats individuales.
 <br />Los usuarios deben de haber concedido permisos de notificación a la apliación en algún momento tras su instalación.</td>
 </tr>
@@ -4968,18 +5045,16 @@ Los usuarios deben formar parte del mismo viaje o excursión.
 <tr>
 <a name="STP-0066" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-accede a la sección de chat y selecciona el usuario o grupo con el que desea comunicarse.</em>
+accede a la sección de chat y selecciona el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> o grupo con el que desea comunicarse.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0067" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 escribe su mensaje en el campo de texto y presiona la opción "Enviar".</em>
@@ -4991,14 +5066,13 @@ escribe su mensaje en el campo de texto y presiona la opción "Enviar".</em>
 <td>El
      
     sistema<em>
-notifica a el/los usuario(s) destinatarios en sus duspositivos a través de la aplicación.</em>
+notifica a el/los <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>(s) destinatarios en sus duspositivos a través de la aplicación.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0069" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 puede visualizar el contenido del mensaje seleccionando el chat correspondiente.</em>
@@ -5007,7 +5081,6 @@ puede visualizar el contenido del mensaje seleccionando el chat correspondiente.
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
 </td>
 </tr>
 <tr>
@@ -5063,7 +5136,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> envía un mensaje al chat del grupo</td>
 </tr>
 </table>
 <p />
@@ -5072,7 +5145,8 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0014</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Eliminar grupo de gasto</th>
+Eliminar <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -5115,15 +5189,15 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-un administrador desea eliminar por completo un grupo de gasto que ha creado con anterioridad</em>
+un administrador desea eliminar por completo un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> que ha creado con anterioridad</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El usuario que desea realizar la acción debe de tener el rol de administrador.
-<br />Debe de existir un grupo de gasto que pueda ser eliminado.
-<br />El grupo  de gasto debe tener todas sus deudas saldadas.
+El <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> que desea realizar la acción debe de tener el rol de administrador.
+<br />Debe de existir un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> que pueda ser eliminado.
+<br />El grupo  de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> debe tener todas sus deudas saldadas.
 <br />No deben quedar actividades grupales en curso o pendientes de realización.</td>
 </tr>
 <tr>
@@ -5138,7 +5212,7 @@ El usuario que desea realizar la acción debe de tener el rol de administrador.
 Administrador (ACT-0002)
     </a>
 <em>
-selecciona el grupo de gasto que desea eliminar manteniendo pulsado su icono correspondiente en la interfaz de la aplicación.</em>
+selecciona el <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> que desea eliminar manteniendo pulsado su icono correspondiente en la interfaz de la aplicación.</em>
 </td>
 </tr>
 <tr>
@@ -5167,13 +5241,13 @@ confirma la eliminación del grupo de manera permanente e irreversible.</em>
 <td>El
      
     sistema<em>
-actualiza la información relativa a los grupos de gasto existentes y las entradas correspondientes de la base de datos</em>
+actualiza la información relativa a los grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> existentes y las entradas correspondientes de la base de datos</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-El grupo de gasto desaparace para todos los usuarios miebros y la información relativa a él desaparece del sistema.</td>
+El <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> desaparace para todos los usuarios miebros y la información relativa a él desaparece del sistema.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -5234,7 +5308,8 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un administrador elimina un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</td>
 </tr>
 </table>
 <p />
@@ -5243,7 +5318,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0015</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Organizar actividad grupal</th>
+Organizar <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> grupal</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -5279,14 +5354,14 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#UC-0006" title="Crear actividad">
-                                [UC-0006] 
-Crear actividad</a>
-</li>
-<li>
 <a href="#UC-0010" title="Consultar calendario">
                                 [UC-0010] 
 Consultar calendario</a>
+</li>
+<li>
+<a href="#UC-0006" title="Crear actividad">
+                                [UC-0006] 
+Crear actividad</a>
 </li>
 </td>
 </tr>
@@ -5297,7 +5372,7 @@ Consultar calendario</a>
 
     caso de uso cuando
 <em>
-un administrador desea organizar una actividad que incluya a todos los miembros del grupo actual</em>
+un administrador desea organizar una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> que incluya a todos los miembros del grupo actual</em>
 </td>
 </tr>
 <tr>
@@ -5327,7 +5402,8 @@ Crear actividad
 Administrador (ACT-0002)
     </a>
 <em>
-selecciona la opción de añadir la actividad a un grupo de gasto</em>
+selecciona la opción de añadir la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> a un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -5337,7 +5413,8 @@ selecciona la opción de añadir la actividad a un grupo de gasto</em>
 Administrador (ACT-0002)
     </a>
 <em>
-inidca el grupo de gasto concreto, de entre todos los disponibles, al que desea incluír en la actividad</em>
+inidca el <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> concreto, de entre todos los disponibles, al que desea incluír en la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -5356,13 +5433,13 @@ Consultar calendario
 <td>El
      
     sistema<em>
-El sistema registra todos los cambios relacionando la nueva actividad con el grupo de gasto adecuado</em>
+El sistema registra todos los cambios relacionando la nueva <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> con el <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> adecuado</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-La actividad queda registrada en los calendarios individuales y se almacena en el sistema</td>
+La <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> queda registrada en los calendarios individuales y se almacena en el sistema</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -5417,14 +5494,15 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Un administrador crea una nueva <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> para un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>
+</td>
 </tr>
 </table>
 <p />
 <a name="SEC-0026" />
 <h4 align="left">3.2.2.4 
 Subsistema actividades</h4><a name="PRG-0008" />
-<p>Este subsistema ofrece una serie de herramientas que permiten al usuario crear y manejar actividades, publicar reseñas y obtener recomendaciones. El diagrama de casos de uso de este apartado muestra su funcionamiento básico en base a sus interacciones con el usuario.</p>
+<p>Este subsistema ofrece una serie de herramientas que permiten al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> crear y manejar actividades, publicar reseñas y obtener recomendaciones. El diagrama de casos de uso de este apartado muestra su funcionamiento básico en base a sus interacciones con el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>.</p>
 <a name="FRQ-0003" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
@@ -5477,7 +5555,7 @@ Sistema de gestión de actividades</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-proporcionar al usuario la capacidad de crear actividades sobre las que se basa un gasto y valorarlas en forma de reseña con puntuación. Estas actividades se podrán programar en un calendario para la organización de los grupos de gasto. Además, se permitirá consultar las reseñas y la información de cualquier actividad a la que el usuario tenga acceso y obtener recomendaciones en base a las mismas.</em>
+proporcionar al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> la capacidad de crear actividades sobre las que se basa un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> y valorarlas en forma de reseña con puntuación. Estas actividades se podrán programar en un calendario para la organización de los grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>. Además, se permitirá consultar las reseñas y la información de cualquier <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> a la que el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> tenga acceso y obtener recomendaciones en base a las mismas.</em>
 </td>
 </tr>
 <tr>
@@ -5516,7 +5594,8 @@ Diagrama de casos de uso del subsistema actividades</p>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0006</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Crear actividad</th>
+Crear <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -5582,31 +5661,31 @@ Hay un grupo seleccionado</td>
 <tr>
 <a name="STP-0044" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona la opción de crear una actividad</em>
+selecciona la opción de crear una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0045" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-introduce el nombre y la descripción de la actividad</em>
+introduce el nombre y la descripción de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0046" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona la ubicación de la actividad</em>
+selecciona la ubicación de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -5615,14 +5694,14 @@ selecciona la ubicación de la actividad</em>
 <td>El
      
     sistema<em>
-solicita una fecha en el calendario para programar la actividad</em>
+solicita una fecha en el calendario para programar la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0048" />
 <td align="center" valign="top">5</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 selecciona la fecha deseada</em>
@@ -5641,17 +5720,17 @@ Añadir reseña
 <tr>
 <a name="STP-0050" />
 <td align="center" valign="top">7</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-confirma la creación de la actividad</em>
+confirma la creación de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Existe una nueva actividad en el grupo</td>
+Existe una nueva <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> en el grupo</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -5662,7 +5741,7 @@ Existe una nueva actividad en el grupo</td>
 <a name="STX-0007" />
 <td align="center" valign="top">6</td>
 <td>Si<em>
-no desea añadir una reseña cuando crea la actividad,
+no desea añadir una reseña cuando crea la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>,
                             </em>el
      
     sistema<em>
@@ -5712,7 +5791,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Crear una actividad en el grupo en cierta ubicación y programarla en el calendario para un dia concreto</td>
+Crear una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> en el grupo en cierta ubicación y programarla en el calendario para un dia concreto</td>
 </tr>
 </table>
 <p />
@@ -5774,7 +5853,7 @@ Crear actividad</a></td>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-Hay una actividad seleccionada</td>
+Hay una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> seleccionada</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="6">Secuencia normal</th>
@@ -5784,8 +5863,7 @@ Hay una actividad seleccionada</td>
 <tr>
 <a name="STP-0039" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 selecciona la opción de añadir una reseña</em>
@@ -5794,8 +5872,7 @@ selecciona la opción de añadir una reseña</em>
 <tr>
 <a name="STP-0040" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 incluye el texto deseado en la reseña</em>
@@ -5807,14 +5884,14 @@ incluye el texto deseado en la reseña</em>
 <td>El
      
     sistema<em>
-solicita una puntuación para la actividad</em>
+solicita una puntuación para la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0042" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 introduce la puntuación deseada</em>
@@ -5823,8 +5900,7 @@ introduce la puntuación deseada</em>
 <tr>
 <a name="STP-0043" />
 <td align="center" valign="top">5</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 confirma la publicación de la reseña</em>
@@ -5833,7 +5909,8 @@ confirma la publicación de la reseña</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Existe una nueva reseña en la actividad</td>
+Existe una nueva reseña en la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="3">Excepciones</th>
@@ -5844,7 +5921,7 @@ Existe una nueva reseña en la actividad</td>
 <a name="STX-0005" />
 <td align="center" valign="top">1</td>
 <td>Si<em>
-no hay una actividad seleccionada,
+no hay una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> seleccionada,
                             </em>el
      
     sistema<em>
@@ -5858,7 +5935,7 @@ cancela la creación de la reseña</em>,
 <a name="STX-0006" />
 <td align="center" valign="top">1</td>
 <td>Si<em>
-ya existe una reseña en la actividad creada por el usuario,
+ya existe una reseña en la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> creada por el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>,
                             </em>el
      
     sistema<em>
@@ -5908,7 +5985,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Crear una reseña y puntuar una actividad concreta</td>
+Crear una reseña y puntuar una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> concreta</td>
 </tr>
 </table>
 <p />
@@ -5960,8 +6037,7 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+se selecciona la opción de consultar el calendario</em>
     o durante la realización de los siguientes casos de uso:
 <a href="&#xA;                #UC-0015">
            [UC-0015]
@@ -5981,8 +6057,7 @@ Hay un grupo seleccionado</td>
 <tr>
 <a name="STP-0054" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
 selecciona la opción de consultar el calendario</em>
@@ -6009,11 +6084,10 @@ muestra las actividades programadas en los días asociados</em>
 <tr>
 <a name="STP-0058" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
-Usuario (ACT-0001)
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación."> Usuario (ACT-0001)
     </a>
 <em>
-selecciona una actividad del calendario</em>
+selecciona una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> del calendario</em>
 </td>
 </tr>
 <tr>
@@ -6084,7 +6158,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Mostrar correctamente todos los elementos presentes en un calendario, seleccionar una actividad y mostrar sus elementos</td>
+Mostrar correctamente todos los elementos presentes en un calendario, seleccionar una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> y mostrar sus elementos</td>
 </tr>
 </table>
 <p />
@@ -6093,7 +6167,8 @@ Mostrar correctamente todos los elementos presentes en un calendario, selecciona
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0011</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Consultar actividad</th>
+Consultar <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -6156,7 +6231,8 @@ Consultar calendario</a></td>
 <td>El
      
     sistema<em>
-muestra el título, la descripción y la fecha de realización de la actividad</em>
+muestra el título, la descripción y la fecha de realización de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -6165,7 +6241,8 @@ muestra el título, la descripción y la fecha de realización de la actividad</em>
 <td>El
      
     sistema<em>
-muestra la ubicación de la actividad</em>
+muestra la ubicación de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -6174,7 +6251,8 @@ muestra la ubicación de la actividad</em>
 <td>El
      
     sistema<em>
-muestra el listado de reseñas asociadas a la actividad</em>
+muestra el listado de reseñas asociadas a la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -6183,7 +6261,7 @@ muestra el listado de reseñas asociadas a la actividad</em>
 <td>El
      
     sistema<em>
-muestra una serie de actividades recomendadas al usuario en base a la actividad seleccionada y a las puntuaciones de otras actividades</em>
+muestra una serie de actividades recomendadas al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> en base a la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> seleccionada y a las puntuaciones de otras actividades</em>
 </td>
 </tr>
 <tr>
@@ -6244,7 +6322,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Mostrar correctamente los elementos de una actividad y obtener reseñas de otras actividades</td>
+Mostrar correctamente los elementos de una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> y obtener reseñas de otras actividades</td>
 </tr>
 </table>
 <p />
@@ -6307,9 +6385,9 @@ Sistema de gestión de usuarios</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-cumplir con la normativa de proteccion de datos (LOPD, etc.), proporcionar métodos de pago seguros a sus usuarios, así como
-<br />gestionar la privacidad a nivel de grupos de gasto y los permisos de acceso a la informacion de dichos grupos.
-<br />Debe además de contar con un sistema de verificación de identidad de anfitrión y usuario estándar.</em>
+cumplir con la normativa de proteccion de datos (LOPD, etc.), proporcionar métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> seguros a sus usuarios, así como
+<br />gestionar la privacidad a nivel de grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> y los permisos de acceso a la informacion de dichos grupos.
+<br />Debe además de contar con un sistema de verificación de identidad de anfitrión y <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> estándar.</em>
 </td>
 </tr>
 <tr>
@@ -6376,6 +6454,16 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
+<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
+                                [OBJ-0003] 
+Sistema de gestión de chats y grupos</a>
+</li>
+<li>
+<a href="#OBJ-0004" title="Sistema de gestión de actividades">
+                                [OBJ-0004] 
+Sistema de gestión de actividades</a>
+</li>
+<li>
 <a href="#OBJ-0005" title="Sistema de recomendaciones automáticas">
                                 [OBJ-0005] 
 Sistema de recomendaciones automáticas</a>
@@ -6389,16 +6477,6 @@ Sistema de gestión de gastos</a>
 <a href="#OBJ-0002" title="Sistema de gestión de usuarios">
                                 [OBJ-0002] 
 Sistema de gestión de usuarios</a>
-</li>
-<li>
-<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
-                                [OBJ-0003] 
-Sistema de gestión de chats y grupos</a>
-</li>
-<li>
-<a href="#OBJ-0004" title="Sistema de gestión de actividades">
-                                [OBJ-0004] 
-Sistema de gestión de actividades</a>
 </li>
 </td>
 </tr>
@@ -6474,14 +6552,14 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
+<a href="#OBJ-0004" title="Sistema de gestión de actividades">
+                                [OBJ-0004] 
+Sistema de gestión de actividades</a>
+</li>
+<li>
 <a href="#OBJ-0001" title="Sistema de gestión de gastos">
                                 [OBJ-0001] 
 Sistema de gestión de gastos</a>
-</li>
-<li>
-<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
-                                [OBJ-0002] 
-Sistema de gestión de usuarios</a>
 </li>
 <li>
 <a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
@@ -6494,9 +6572,9 @@ Sistema de gestión de chats y grupos</a>
 Sistema de recomendaciones automáticas</a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Sistema de gestión de actividades">
-                                [OBJ-0004] 
-Sistema de gestión de actividades</a>
+<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
+                                [OBJ-0002] 
+Sistema de gestión de usuarios</a>
 </li>
 </td>
 </tr>
@@ -6572,16 +6650,6 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#OBJ-0004" title="Sistema de gestión de actividades">
-                                [OBJ-0004] 
-Sistema de gestión de actividades</a>
-</li>
-<li>
-<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
-                                [OBJ-0003] 
-Sistema de gestión de chats y grupos</a>
-</li>
-<li>
 <a href="#OBJ-0001" title="Sistema de gestión de gastos">
                                 [OBJ-0001] 
 Sistema de gestión de gastos</a>
@@ -6591,6 +6659,16 @@ Sistema de gestión de gastos</a>
                                 [OBJ-0002] 
 Sistema de gestión de usuarios</a>
 </li>
+<li>
+<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
+                                [OBJ-0003] 
+Sistema de gestión de chats y grupos</a>
+</li>
+<li>
+<a href="#OBJ-0004" title="Sistema de gestión de actividades">
+                                [OBJ-0004] 
+Sistema de gestión de actividades</a>
+</li>
 </td>
 </tr>
 <tr>
@@ -6598,7 +6676,8 @@ Sistema de gestión de usuarios</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-contar con una interfaz de usuario clara y concisa, con el objetivo de facilitar su uso por parte del usuario</em>
+contar con una interfaz de <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> clara y concisa, con el objetivo de facilitar su uso por parte del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -6629,7 +6708,8 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">NFR-0005</th>
 <th align="left" valign="top" width="100%">
-Soporte de múltiples métodos de pago</th>
+Soporte de múltiples métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -6670,14 +6750,14 @@ José Ángel Taboada Gonzalez</a>
 Sistema de gestión de usuarios</a>
 </li>
 <li>
-<a href="#FRQ-0002" title="Gestionar gastos">
-                                [FRQ-0002] 
-Gestionar gastos</a>
-</li>
-<li>
 <a href="#OBJ-0001" title="Sistema de gestión de gastos">
                                 [OBJ-0001] 
 Sistema de gestión de gastos</a>
+</li>
+<li>
+<a href="#FRQ-0002" title="Gestionar gastos">
+                                [FRQ-0002] 
+Gestionar gastos</a>
 </li>
 </td>
 </tr>
@@ -6686,7 +6766,7 @@ Sistema de gestión de gastos</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-mostrar a los usuarios de la aplicación sus diferentes métodos de pago antes de realizar un movimiento, para permitirle escoger con que forma desean pagar. Para utilizar una tarjeta, puede tener varias formas, en caso de que tenga la tarjeta en el móvil, puede pagarse con la aplicación. También se pueden introducir los datos de la tarjeta manualmente. Al igual que con la tarjeta, se puede enlazar una cuenta bancaria con la aplicación para realizar gastos a partir de la cuenta, o se le puede ingresar cierta cantidad de dinero para utilizarlo como saldo. No solo se podrán utilizar los pagos para las actividades, si no que también se espera poder pagar utilizando los distintos métodos las deudas de un usuario.</em>
+mostrar a los usuarios de la aplicación sus diferentes métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> antes de realizar un movimiento, para permitirle escoger con que forma desean pagar. Para utilizar una tarjeta, puede tener varias formas, en caso de que tenga la tarjeta en el móvil, puede pagarse con la aplicación. También se pueden introducir los datos de la tarjeta manualmente. Al igual que con la tarjeta, se puede enlazar una cuenta bancaria con la aplicación para realizar gastos a partir de la cuenta, o se le puede ingresar cierta cantidad de dinero para utilizarlo como saldo. No solo se podrán utilizar los pagos para las actividades, si no que también se espera poder pagar utilizando los distintos métodos las deudas de un <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>.</em>
 </td>
 </tr>
 <tr>
@@ -6847,7 +6927,7 @@ Interfaz fácil de usar y entender</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-permitir la internacionalización. Los usuarios podrán configurar su idioma de preferencia, que se aplicará en todas las interacciones. Todos los idiomas permitidos se implementarán siguiendo el mismo principio de lenguaje accesible. Se admiten caracteres especiales y diferentes tipos de alfabetos para garantizar la representación de los diversos símbolos. El contenido no asociado a la interfaz como mensajes o reseñas contará con una herramienta de traducción automática para facilitar al usuario su comprensión. Según la demanda de los usuarios, se incorporarán nuevos idiomas y se actualizarán los implementados en cuanto a los errores presentes</em>
+permitir la internacionalización. Los usuarios podrán configurar su idioma de preferencia, que se aplicará en todas las interacciones. Todos los idiomas permitidos se implementarán siguiendo el mismo principio de lenguaje accesible. Se admiten caracteres especiales y diferentes tipos de alfabetos para garantizar la representación de los diversos símbolos. El contenido no asociado a la interfaz como mensajes o reseñas contará con una herramienta de traducción automática para facilitar al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> su comprensión. Según la demanda de los usuarios, se incorporarán nuevos idiomas y se actualizarán los implementados en cuanto a los errores presentes</em>
 </td>
 </tr>
 <tr>
@@ -6903,7 +6983,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\agfil\Documents\Universidad\Tercero\PrimerCuatri\Ingenieria Software\Interactivas\Practica6_EspecsREM\03_PortableREM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -6920,7 +7000,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #FRQ-0002" title="Gestionar gastos">FRQ-0002</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\agfil\Documents\Universidad\Tercero\PrimerCuatri\Ingenieria Software\Interactivas\Practica6_EspecsREM\03_PortableREM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -6949,7 +7029,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\agfil\Documents\Universidad\Tercero\PrimerCuatri\Ingenieria Software\Interactivas\Practica6_EspecsREM\03_PortableREM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -6966,7 +7046,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\agfil\Documents\Universidad\Tercero\PrimerCuatri\Ingenieria Software\Interactivas\Practica6_EspecsREM\03_PortableREM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -9002,7 +9082,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">Reunión</th>
 <th align="left" valign="top" width="100%">
-Segunda Sesion</th>
+Segunda Sesión</th>
 </tr>
 <tr>
 <th align="left" valign="top">Fecha</th>
@@ -9149,5 +9229,79 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="SEC-0027" />
+<h1 align="left">B 
+Priorización de requisitos</h1><a name="SEC-0029" />
+<h2 align="left">B.1 
+Lista inicial de requisitos</h2><a name="PRG-0020" />
+<p>Basándonos en los casos de uso diseñados en este documento, elaboramos una lista inicial de requisitos que consideramos prioritarios frente al resto a la hora de desarrollar la herramienta que nuestro cliente busca. A partir de la lista, aplicaremos sobre estos requisitos la metodología PAJ (Proceso Analítico Jerárquico) para establecer unas métricas relativas entre los mismos, basándonos en su valor para el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>/cliente y el coste de implementación para la empresa. Con esto se pretende obtener un orden de requisitos basado en su prioridad de desarrollo e implementación que facilite al equipo las labores de decisión durante el transcurso del proyecto.</p>
+<a name="GRF-0009" />
+<p align="center">
+<img src=".\Imagenes\lista_requisitos_PJA.PNG" title=".\Imagenes\lista_requisitos_PJA.PNG" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Lista de requisitos</p>
+<a name="SEC-0028" />
+<h2 align="left">B.2 
+Matrices de prioridad para coste y valor</h2><a name="PRG-0021" />
+<p>Para identificar relaciones entre requisitos construimos una matriz 15x15 cuyos elementos se corresponderán con las comparaciones de valor o coste entre pares a través de una escala 1-9 en la que 1 representa igualdad en valor y 9 representa la mayor prevalencia posible de un requisito sobre otro. Tras realizar las estimaciones pertinentes, obtenemos las siguientes matrices de prioridad para Valor y para Coste, respectivamente.</p>
+<a name="GRF-0010" />
+<p align="center">
+<img src=".\Imagenes\matriz_valor_PJA.PNG" title=".\Imagenes\matriz_valor_PJA.PNG" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Matriz de prioridad para valor</p>
+<a name="GRF-0011" />
+<p align="center">
+<img src=".\Imagenes\matriz_coste_PJA.PNG" title=".\Imagenes\matriz_coste_PJA.PNG" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Matriz de prioridad para coste</p>
+<a name="SEC-0030" />
+<h2 align="left">B.3 
+Índices de consistencia</h2><a name="PRG-0022" />
+<p>Los índices de consistencia (IC) nos muestran la robustez de las relaciones transitivas entre los requisitos estudiados. A partir de las matrices de prioridad se obtienen estos índices calculando sus autovalores, para posteriormente compararlos con los índices aleatorios. Estos últimos se generan a partir de matrices recíprocas aleatorias con valores en la escala 1-9 y funcionan de medidor para la consistencia de los resultados obtenidos. Para calcular los IC de las matrices de valor y coste utilizamos el autovalor principal máximo y lo comparamos con el número de requisitos según la siguiente fórmula: CI=((Lambda-n))/((n-1)). Cuanto más se acerque lambda a n, más consistente será el resultado.</p>
+<a name="SEC-0031" />
+<h3 align="left">B.3.1 
+Índice de consistencia para valor</h3><a name="PRG-0023" />
+<p>En el análisis de la matriz de valor, comenzamos con un valor máximo de lambda de 17.46, que conduce a un CI de 0.18. Para evaluar la aceptabilidad de este índice, calculamos el Ratio de Consistencia (RC) usando el Índice Aleatorio (RI) correspondiente a una matriz de 15x15, que es 1.59. El RC se obtiene dividiendo el CI por el RI, resultando en este caso en 0.11 (CI/RI = 0.11). Según los criterios establecidos, un RC de 0.10 o menos se considera aceptable. Aunque el RC obtenido de 0.11 excede ligeramente este umbral, se considera suficientemente cercano para validar las comparaciones entre pares realizadas en la matriz, especialmente en el contexto de priorizar requisitos basados en el valor percibido por el cliente.</p>
+<a name="SEC-0032" />
+<h3 align="left">B.3.2 
+Índice de consistencia para coste</h3><a name="PRG-0024" />
+<p>En el análisis de la matriz de valor, comenzamos con un valor máximo de lambda de 17.46, que conduce a un CI de 0.18. Para evaluar la aceptabilidad de este índice, calculamos el Ratio de Consistencia (RC) usando el Índice Aleatorio (RI) correspondiente a una matriz de 15x15, que es 1.59. El RC se obtiene dividiendo el CI por el RI, resultando en este caso en 0.11 (CI/RI = 0.11). Según los criterios establecidos, un RC de 0.10 o menos se considera aceptable. Aunque el RC obtenido de 0.11 excede ligeramente este umbral, se considera suficientemente cercano para validar las comparaciones entre pares realizadas en la matriz, especialmente en el contexto de priorizar requisitos basados en el valor percibido por el cliente.</p>
+<a name="SEC-0033" />
+<h2 align="left">B.4 
+Diagrama Coste-Valor</h2><a name="GRF-0012" />
+<p align="center">
+<img src=".\Imagenes\diagrama_PJA.PNG" title=".\Imagenes\diagrama_PJA.PNG" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama Coste-Valor</p>
+<a name="PRG-0025" />
+<p>Como podemos observar, la mayoría de los requisitos quedan comprendidos entre los límites establecidos de la gráfica, exceptuando a R1, R2, R12 y R15. En especial, R1 y R2 son aquellos requisitos que muestran mayor valor para el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>, además de presentar un coste muy reducido para la empresa, alcanzando así el mayor grado de importancia. Por otro lado, R12 y R15 representan aquellos requisitos que tendrán menor prioridad, debido a su elevado coste para la empresa y su valor mínimo para el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>.</p>
+<a name="SEC-0034" />
+<h2 align="left">B.5 
+Lista priorizada de requisitos</h2><a name="GRF-0013" />
+<p align="center">
+<img src=".\Imagenes\lista_requisitos_priorizada_PJA.PNG" title=".\Imagenes\lista_requisitos_priorizada_PJA.PNG" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Lista priorizada de requisitos</p>
+<a name="PRG-0026" />
+<p>En nuestra decisión final, hemos dado prioridad a los requisitos que son fundamentales para las funcionalidades básicas de la herramienta. A pesar de que la creación de un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a> (R11) es esencial para registrar un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>, añadir un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> o calcular el balance (R10, R6, R9), hemos decidido enfocarnos primero en el diseño e implementación de estas últimas acciones. Esta decisión se basa en el hecho de que dichas acciones constituyen la esencia de la herramienta. Además, esta priorización toma en cuenta el análisis de coste/valor realizado previamente, asegurando que nuestras elecciones respaldan tanto la funcionalidad esencial como la eficiencia en términos de coste y valor.
+<br />La decisión de asignar la menor prioridad al desarrollo del chat entre usuarios (R12), a pesar de ser una funcionalidad especificada por el cliente, se fundamenta en la naturaleza esencial de la aplicación como herramienta de gestión de gastos. Consideramos que la capacidad de la aplicación para manejar gastos de manera efectiva es primordial. En comparación, el chat se identifica como una funcionalidad adicional y no esencial, ya que existen otras alternativas externas. Además, el alto coste de implementar un sistema de chat robusto y eficiente también contribuye a su baja prioridad en nuestra lista. Por tanto, hemos decidido concentrar nuestros recursos en mejorar y perfeccionar las funciones centrales de gestión de gastos, relegando el desarrollo del chat a una fase posterior del proyecto.
+<br />Finalmente, la máxima prioridad en nuestra aplicación se asigna al registro de usuarios y al inicio de sesión, ya que son fundamentales para acceder a cualquier funcionalidad interna. Estos procesos son clave para la seguridad y personalización del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>. Además, tienen un valor evidente y un bajo coste de implementación, lo que los convierte en una opción lógica a la par que acertada para iniciar el desarrollo.
+<br />
+</p>
 </body>
 </html>

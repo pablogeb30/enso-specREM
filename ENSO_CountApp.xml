@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Users\agfil\Documents\Universidad\Tercero\PrimerCuatri\Ingenieria Software\Interactivas\Practica6_EspecsREM\03_PortableREM\REM\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Users\Pablo\Documents\Enxeñaría Informática\Terceiro\1º Cuatrimestre\Enxeñaría do Software\Prácticas\Practica5_2_REM\REM\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>ENSO_CountApp</rem:name>
@@ -11,7 +11,7 @@ xmlns:rem="http://rem.lsi.us.es">
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>12</rem:month>
-<rem:day>5</rem:day>
+<rem:day>20</rem:day>
 </rem:date>
 </rem:version>
 <rem:comments>
@@ -215,9 +215,9 @@ Ninguno</rem:comments>
 <rem:fax>pablo.garcia.fuentes@rai.usc.es</rem:fax>
 </rem:organization>
 <rem:stakeholder
- oid = "STK-0002">
+ oid = "STK-0004">
 <rem:name>
-Pablo Guerrica-Echevarría Basterrechea </rem:name>
+Aarón García Filgueira</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -229,7 +229,7 @@ Pablo Guerrica-Echevarría Basterrechea </rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Analista</rem:stakeholderRole>
+<rem:stakeholderRole>Asegurador de Calidad</rem:stakeholderRole>
 <rem:isDeveloper/>
 <rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
@@ -253,9 +253,9 @@ Ninguno</rem:comments>
 <rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
 <rem:stakeholder
- oid = "STK-0004">
+ oid = "STK-0002">
 <rem:name>
-Aarón García Filgueira</rem:name>
+Pablo Guerrica-Echevarría Basterrechea </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -267,7 +267,7 @@ Aarón García Filgueira</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Asegurador de Calidad</rem:stakeholderRole>
+<rem:stakeholderRole>Analista</rem:stakeholderRole>
 <rem:isDeveloper/>
 <rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
@@ -328,6 +328,61 @@ Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>1.3.1 </rem:number>
 <rem:glossaryItem
+ oid = "GLO-0019">
+<rem:name>
+<rem:ref oid="GLO-0019">Actividad</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Evento al que acuden diversos usuarios pertencientes a un mismo <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0015">
+<rem:name>
+<rem:ref oid="GLO-0015">Gasto</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un <rem:ref oid="GLO-0013">usuario</rem:ref> realice y desee registrar para solicitar la aportación económica de otros usuarios</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0014">
+<rem:name>
+<rem:ref oid="GLO-0014">Grupo de gasto</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
  oid = "GLO-0005">
 <rem:name>
 <rem:ref oid="GLO-0005">Importancia1-Vital</rem:ref></rem:name>
@@ -340,9 +395,85 @@ Ninguno</rem:comments>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text> Debe cumplirse sí o sí. Si no se alcanza el proyecto deja de tener sentido.</rem:text>
+<rem:text> Debe cumplirse sí o sí. Si no se alcanza el proyecto deja de tener sentido</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0011">
+<rem:name>
+<rem:ref oid="GLO-0011">Importancia2-Importante</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> El cliente espera que este elemento esté presente y se sentirá <br/>francamente decepcionado si no es así</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0012">
+<rem:name>
+<rem:ref oid="GLO-0012">Importancia3-Quedaría Bien</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> El cliente no nos lo ha especificado, pero le aporta valor al proyecto. El cliente se sentirá satisfecho por su presencia.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0018">
+<rem:name>
+<rem:ref oid="GLO-0018">Pago</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Saldo de una deuda entre dos usuarios</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0013">
+<rem:name>
+<rem:ref oid="GLO-0013">Usuario</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Persona física que utiliza la aplicación</rem:text>
 </rem:glossaryItem>
 </rem:section>
 <rem:section
@@ -375,6 +506,8 @@ Ninguno</rem:comments>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:text> CountApp</rem:text>
@@ -398,6 +531,25 @@ Organización del documento</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>1.4 </rem:number>
+<rem:paragraph
+ oid = "PRG-0016">
+<rem:name>
+Organización del documento</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este documento de especificación de requisitos organiza su contenido en base a tres secciones principales: visión general, requisitos y matrices de trazabilidad, a mayores del apartado introductorio aquí mostrado y los diversos apéndices. <br/>En la sección 2 se presenta el proyecto en el contexto de la interacción con el cliente, constatando unos objetivos y el alcance de la solución diseñada. La sección 3 describe en detalle los tres tipos de requisitos: de información, funcionales y no funcionales. Para los de información se presentan diversas restricciones y los funcionales se complementan de diagramas de casos de uso que muestran el entorno y la interacción del sistema con sus actores. Por último, la sección 4 reúne las dependencias presentes entre diversos elementos elaborados y los apéndices contienen información complementaria necesaria para la completitud del documento.</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:section>
 <rem:section
@@ -451,7 +603,7 @@ Caso de Negocio</rem:name>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>La empresa OldTravelsa, con sede en Vigo, es una agencia de viajes enfocada en organizar excursiones con personas de la tercera edad y trabaja intensivamente con el Imserso lo que les proporciona un elevado número de clientes en este tramo de edad. La empresa ha observado que las franjas de descanso, en las que no hay actividades programadas, se usan sistemáticamente por los excursionistas para organizarse en pequeños grupos, que salen para tomar algo o ver alguna zona o museo, que no están incluidos en el viaje pero que les resulta de interés.<br/><br/>Como consecuencia de esta situación la empresa identifica que se generan algunas malas dinámicas de grupo, llegándose incluso a discusiones, debido al reparto de los gastos generados en dichas actividades. Estas situaciones generan un mal ambiente en el que se<br/>ven involucradas incluso personas que no tienen un papel directo en la situación y, como resultado, las evaluaciones de satisfacción disminuyen globalmente.<br/><br/>Por ende, OldTravelsa busca alcanzar una solución que le permita evitar los perjuicios anteriormente citados, proponiendo para ello el diseño y creación de una herramienta que permita a sus clientes gestionar grupos de gasto, así como el envío y recibo de mensajes de texto e imágenes, y un sistema de recomendaciones de servicios basado en los gastos imputados en el grupo correspondiente.<br/>Con ello, además de evitar el problema original, pueden mejorar su imagen y calidad de servicio, obteniendo una mejora general de cara al público contratante.<br/><br/>Desde nuestro equipo proponemos pues una solución que cubra las necesidades expuestas por parte del cliente, que englobará un sistema de gestión de usuarios para el uso por parte de la clientela de la empresa, un sistema de gestión de gastos que sirva como medio para la repartición de gastos incurridos durante las actividades realizadas por los usuarios, así como de feedback para el sistema de gestión de actividades, que se encargará de recomendar servicios y puntos de interés a los usuarios. Finalmente, se incluirá un sistema de gestión de chats y grupos, con el objetivo de dotar de comunicación rápida y sencilla entre los usuarios.</rem:text>
+<rem:text>La empresa OldTravelsa, con sede en Vigo, es una agencia de viajes enfocada en organizar excursiones con personas de la tercera edad y trabaja intensivamente con el Imserso lo que les proporciona un elevado número de clientes en este tramo de edad. La empresa ha observado que las franjas de descanso, en las que no hay actividades programadas, se usan sistemáticamente por los excursionistas para organizarse en pequeños grupos, que salen para tomar algo o ver alguna zona o museo, que no están incluidos en el viaje pero que les resulta de interés.<br/><br/>Como consecuencia de esta situación la empresa identifica que se generan algunas malas dinámicas de grupo, llegándose incluso a discusiones, debido al reparto de los gastos generados en dichas actividades. Estas situaciones generan un mal ambiente en el que se<br/>ven involucradas incluso personas que no tienen un papel directo en la situación y, como resultado, las evaluaciones de satisfacción disminuyen globalmente.<br/><br/>Por ende, OldTravelsa busca alcanzar una solución que le permita evitar los perjuicios anteriormente citados, proponiendo para ello el diseño y creación de una herramienta que permita a sus clientes gestionar grupos de <rem:ref oid="GLO-0015">gasto</rem:ref>, así como el envío y recibo de mensajes de texto e imágenes, y un sistema de recomendaciones de servicios basado en los gastos imputados en el grupo correspondiente.<br/>Con ello, además de evitar el problema original, pueden mejorar su imagen y calidad de servicio, obteniendo una mejora general de cara al público contratante.<br/><br/>Desde nuestro equipo proponemos pues una solución que cubra las necesidades expuestas por parte del cliente, que englobará un sistema de gestión de usuarios para el uso por parte de la clientela de la empresa, un sistema de gestión de gastos que sirva como medio para la repartición de gastos incurridos durante las actividades realizadas por los usuarios, así como de feedback para el sistema de gestión de actividades, que se encargará de recomendar servicios y puntos de interés a los usuarios. Finalmente, se incluirá un sistema de gestión de chats y grupos, con el objetivo de dotar de comunicación rápida y sencilla entre los usuarios. Se considera esta como la solución más adecuada para el problema presentado debido a que, por un lado se trata de una forma cómoda y amigable de gestionar las casuísticas estudiadas y por otro lado, permite un uso extendido y concurrente posibilitando un crecimiento de las herramientas y métodos desarrollados.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -484,7 +636,7 @@ Sistema de gestión de usuarios</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0003 STK-0004 "/>
+<rem:authors stakeholders ="STK-0004 STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -493,7 +645,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-permitir el registro y eliminación de usuarios, acceder a la configuración sobre privacidad, métodos de pago y demás información personal</rem:description>
+permitir el registro y eliminación de usuarios, acceder a la configuración sobre privacidad, métodos de <rem:ref oid="GLO-0018">pago</rem:ref> y demás información personal</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0001">
@@ -508,7 +660,7 @@ Sistema de gestión de gastos</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0003 STK-0004 "/>
+<rem:authors stakeholders ="STK-0004 STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -517,7 +669,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-permitir el registro de un gasto configurando sus particicpantes, calculando automáticamente el balance y registrando una fecha asociada a la operación. También ofrecerá la posibilidad de adjuntar un justificante y/o asociar el gasto a una actividad existinte en el sistema. Para cada gasto se pueden consultar saldos y deudas; y registrar nuevos pagos de deuda.<br/></rem:description>
+permitir el registro de un <rem:ref oid="GLO-0015">gasto</rem:ref> configurando sus particicpantes, calculando automáticamente el balance y registrando una fecha asociada a la operación. También ofrecerá la posibilidad de adjuntar un justificante y/o asociar el <rem:ref oid="GLO-0015">gasto</rem:ref> a una <rem:ref oid="GLO-0019">actividad</rem:ref> existinte en el sistema. Para cada <rem:ref oid="GLO-0015">gasto</rem:ref> se pueden consultar saldos y deudas; y registrar nuevos pagos de deuda.<br/></rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0003">
@@ -532,7 +684,7 @@ Sistema de gestión de chats y grupos</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0003 STK-0004 "/>
+<rem:authors stakeholders ="STK-0004 STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -556,7 +708,7 @@ Sistema de gestión de actividades</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0003 STK-0004 "/>
+<rem:authors stakeholders ="STK-0004 STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -579,7 +731,7 @@ Sistema de recomendaciones automáticas</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0003 STK-0004 "/>
+<rem:authors stakeholders ="STK-0004 STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -628,6 +780,25 @@ Ninguno</rem:comments>
 <![CDATA[.\Imagenes\diagrama_contexto.jpg]]>
 </rem:fileName>
 </rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0017">
+<rem:name>
+Descripción del alcance</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El software desarrollado se entregará al cliente en forma de aplicación ejecutable facilitando toda posible abstracción sobre la puesta en marcha del mismo. En cuanto al sistema de almacenamiento de datos, el diseño y construcción de la base de datos y su conexión con la aplicación son responsabilidad del equipo desarrollador, de forma que será la empresa desarrolladora la encargada de la creación y administración de la infraestructura asociada, lo que implica unos costes periódicos a OldTravesa asociados a esta gestión. Por último, será OldTravesa la encargada de presentar la aplicación a sus clientes una vez finalizado el proceso.</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:section>
 <rem:section
@@ -688,7 +859,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0001">
 <rem:name>
-Gasto</rem:name>
+<rem:ref oid="GLO-0015">Gasto</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -704,7 +875,7 @@ Gasto</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 gastos en el sistema de pagos de la aplicación</rem:relevantConcept>
@@ -722,7 +893,7 @@ gastos en el sistema de pagos de la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0102">
 <rem:description>
-Documentan cualquier tipo de pago en una actividad por parte de uno o varios integrantes del grupo.</rem:description>
+Documentan cualquier tipo de <rem:ref oid="GLO-0018">pago</rem:ref> en una <rem:ref oid="GLO-0019">actividad</rem:ref> por parte de uno o varios integrantes del grupo.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -742,7 +913,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0002">
 <rem:name>
-Usuario</rem:name>
+<rem:ref oid="GLO-0013">Usuario</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -758,7 +929,7 @@ Usuario</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 clientes de la empresa en la aplicación</rem:relevantConcept>
@@ -782,13 +953,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0106">
 <rem:description>
-Se pueden crear a partir de credenciales de autenticación: nombre de usuario, correo electrónico y contraseña.</rem:description>
+Se pueden crear a partir de credenciales de autenticación: nombre de <rem:ref oid="GLO-0013">usuario</rem:ref>, correo electrónico y contraseña.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0107">
 <rem:description>
-Pueden entrar en grupos de gasto, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada.</rem:description>
+Pueden entrar en grupos de <rem:ref oid="GLO-0015">gasto</rem:ref>, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -796,7 +967,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0003">
 <rem:name>
-Actividad</rem:name>
+<rem:ref oid="GLO-0019">Actividad</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -812,7 +983,7 @@ Actividad</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:relevantConcept>
 actividades registradas por usuarios en la aplicación</rem:relevantConcept>
@@ -842,7 +1013,7 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0110">
 <rem:description>
-Cada actividad puede tener múltiples gastos asociados con diferentes integrantes en los mismos.</rem:description>
+Cada <rem:ref oid="GLO-0019">actividad</rem:ref> puede tener múltiples gastos asociados con diferentes integrantes en los mismos.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -872,7 +1043,7 @@ Grupo</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 grupos de viaje formados en la aplicación</rem:relevantConcept>
@@ -890,7 +1061,7 @@ grupos de viaje formados en la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0112">
 <rem:description>
-Agrupan a los usuarios que participen en una actividad o compartan gastos.<br/></rem:description>
+Agrupan a los usuarios que participen en una <rem:ref oid="GLO-0019">actividad</rem:ref> o compartan gastos.<br/></rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -926,7 +1097,7 @@ Notificación</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0004"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 notificaciones enviadas y recibidas en la aplicación</rem:relevantConcept>
@@ -950,7 +1121,7 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0116">
 <rem:description>
-Informan al usuario sobre eventos comunes o programados, como por ejemplo el comienzo de una actividad o su final, si necesita hacer un pago a otra persona, etc.</rem:description>
+Informan al <rem:ref oid="GLO-0013">usuario</rem:ref> sobre eventos comunes o programados, como por ejemplo el comienzo de una <rem:ref oid="GLO-0019">actividad</rem:ref> o su final, si necesita hacer un <rem:ref oid="GLO-0018">pago</rem:ref> a otra persona, etc.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -980,7 +1151,7 @@ Reseña</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0002"/>
 <rem:relevantConcept>
 reseñas de los usuarios sobre la aplicación</rem:relevantConcept>
@@ -1034,7 +1205,7 @@ Mensaje</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:relevantConcept>
 mensajes enviados y recibidos en la aplicación</rem:relevantConcept>
@@ -1060,7 +1231,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0008">
 <rem:name>
-Pago</rem:name>
+<rem:ref oid="GLO-0018">Pago</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1076,7 +1247,7 @@ Pago</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 pagos registrados en la aplicación</rem:relevantConcept>
@@ -1100,13 +1271,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0123">
 <rem:description>
-Permiten saldar deudas entre usuarios dentro de un grupo de gasto.</rem:description>
+Permiten saldar deudas entre usuarios dentro de un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0124">
 <rem:description>
-Se permite realizar un pago a través de la aplicación con diferentes métodos de pago.</rem:description>
+Se permite realizar un <rem:ref oid="GLO-0018">pago</rem:ref> a través de la aplicación con diferentes métodos de <rem:ref oid="GLO-0018">pago</rem:ref>.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1136,10 +1307,10 @@ Chat</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-chats de cada usuario en la aplicación</rem:relevantConcept>
+chats de cada <rem:ref oid="GLO-0013">usuario</rem:ref> en la aplicación</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>9</rem:value>
 <rem:timeUnit value = "TUV-0005"/>
@@ -1184,7 +1355,7 @@ Saldo</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:relevantConcept>
 saldos de los usuarios de la aplicación</rem:relevantConcept>
@@ -1202,13 +1373,13 @@ saldos de los usuarios de la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0128">
 <rem:description>
-Refleja el estado financiero individual de cada usuario en un grupo de gasto.</rem:description>
+Refleja el estado financiero individual de cada <rem:ref oid="GLO-0013">usuario</rem:ref> en un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0129">
 <rem:description>
-Incluye todas las deudas y cobros individuales del usuario con otros usuarios.</rem:description>
+Incluye todas las deudas y cobros individuales del <rem:ref oid="GLO-0013">usuario</rem:ref> con otros usuarios.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1239,7 +1410,7 @@ Ninguno</rem:comments>
 <rem:constraintRequirement
  oid = "CRQ-0001">
 <rem:name>
-Pagador de un gasto</rem:name>
+Pagador de un <rem:ref oid="GLO-0015">gasto</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1255,7 +1426,7 @@ Pagador de un gasto</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:description>
 los gastos solo pueden tener un pagador.</rem:description>
@@ -1279,7 +1450,7 @@ Usuarios idénticos</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:description>
 no puede haber dos usuarios registrados con las misma credenciales.</rem:description>
@@ -1303,10 +1474,10 @@ Administrador del grupo</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:description>
-los grupos son creados y gestionados únicamente por un anfitrión en las funciones de añadir, bloquear y eliminar usuarios. Si un usuario no tiene este rol no podrá realizar las acciones mencionadas. </rem:description>
+los grupos son creados y gestionados únicamente por un anfitrión en las funciones de añadir, bloquear y eliminar usuarios. Si un <rem:ref oid="GLO-0013">usuario</rem:ref> no tiene este rol no podrá realizar las acciones mencionadas. </rem:description>
 </rem:constraintRequirement>
 <rem:constraintRequirement
  oid = "CRQ-0004">
@@ -1327,10 +1498,10 @@ Reseña única</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0004"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:description>
-cada usuario puede escribir una única reseña de la aplicación, aunque esta puede ser modificada a lo largo del tiempo.</rem:description>
+cada <rem:ref oid="GLO-0013">usuario</rem:ref> puede escribir una única reseña de la aplicación, aunque esta puede ser modificada a lo largo del tiempo.</rem:description>
 </rem:constraintRequirement>
 <rem:constraintRequirement
  oid = "CRQ-0005">
@@ -1351,7 +1522,7 @@ Edición o borrado de mensajes</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:description>
 solo el administrador del grupo tiene la capacidad de editar o borrar mensajes si fuera necesario.</rem:description>
@@ -1375,10 +1546,10 @@ Encriptación de mensajes</rem:name>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-no se pueden mandar mensajes sin encriptar,  manteniendo así la seguridad y privacidad de los datos de los usuarios.</rem:description>
+los mensajes se deben transmitir encriptados,  manteniendo así la seguridad y privacidad de los datos de los usuarios.</rem:description>
 </rem:constraintRequirement>
 </rem:section>
 </rem:section>
@@ -1419,7 +1590,7 @@ Ninguno</rem:comments>
 <rem:actor
  oid = "ACT-0001">
 <rem:name>
-Usuario</rem:name>
+<rem:ref oid="GLO-0013">Usuario</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1429,11 +1600,11 @@ Usuario</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0003 STK-0004 "/>
+<rem:authors stakeholders ="STK-0004 STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:actorRole>al viajero de la compañía o a cualquier usuario general de la aplicación.</rem:actorRole>
+<rem:actorRole>al viajero de la compañía o a cualquier <rem:ref oid="GLO-0013">usuario</rem:ref> general de la aplicación.</rem:actorRole>
 </rem:actor>
 <rem:actor
  oid = "ACT-0002">
@@ -1452,7 +1623,7 @@ Administrador</rem:name>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:actorRole>el rol que adquiere un usuario en relación a un grupo de gasto creado por él.</rem:actorRole>
+<rem:actorRole>el rol que adquiere un <rem:ref oid="GLO-0013">usuario</rem:ref> en relación a un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> creado por él.</rem:actorRole>
 </rem:actor>
 </rem:section>
 <rem:section
@@ -1523,7 +1694,7 @@ Descripción subsistema usuarios</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>El subsistema de usuarios se centra en la gestión de cuentas y perfiles de usuario. Permite a los usuarios llevar a cabo funciones relacionadas con su información personal, sus preferencias y otras configuraciones esenciales que se almacenan en el sistema. </rem:text>
+<rem:text>El subsistema de usuarios se centra en la gestión de cuentas y perfiles de <rem:ref oid="GLO-0013">usuario</rem:ref>. Permite a los usuarios llevar a cabo funciones relacionadas con su información personal, sus preferencias y otras configuraciones esenciales que se almacenan en el sistema. </rem:text>
 </rem:paragraph>
 <rem:functionalRequirement
  oid = "FRQ-0001">
@@ -1547,7 +1718,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-de implementar toda la lógica subyacente a la creación, eliminación y gestión de usuarios de la apliación. También se implementarán aquí todas las opciones relacionadas con preferencias, privacidad, métodos de pago y amistades, entre otros.</rem:description>
+de implementar toda la lógica subyacente a la creación, eliminación y gestión de usuarios de la apliación. También se implementarán aquí todas las opciones relacionadas con preferencias, privacidad, métodos de <rem:ref oid="GLO-0018">pago</rem:ref> y amistades, entre otros.</rem:description>
 </rem:functionalRequirement>
 <rem:graphicFile
  oid = "GRF-0004">
@@ -1586,17 +1757,17 @@ Registrarse en el sistema</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Una persona física crea unas credenciales y se registra en el sistema</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-un nuevo usuario desea darse de alta en la aplicación.</rem:triggeringEvent>
+un nuevo <rem:ref oid="GLO-0013">usuario</rem:ref> desea darse de alta en la aplicación.</rem:triggeringEvent>
 <rem:precondition>
-El usuario debe de poseer una versión válida de la aplicación instalada en su sistema.</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de poseer una versión válida de la aplicación instalada en su sistema.</rem:precondition>
 <rem:postcondition>
-El sistema registra los datos del nuevo usuario y lo añade a la base de datos.</rem:postcondition>
+El sistema registra los datos del nuevo <rem:ref oid="GLO-0013">usuario</rem:ref> y lo añade a la base de datos.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 100
@@ -1620,7 +1791,7 @@ acepta los términos y condiciones de uso de la aplicación y los sistemas integra
 </rem:actorAction>
 <rem:stepException oid = "STX-0010">
 <rem:condition>
-el usuario no acepta los términos y condiciones de uso o las condiciones de privacidad</rem:condition>
+el <rem:ref oid="GLO-0013">usuario</rem:ref> no acepta los términos y condiciones de uso o las condiciones de privacidad</rem:condition>
 <rem:systemAction>
 <rem:description>
 lo devulve al panel de bienvenida y mustra un mensaje de error</rem:description>
@@ -1636,11 +1807,11 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-introduce los datos requeridos por el sistema, como el nombre completo, la fecha de nacimiento, el nombre de usuario y la contraseña.</rem:description>
+introduce los datos requeridos por el sistema, como el nombre completo, la fecha de nacimiento, el nombre de <rem:ref oid="GLO-0013">usuario</rem:ref> y la contraseña.</rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0011">
 <rem:condition>
-el usuario introduce algún dato no válido </rem:condition>
+el <rem:ref oid="GLO-0013">usuario</rem:ref> introduce algún dato no válido </rem:condition>
 <rem:systemAction>
 <rem:description>
 lanza un mensaje de error indicando el campo que contiene información incorrecta y solicita que se modifique</rem:description>
@@ -1698,17 +1869,17 @@ Iniciar sesión el sistema</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un <rem:ref oid="GLO-0013">usuario</rem:ref> inicia sesión desde un dispositivo</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-un usuario ya registrado desea ingresar a la aplicación</rem:triggeringEvent>
+un <rem:ref oid="GLO-0013">usuario</rem:ref> ya registrado desea ingresar a la aplicación</rem:triggeringEvent>
 <rem:precondition>
-El usuario debe de estar registrado en el sistema y en la base de datos</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de estar registrado en el sistema y en la base de datos</rem:precondition>
 <rem:postcondition>
-El usuario gana acceso a los servicios de la aplicación</rem:postcondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> gana acceso a los servicios de la aplicación</rem:postcondition>
 <rem:frequency>
 <rem:value>
 500
@@ -1728,11 +1899,11 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-Introduce su usuario y contraseña en los campos donde se solicita</rem:description>
+Introduce su <rem:ref oid="GLO-0013">usuario</rem:ref> y contraseña en los campos donde se solicita</rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0013">
 <rem:condition>
-se introducen datos incorrectos en los campos usuario o contraseña</rem:condition>
+se introducen datos incorrectos en los campos <rem:ref oid="GLO-0013">usuario</rem:ref> o contraseña</rem:condition>
 <rem:systemAction>
 <rem:description>
 indica que hay un error y que se deben volver a introducir los datos con errores</rem:description>
@@ -1757,7 +1928,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-registra que el usuario está ahora conectado</rem:description>
+registra que el <rem:ref oid="GLO-0013">usuario</rem:ref> está ahora conectado</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1779,15 +1950,15 @@ Editar Perfil</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un <rem:ref oid="GLO-0013">usuario</rem:ref> edita el teléfono de su perfil</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-el usuario desea modificar configuraciones personales de su cuenta</rem:triggeringEvent>
+el <rem:ref oid="GLO-0013">usuario</rem:ref> desea modificar configuraciones personales de su cuenta</rem:triggeringEvent>
 <rem:precondition>
-El usuario debe de estar registrado en la aplicación.<br/>El ussuario debe de haber iniciado sesión de manera satisfactoria.</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de estar registrado en la aplicación.<br/>El ussuario debe de haber iniciado sesión de manera satisfactoria.</rem:precondition>
 <rem:postcondition>
 El sistema almacena los cambios indicados y actualiza la información pertinente.</rem:postcondition>
 <rem:frequency>
@@ -1813,7 +1984,7 @@ modifica aquellos campos en los que desea actualizar los datos, ya sea informaci
 </rem:actorAction>
 <rem:stepException oid = "STX-0014">
 <rem:condition>
-alguno de los datos introducidos por el usuario no es válido porque viola alguna restricción</rem:condition>
+alguno de los datos introducidos por el <rem:ref oid="GLO-0013">usuario</rem:ref> no es válido porque viola alguna restricción</rem:condition>
 <rem:systemAction>
 <rem:description>
 lanza un mensaje de error y limpia el que campo que se estaba tratando de modificar para que se introduzca un valor válido</rem:description>
@@ -1847,7 +2018,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0019">
 <rem:name>
-Configurar métodos de pago</rem:name>
+Configurar métodos de <rem:ref oid="GLO-0018">pago</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1860,15 +2031,15 @@ Configurar métodos de pago</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un <rem:ref oid="GLO-0013">usuario</rem:ref> añade un método de <rem:ref oid="GLO-0018">pago</rem:ref> nuevo</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-se selecciona manualmente la opción de registrar un método de pago o se pretende llevar a cabo un pago sin tener un método de pago definido.</rem:triggeringEvent>
+se selecciona manualmente la opción de registrar un método de <rem:ref oid="GLO-0018">pago</rem:ref> o se pretende llevar a cabo un <rem:ref oid="GLO-0018">pago</rem:ref> sin tener un método de <rem:ref oid="GLO-0018">pago</rem:ref> definido.</rem:triggeringEvent>
 <rem:precondition>
-El usuario debe de estar registrado en el sistema.<br/>El usuario debe de haber inicado sesión y estar conectado.</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de estar registrado en el sistema.<br/>El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de haber inicado sesión y estar conectado.</rem:precondition>
 <rem:postcondition>
 El sistema almacena la información suministrada por el cliente en la base de datos del sistema.</rem:postcondition>
 <rem:frequency>
@@ -1881,7 +2052,7 @@ El sistema almacena la información suministrada por el cliente en la base de dat
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona la opción de añadir un nuevo método de pago en el apartado de configuración del perfil.</rem:description>
+selecciona la opción de añadir un nuevo método de <rem:ref oid="GLO-0018">pago</rem:ref> en el apartado de configuración del perfil.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1890,14 +2061,14 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-elige cual de los métodos de pago que están disponibles es el que desea usar para abonar los pagos que vaya a realizar mediante la aplicación.</rem:description>
+elige cual de los métodos de <rem:ref oid="GLO-0018">pago</rem:ref> que están disponibles es el que desea usar para abonar los pagos que vaya a realizar mediante la aplicación.</rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0016">
 <rem:condition>
-el método de pago seleccionado es gestionado por una plataforma/empresa externa y no por una entidad bancaria (por ejemplo PayPal o AliPay)</rem:condition>
+el método de <rem:ref oid="GLO-0018">pago</rem:ref> seleccionado es gestionado por una plataforma/empresa externa y no por una entidad bancaria (por ejemplo PayPal o AliPay)</rem:condition>
 <rem:systemAction>
 <rem:description>
-redireccionará al usuario al sistema de incio de sesión de la plataforma correspondiente para poder validar los datos</rem:description>
+redireccionará al <rem:ref oid="GLO-0013">usuario</rem:ref> al sistema de incio de sesión de la plataforma correspondiente para poder validar los datos</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0002"/>
 <rem:comments>
@@ -1910,7 +2081,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:systemAction>
 <rem:description>
-valida los datos introducidos y los almacena en la base de datos para poder emplearlos en la realización de cobros y recargos asociados al usuario.</rem:description>
+valida los datos introducidos y los almacena en la base de datos para poder emplearlos en la realización de cobros y recargos asociados al <rem:ref oid="GLO-0013">usuario</rem:ref>.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1932,17 +2103,17 @@ Cerrar sesión</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un <rem:ref oid="GLO-0013">usuario</rem:ref> cierra sesión en la aplicación desde un dispositivo</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-la opción de cerrar sesión es invocada desde el menú de configuración de la aplicación por parte de un usuario.</rem:triggeringEvent>
+la opción de cerrar sesión es invocada desde el menú de configuración de la aplicación por parte de un <rem:ref oid="GLO-0013">usuario</rem:ref>.</rem:triggeringEvent>
 <rem:precondition>
-El usuario debe de estar registrado en el sistema.<br/>El usuario debe de haber iniciado sesión en la aplicación y estar conectado de manera activa.</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de estar registrado en el sistema.<br/>El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de haber iniciado sesión en la aplicación y estar conectado de manera activa.</rem:precondition>
 <rem:postcondition>
-El sistema registra que el usuario ya no se encuentra activo.</rem:postcondition>
+El sistema registra que el <rem:ref oid="GLO-0013">usuario</rem:ref> ya no se encuentra activo.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 30
@@ -1975,10 +2146,10 @@ confirma la acción en el banner pop-up que solicita una segunda confirmación.</r
 </rem:actorAction>
 <rem:stepException oid = "STX-0015">
 <rem:condition>
-el usuario rechaza el cierre de sesión en la ventana emergente de confirmación</rem:condition>
+el <rem:ref oid="GLO-0013">usuario</rem:ref> rechaza el cierre de sesión en la ventana emergente de confirmación</rem:condition>
 <rem:systemAction>
 <rem:description>
-anula el cierre de sesión y devuelve al usuario al menú de configuración en el que se encontraba anteriormente</rem:description>
+anula el cierre de sesión y devuelve al <rem:ref oid="GLO-0013">usuario</rem:ref> al menú de configuración en el que se encontraba anteriormente</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0003"/>
 <rem:comments>
@@ -1991,7 +2162,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-redirige al usuario a la página de inicio de la aplicación.</rem:description>
+redirige al <rem:ref oid="GLO-0013">usuario</rem:ref> a la página de inicio de la aplicación.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2013,17 +2184,17 @@ Notificar incidencia</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un <rem:ref oid="GLO-0013">usuario</rem:ref> crea y envia una invidencia sobre la aplicación</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-un usuario experimenta algún problema o inconveniente y desea reportarlo al equipo de desarrollo/control.</rem:triggeringEvent>
+un <rem:ref oid="GLO-0013">usuario</rem:ref> experimenta algún problema o inconveniente y desea reportarlo al equipo de desarrollo/control.</rem:triggeringEvent>
 <rem:precondition>
-El usuario debe de estar registrado.<br/>El usuario debe de estar activo.</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de estar registrado.<br/>El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de estar activo.</rem:precondition>
 <rem:postcondition>
-El sisitema almacena la incidencia y crea un log con la fecha y el usuario correspondientes.</rem:postcondition>
+El sisitema almacena la incidencia y crea un log con la fecha y el <rem:ref oid="GLO-0013">usuario</rem:ref> correspondientes.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 5
@@ -2061,7 +2232,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-clasifica el reporte según los datos proporcionados por el usuario, le asigna una prioridad apróximada y envía una notificación al equipo responsable de su revisión.</rem:description>
+clasifica el reporte según los datos proporcionados por el <rem:ref oid="GLO-0013">usuario</rem:ref>, le asigna una prioridad apróximada y envía una notificación al equipo responsable de su revisión.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2124,7 +2295,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-permitir al usuario crear un nuevo gasto en un grupo de gasto concreto. Para esto, deberá elegir los miembros implicados y podrá asociar una actividad realizada y un justificante del gasto. El sistema calculará automáticamente el balance de cada miembro y permitirá registrar pagos que reajusten este balance, así como consultar los saldos correspondientes.</rem:description>
+permitir al <rem:ref oid="GLO-0013">usuario</rem:ref> crear un nuevo <rem:ref oid="GLO-0015">gasto</rem:ref> en un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> concreto. Para esto, deberá elegir los miembros implicados y podrá asociar una <rem:ref oid="GLO-0019">actividad</rem:ref> realizada y un justificante del <rem:ref oid="GLO-0015">gasto</rem:ref>. El sistema calculará automáticamente el balance de cada miembro y permitirá registrar pagos que reajusten este balance, así como consultar los saldos correspondientes.</rem:description>
 </rem:functionalRequirement>
 <rem:graphicFile
  oid = "GRF-0006">
@@ -2148,7 +2319,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0003">
 <rem:name>
-Añadir gasto</rem:name>
+Añadir <rem:ref oid="GLO-0015">gasto</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2161,17 +2332,17 @@ Añadir gasto</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Crear un gasto a repartir entre los miembros del grupo, asociarle una actividad y añadir una imagen del recibo</rem:comments>
+Crear un <rem:ref oid="GLO-0015">gasto</rem:ref> a repartir entre los miembros del grupo, asociarle una <rem:ref oid="GLO-0019">actividad</rem:ref> y añadir una imagen del recibo</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-</rem:triggeringEvent>
+un <rem:ref oid="GLO-0013">usuario</rem:ref> selecciona la opción de añadir un nuevo <rem:ref oid="GLO-0015">gasto</rem:ref></rem:triggeringEvent>
 <rem:precondition>
-El usuario ha seleccionado un grupo concreto</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> ha seleccionado un grupo concreto</rem:precondition>
 <rem:postcondition>
-Existe un nuevo gasto en el grupo seleccionado</rem:postcondition>
+Existe un nuevo <rem:ref oid="GLO-0015">gasto</rem:ref> en el grupo seleccionado</rem:postcondition>
 <rem:frequency>
 <rem:value>
 100
@@ -2182,7 +2353,7 @@ Existe un nuevo gasto en el grupo seleccionado</rem:postcondition>
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona la opción de añandir un gasto.</rem:description>
+selecciona la opción de añandir un <rem:ref oid="GLO-0015">gasto</rem:ref>.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2191,10 +2362,10 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:useCaseAction useCase = "UC-0004"/><rem:stepException oid = "STX-0002">
 <rem:condition>
-no existen viajeros en el grupo de gasto </rem:condition>
+no existen viajeros en el <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> </rem:condition>
 <rem:systemAction>
 <rem:description>
-no permite el registro de dicho gasto.</rem:description>
+no permite el registro de dicho <rem:ref oid="GLO-0015">gasto</rem:ref>.</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0003"/>
 <rem:comments>
@@ -2212,11 +2383,11 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita la adición de un justificante de gasto</rem:description>
+solicita la adición de un justificante de <rem:ref oid="GLO-0015">gasto</rem:ref></rem:description>
 </rem:systemAction>
 <rem:stepException oid = "STX-0004">
 <rem:condition>
-el usuario no desea añadir un justificante de gasto</rem:condition>
+el <rem:ref oid="GLO-0013">usuario</rem:ref> no desea añadir un justificante de <rem:ref oid="GLO-0015">gasto</rem:ref></rem:condition>
 <rem:useCaseAction useCase = "UC-0007"/><rem:termination value = "TEV-0002"/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2228,7 +2399,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-incluye una imagen del justificante de gasto</rem:description>
+incluye una imagen del justificante de <rem:ref oid="GLO-0015">gasto</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2242,7 +2413,7 @@ Ninguno</rem:comments>
 <rem:number>7</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-confirma la creación del nuevo gasto</rem:description>
+confirma la creación del nuevo <rem:ref oid="GLO-0015">gasto</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2264,7 +2435,7 @@ Filtrar participantes</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Seleccionar varios de los participantes de un grupo para que participen en un gasto</rem:comments>
+Seleccionar varios de los participantes de un grupo para que participen en un <rem:ref oid="GLO-0015">gasto</rem:ref></rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
@@ -2273,7 +2444,7 @@ Seleccionar varios de los participantes de un grupo para que participen en un ga
 <rem:triggeringEvent>
 <rem:tbd/></rem:triggeringEvent>
 <rem:precondition>
-Se ha seleccionado un gasto</rem:precondition>
+Se ha seleccionado un <rem:ref oid="GLO-0015">gasto</rem:ref></rem:precondition>
 <rem:postcondition>
 </rem:postcondition>
 <rem:frequency>
@@ -2322,7 +2493,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0005">
 <rem:name>
-Asociar actividad</rem:name>
+Asociar <rem:ref oid="GLO-0019">actividad</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2335,7 +2506,7 @@ Asociar actividad</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Seleccionar una actividad y asociarla a un gasto</rem:comments>
+Seleccionar una <rem:ref oid="GLO-0019">actividad</rem:ref> y asociarla a un <rem:ref oid="GLO-0015">gasto</rem:ref></rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
@@ -2343,9 +2514,9 @@ Seleccionar una actividad y asociarla a un gasto</rem:comments>
 <rem:triggeringEvent>
 </rem:triggeringEvent>
 <rem:precondition>
-Se ha seleccionado un gasto</rem:precondition>
+Se ha seleccionado un <rem:ref oid="GLO-0015">gasto</rem:ref></rem:precondition>
 <rem:postcondition>
-El gasto seleccionado tiene una nueva actividad asociada</rem:postcondition>
+El <rem:ref oid="GLO-0015">gasto</rem:ref> seleccionado tiene una nueva <rem:ref oid="GLO-0019">actividad</rem:ref> asociada</rem:postcondition>
 <rem:frequency>
 <rem:value>
 100
@@ -2356,11 +2527,11 @@ El gasto seleccionado tiene una nueva actividad asociada</rem:postcondition>
 <rem:number>1</rem:number>
 <rem:systemAction>
 <rem:description>
-lista las actividades creadas para el grupo de gasto</rem:description>
+lista las actividades creadas para el <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:description>
 </rem:systemAction>
 <rem:stepException oid = "STX-0003">
 <rem:condition>
-no se elige ninguna actividad de las listadas</rem:condition>
+no se elige ninguna <rem:ref oid="GLO-0019">actividad</rem:ref> de las listadas</rem:condition>
 <rem:useCaseAction useCase = "UC-0006"/><rem:termination value = "TEV-0002"/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2372,7 +2543,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-elige la actividad deseada para asociarla al gasto</rem:description>
+elige la <rem:ref oid="GLO-0019">actividad</rem:ref> deseada para asociarla al <rem:ref oid="GLO-0015">gasto</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2381,7 +2552,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:systemAction>
 <rem:description>
-actualiza la fecha del gasto como la fecha de realizacion de la actividad</rem:description>
+actualiza la fecha del <rem:ref oid="GLO-0015">gasto</rem:ref> como la fecha de realizacion de la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2412,9 +2583,9 @@ Actualizar el balance de cada miembro del grupo en función de los nuevos gastos 
 <rem:triggeringEvent>
 <rem:tbd/></rem:triggeringEvent>
 <rem:precondition>
-Se ha seleccionado un grupo de gasto</rem:precondition>
+Se ha seleccionado un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:precondition>
 <rem:postcondition>
-Cada participante de un gasto tiene un nuevo balance</rem:postcondition>
+Cada participante de un <rem:ref oid="GLO-0015">gasto</rem:ref> tiene un nuevo balance</rem:postcondition>
 <rem:frequency>
 <rem:value>
 100
@@ -2425,7 +2596,7 @@ Cada participante de un gasto tiene un nuevo balance</rem:postcondition>
 <rem:number>1</rem:number>
 <rem:systemAction>
 <rem:description>
-obtiene el importe de cada gasto</rem:description>
+obtiene el importe de cada <rem:ref oid="GLO-0015">gasto</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2434,7 +2605,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-obtiene los miembros del grupo implicados en cada gasto y sus balances</rem:description>
+obtiene los miembros del grupo implicados en cada <rem:ref oid="GLO-0015">gasto</rem:ref> y sus balances</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2443,7 +2614,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:systemAction>
 <rem:description>
-calcula los nuevos balances de los participantes en función de su porcentaje de participación en cada gasto</rem:description>
+calcula los nuevos balances de los participantes en función de su porcentaje de participación en cada <rem:ref oid="GLO-0015">gasto</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2461,7 +2632,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0008">
 <rem:name>
-Registrar pago</rem:name>
+Registrar <rem:ref oid="GLO-0018">pago</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2474,17 +2645,17 @@ Registrar pago</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Seleccionar un usuario para realizar un pago correspondiente a un importe que ha abonado y actualizar los balances de ambos usuarios</rem:comments>
+Seleccionar un <rem:ref oid="GLO-0013">usuario</rem:ref> para realizar un <rem:ref oid="GLO-0018">pago</rem:ref> correspondiente a un importe que ha abonado y actualizar los balances de ambos usuarios</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-</rem:triggeringEvent>
+un <rem:ref oid="GLO-0013">usuario</rem:ref> selecciona la opción de añadir un <rem:ref oid="GLO-0018">pago</rem:ref></rem:triggeringEvent>
 <rem:precondition>
-Se ha seleccionado un gasto</rem:precondition>
+Se ha seleccionado un <rem:ref oid="GLO-0015">gasto</rem:ref></rem:precondition>
 <rem:postcondition>
-Cada participante del pago tiene un nuevo balance</rem:postcondition>
+Cada participante del <rem:ref oid="GLO-0018">pago</rem:ref> tiene un nuevo balance</rem:postcondition>
 <rem:frequency>
 <rem:value>
 170
@@ -2495,7 +2666,7 @@ Cada participante del pago tiene un nuevo balance</rem:postcondition>
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona la opcion de registrar un pago</rem:description>
+selecciona la opcion de registrar un <rem:ref oid="GLO-0018">pago</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2504,7 +2675,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona un gasto que reflejará el pago a uno de sus participantes</rem:description>
+selecciona un <rem:ref oid="GLO-0015">gasto</rem:ref> que reflejará el <rem:ref oid="GLO-0018">pago</rem:ref> a uno de sus participantes</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2527,7 +2698,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-Confirma el pago</rem:description>
+Confirma el <rem:ref oid="GLO-0018">pago</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2582,7 +2753,7 @@ Descripcion subsistema chat</rem:name>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Este subsistema proporciona las principales funcionalidades asociadas a los chats y a los grupos de gasto. Por lo tanto se construyen aquí todas aquellas operaciones relacionadas con el envío y ercepción de mensajes por parte de los usuarios, así como las funcionalidades inherentes a los grupos de gasto enfocadas en administración y uso.</rem:text>
+<rem:text>Este subsistema proporciona las principales funcionalidades asociadas a los chats y a los grupos de <rem:ref oid="GLO-0015">gasto</rem:ref>. Por lo tanto se construyen aquí todas aquellas operaciones relacionadas con el envío y ercepción de mensajes por parte de los usuarios, así como las funcionalidades inherentes a los grupos de <rem:ref oid="GLO-0015">gasto</rem:ref> enfocadas en administración y uso.</rem:text>
 </rem:paragraph>
 <rem:functionalRequirement
  oid = "FRQ-0004">
@@ -2632,7 +2803,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0012">
 <rem:name>
-Creación de grupos de gasto</rem:name>
+Creación de grupos de <rem:ref oid="GLO-0015">gasto</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2645,17 +2816,17 @@ Creación de grupos de gasto</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un <rem:ref oid="GLO-0013">usuario</rem:ref> crea un nuevo <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> y añade a sus integrantes</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-se</rem:triggeringEvent>
+se selecciona la opción de crear un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:triggeringEvent>
 <rem:precondition>
-El usuario debe de estar registrado y haber iniciado sesión en la aplicación.<br/>El usuario debe estar dado de alta en algún viaje o excursión.</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> debe de estar registrado y haber iniciado sesión en la aplicación.<br/>El <rem:ref oid="GLO-0013">usuario</rem:ref> debe estar dado de alta en algún viaje o excursión.</rem:precondition>
 <rem:postcondition>
-Ahora existe un grupo de gasto en el sistema del que forman parte determinados usuarios.</rem:postcondition>
+Ahora existe un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> en el sistema del que forman parte determinados usuarios.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 40
@@ -2666,7 +2837,7 @@ Ahora existe un grupo de gasto en el sistema del que forman parte determinados u
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona la opción para crear o gestionar un grupo de pago.</rem:description>
+selecciona la opción para crear o gestionar un grupo de <rem:ref oid="GLO-0018">pago</rem:ref>.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2675,7 +2846,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-establece las opciones para nombrar el grupo, describir su propósito, y establecer parámetros como límites de gasto.</rem:description>
+establece las opciones para nombrar el grupo, describir su propósito, y establecer parámetros como límites de <rem:ref oid="GLO-0015">gasto</rem:ref>.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2684,7 +2855,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona a otros usuarios que formen grupo de su viaje o excursión para ofrecerles formar parte del grupo de gasto.</rem:description>
+selecciona a otros usuarios que formen grupo de su viaje o excursión para ofrecerles formar parte del <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2693,7 +2864,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-que recibe la solicitud inidca que desea aceptar la invitación para unirse al grupo de gasto.</rem:description>
+que recibe la solicitud inidca que desea aceptar la invitación para unirse al <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>.</rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0009">
 <rem:condition>
@@ -2735,17 +2906,17 @@ Chat entre usuarios/grupal</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un <rem:ref oid="GLO-0013">usuario</rem:ref> envía un mensaje al chat del grupo</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-<rem:tbd/></rem:triggeringEvent>
+se selecciona la opción de chat</rem:triggeringEvent>
 <rem:precondition>
-Los usuarios deben formar parte del mismo viaje o excursión.<br/>Los usuarios deben formar parte del mismo grupo de gasto.<br/>Los usuarios deben tener abierta la conexión para chats individuales.<br/>Los usuarios deben de haber concedido permisos de notificación a la apliación en algún momento tras su instalación.</rem:precondition>
+Los usuarios deben formar parte del mismo viaje o excursión.<br/>Los usuarios deben formar parte del mismo <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>.<br/>Los usuarios deben tener abierta la conexión para chats individuales.<br/>Los usuarios deben de haber concedido permisos de notificación a la apliación en algún momento tras su instalación.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+</rem:postcondition>
 <rem:frequency>
 <rem:value>
 200
@@ -2756,7 +2927,7 @@ Los usuarios deben formar parte del mismo viaje o excursión.<br/>Los usuarios d
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-accede a la sección de chat y selecciona el usuario o grupo con el que desea comunicarse.</rem:description>
+accede a la sección de chat y selecciona el <rem:ref oid="GLO-0013">usuario</rem:ref> o grupo con el que desea comunicarse.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2774,7 +2945,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:systemAction>
 <rem:description>
-notifica a el/los usuario(s) destinatarios en sus duspositivos a través de la aplicación.</rem:description>
+notifica a el/los <rem:ref oid="GLO-0013">usuario</rem:ref>(s) destinatarios en sus duspositivos a través de la aplicación.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2792,7 +2963,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0014">
 <rem:name>
-Eliminar grupo de gasto</rem:name>
+Eliminar <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2805,17 +2976,17 @@ Eliminar grupo de gasto</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un administrador elimina un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-un administrador desea eliminar por completo un grupo de gasto que ha creado con anterioridad</rem:triggeringEvent>
+un administrador desea eliminar por completo un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> que ha creado con anterioridad</rem:triggeringEvent>
 <rem:precondition>
-El usuario que desea realizar la acción debe de tener el rol de administrador.<br/>Debe de existir un grupo de gasto que pueda ser eliminado.<br/>El grupo  de gasto debe tener todas sus deudas saldadas.<br/>No deben quedar actividades grupales en curso o pendientes de realización.</rem:precondition>
+El <rem:ref oid="GLO-0013">usuario</rem:ref> que desea realizar la acción debe de tener el rol de administrador.<br/>Debe de existir un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> que pueda ser eliminado.<br/>El grupo  de <rem:ref oid="GLO-0015">gasto</rem:ref> debe tener todas sus deudas saldadas.<br/>No deben quedar actividades grupales en curso o pendientes de realización.</rem:precondition>
 <rem:postcondition>
-El grupo de gasto desaparace para todos los usuarios miebros y la información relativa a él desaparece del sistema.</rem:postcondition>
+El <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> desaparace para todos los usuarios miebros y la información relativa a él desaparece del sistema.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 25
@@ -2826,7 +2997,7 @@ El grupo de gasto desaparace para todos los usuarios miebros y la información re
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0002">
 <rem:description>
-selecciona el grupo de gasto que desea eliminar manteniendo pulsado su icono correspondiente en la interfaz de la aplicación.</rem:description>
+selecciona el <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> que desea eliminar manteniendo pulsado su icono correspondiente en la interfaz de la aplicación.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2864,7 +3035,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-actualiza la información relativa a los grupos de gasto existentes y las entradas correspondientes de la base de datos</rem:description>
+actualiza la información relativa a los grupos de <rem:ref oid="GLO-0015">gasto</rem:ref> existentes y las entradas correspondientes de la base de datos</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2873,7 +3044,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0015">
 <rem:name>
-Organizar actividad grupal</rem:name>
+Organizar <rem:ref oid="GLO-0019">actividad</rem:ref> grupal</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2886,17 +3057,17 @@ Organizar actividad grupal</rem:name>
 <rem:authors stakeholders ="STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Un administrador crea una nueva <rem:ref oid="GLO-0019">actividad</rem:ref> para un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-un administrador desea organizar una actividad que incluya a todos los miembros del grupo actual</rem:triggeringEvent>
+un administrador desea organizar una <rem:ref oid="GLO-0019">actividad</rem:ref> que incluya a todos los miembros del grupo actual</rem:triggeringEvent>
 <rem:precondition>
 El grupo debe contener al menos un miembro más a parte del propio administrador.</rem:precondition>
 <rem:postcondition>
-La actividad queda registrada en los calendarios individuales y se almacena en el sistema</rem:postcondition>
+La <rem:ref oid="GLO-0019">actividad</rem:ref> queda registrada en los calendarios individuales y se almacena en el sistema</rem:postcondition>
 <rem:frequency>
 <rem:value>
 30
@@ -2912,7 +3083,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0002">
 <rem:description>
-selecciona la opción de añadir la actividad a un grupo de gasto</rem:description>
+selecciona la opción de añadir la <rem:ref oid="GLO-0019">actividad</rem:ref> a un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2921,7 +3092,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0002">
 <rem:description>
-inidca el grupo de gasto concreto, de entre todos los disponibles, al que desea incluír en la actividad</rem:description>
+inidca el <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> concreto, de entre todos los disponibles, al que desea incluír en la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2935,7 +3106,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:systemAction>
 <rem:description>
-El sistema registra todos los cambios relacionando la nueva actividad con el grupo de gasto adecuado</rem:description>
+El sistema registra todos los cambios relacionando la nueva <rem:ref oid="GLO-0019">actividad</rem:ref> con el <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> adecuado</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2974,7 +3145,7 @@ Descripción subsistema actividades</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Este subsistema ofrece una serie de herramientas que permiten al usuario crear y manejar actividades, publicar reseñas y obtener recomendaciones. El diagrama de casos de uso de este apartado muestra su funcionamiento básico en base a sus interacciones con el usuario.</rem:text>
+<rem:text>Este subsistema ofrece una serie de herramientas que permiten al <rem:ref oid="GLO-0013">usuario</rem:ref> crear y manejar actividades, publicar reseñas y obtener recomendaciones. El diagrama de casos de uso de este apartado muestra su funcionamiento básico en base a sus interacciones con el <rem:ref oid="GLO-0013">usuario</rem:ref>.</rem:text>
 </rem:paragraph>
 <rem:functionalRequirement
  oid = "FRQ-0003">
@@ -2998,7 +3169,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0002"/>
 <rem:description>
-proporcionar al usuario la capacidad de crear actividades sobre las que se basa un gasto y valorarlas en forma de reseña con puntuación. Estas actividades se podrán programar en un calendario para la organización de los grupos de gasto. Además, se permitirá consultar las reseñas y la información de cualquier actividad a la que el usuario tenga acceso y obtener recomendaciones en base a las mismas.</rem:description>
+proporcionar al <rem:ref oid="GLO-0013">usuario</rem:ref> la capacidad de crear actividades sobre las que se basa un <rem:ref oid="GLO-0015">gasto</rem:ref> y valorarlas en forma de reseña con puntuación. Estas actividades se podrán programar en un calendario para la organización de los grupos de <rem:ref oid="GLO-0015">gasto</rem:ref>. Además, se permitirá consultar las reseñas y la información de cualquier <rem:ref oid="GLO-0019">actividad</rem:ref> a la que el <rem:ref oid="GLO-0013">usuario</rem:ref> tenga acceso y obtener recomendaciones en base a las mismas.</rem:description>
 </rem:functionalRequirement>
 <rem:graphicFile
  oid = "GRF-0007">
@@ -3022,7 +3193,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0006">
 <rem:name>
-Crear actividad</rem:name>
+Crear <rem:ref oid="GLO-0019">actividad</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -3035,7 +3206,7 @@ Crear actividad</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Crear una actividad en el grupo en cierta ubicación y programarla en el calendario para un dia concreto</rem:comments>
+Crear una <rem:ref oid="GLO-0019">actividad</rem:ref> en el grupo en cierta ubicación y programarla en el calendario para un dia concreto</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
@@ -3045,7 +3216,7 @@ Crear una actividad en el grupo en cierta ubicación y programarla en el calendar
 <rem:precondition>
 Hay un grupo seleccionado</rem:precondition>
 <rem:postcondition>
-Existe una nueva actividad en el grupo</rem:postcondition>
+Existe una nueva <rem:ref oid="GLO-0019">actividad</rem:ref> en el grupo</rem:postcondition>
 <rem:frequency>
 <rem:value>
 10
@@ -3056,7 +3227,7 @@ Existe una nueva actividad en el grupo</rem:postcondition>
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona la opción de crear una actividad</rem:description>
+selecciona la opción de crear una <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3065,7 +3236,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-introduce el nombre y la descripción de la actividad</rem:description>
+introduce el nombre y la descripción de la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3074,7 +3245,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona la ubicación de la actividad</rem:description>
+selecciona la ubicación de la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3083,7 +3254,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita una fecha en el calendario para programar la actividad</rem:description>
+solicita una fecha en el calendario para programar la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3101,7 +3272,7 @@ Ninguno</rem:comments>
 <rem:number>6</rem:number>
 <rem:useCaseAction useCase = "UC-0009"/><rem:stepException oid = "STX-0007">
 <rem:condition>
-no desea añadir una reseña cuando crea la actividad</rem:condition>
+no desea añadir una reseña cuando crea la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:condition>
 <rem:systemAction>
 <rem:description>
 continúa en el paso 7</rem:description>
@@ -3117,7 +3288,7 @@ Ninguno</rem:comments>
 <rem:number>7</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-confirma la creación de la actividad</rem:description>
+confirma la creación de la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3139,7 +3310,7 @@ Añadir reseña</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Crear una reseña y puntuar una actividad concreta</rem:comments>
+Crear una reseña y puntuar una <rem:ref oid="GLO-0019">actividad</rem:ref> concreta</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
@@ -3147,9 +3318,9 @@ Crear una reseña y puntuar una actividad concreta</rem:comments>
 <rem:triggeringEvent>
 </rem:triggeringEvent>
 <rem:precondition>
-Hay una actividad seleccionada</rem:precondition>
+Hay una <rem:ref oid="GLO-0019">actividad</rem:ref> seleccionada</rem:precondition>
 <rem:postcondition>
-Existe una nueva reseña en la actividad</rem:postcondition>
+Existe una nueva reseña en la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:postcondition>
 <rem:frequency>
 <rem:value>
 10
@@ -3164,7 +3335,7 @@ selecciona la opción de añadir una reseña</rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0005">
 <rem:condition>
-no hay una actividad seleccionada</rem:condition>
+no hay una <rem:ref oid="GLO-0019">actividad</rem:ref> seleccionada</rem:condition>
 <rem:systemAction>
 <rem:description>
 cancela la creación de la reseña</rem:description>
@@ -3175,7 +3346,7 @@ Ninguno</rem:comments>
 </rem:stepException>
 <rem:stepException oid = "STX-0006">
 <rem:condition>
-ya existe una reseña en la actividad creada por el usuario</rem:condition>
+ya existe una reseña en la <rem:ref oid="GLO-0019">actividad</rem:ref> creada por el <rem:ref oid="GLO-0013">usuario</rem:ref></rem:condition>
 <rem:systemAction>
 <rem:description>
 cancela la creación de la reseña</rem:description>
@@ -3200,7 +3371,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita una puntuación para la actividad</rem:description>
+solicita una puntuación para la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3240,13 +3411,13 @@ Consultar calendario</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Mostrar correctamente todos los elementos presentes en un calendario, seleccionar una actividad y mostrar sus elementos</rem:comments>
+Mostrar correctamente todos los elementos presentes en un calendario, seleccionar una <rem:ref oid="GLO-0019">actividad</rem:ref> y mostrar sus elementos</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-<rem:tbd/></rem:triggeringEvent>
+se selecciona la opción de consultar el calendario</rem:triggeringEvent>
 <rem:precondition>
 Hay un grupo seleccionado</rem:precondition>
 <rem:postcondition>
@@ -3288,7 +3459,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona una actividad del calendario</rem:description>
+selecciona una <rem:ref oid="GLO-0019">actividad</rem:ref> del calendario</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3302,7 +3473,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0011">
 <rem:name>
-Consultar actividad</rem:name>
+Consultar <rem:ref oid="GLO-0019">actividad</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -3315,7 +3486,7 @@ Consultar actividad</rem:name>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
-Mostrar correctamente los elementos de una actividad y obtener reseñas de otras actividades</rem:comments>
+Mostrar correctamente los elementos de una <rem:ref oid="GLO-0019">actividad</rem:ref> y obtener reseñas de otras actividades</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0004"/>
@@ -3337,7 +3508,7 @@ Mostrar correctamente los elementos de una actividad y obtener reseñas de otras 
 <rem:number>1</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra el título, la descripción y la fecha de realización de la actividad</rem:description>
+muestra el título, la descripción y la fecha de realización de la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3346,7 +3517,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra la ubicación de la actividad</rem:description>
+muestra la ubicación de la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3355,7 +3526,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra el listado de reseñas asociadas a la actividad</rem:description>
+muestra el listado de reseñas asociadas a la <rem:ref oid="GLO-0019">actividad</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3364,7 +3535,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra una serie de actividades recomendadas al usuario en base a la actividad seleccionada y a las puntuaciones de otras actividades</rem:description>
+muestra una serie de actividades recomendadas al <rem:ref oid="GLO-0013">usuario</rem:ref> en base a la <rem:ref oid="GLO-0019">actividad</rem:ref> seleccionada y a las puntuaciones de otras actividades</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3412,7 +3583,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-cumplir con la normativa de proteccion de datos (LOPD, etc.), proporcionar métodos de pago seguros a sus usuarios, así como<br/>gestionar la privacidad a nivel de grupos de gasto y los permisos de acceso a la informacion de dichos grupos.<br/>Debe además de contar con un sistema de verificación de identidad de anfitrión y usuario estándar.</rem:description>
+cumplir con la normativa de proteccion de datos (LOPD, etc.), proporcionar métodos de <rem:ref oid="GLO-0018">pago</rem:ref> seguros a sus usuarios, así como<br/>gestionar la privacidad a nivel de grupos de <rem:ref oid="GLO-0015">gasto</rem:ref> y los permisos de acceso a la informacion de dichos grupos.<br/>Debe además de contar con un sistema de verificación de identidad de anfitrión y <rem:ref oid="GLO-0013">usuario</rem:ref> estándar.</rem:description>
 </rem:nonFunctionalRequirement>
 <rem:nonFunctionalRequirement
  oid = "NFR-0002">
@@ -3484,12 +3655,12 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-contar con una interfaz de usuario clara y concisa, con el objetivo de facilitar su uso por parte del usuario</rem:description>
+contar con una interfaz de <rem:ref oid="GLO-0013">usuario</rem:ref> clara y concisa, con el objetivo de facilitar su uso por parte del <rem:ref oid="GLO-0013">usuario</rem:ref></rem:description>
 </rem:nonFunctionalRequirement>
 <rem:nonFunctionalRequirement
  oid = "NFR-0005">
 <rem:name>
-Soporte de múltiples métodos de pago</rem:name>
+Soporte de múltiples métodos de <rem:ref oid="GLO-0018">pago</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -3508,7 +3679,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-mostrar a los usuarios de la aplicación sus diferentes métodos de pago antes de realizar un movimiento, para permitirle escoger con que forma desean pagar. Para utilizar una tarjeta, puede tener varias formas, en caso de que tenga la tarjeta en el móvil, puede pagarse con la aplicación. También se pueden introducir los datos de la tarjeta manualmente. Al igual que con la tarjeta, se puede enlazar una cuenta bancaria con la aplicación para realizar gastos a partir de la cuenta, o se le puede ingresar cierta cantidad de dinero para utilizarlo como saldo. No solo se podrán utilizar los pagos para las actividades, si no que también se espera poder pagar utilizando los distintos métodos las deudas de un usuario.</rem:description>
+mostrar a los usuarios de la aplicación sus diferentes métodos de <rem:ref oid="GLO-0018">pago</rem:ref> antes de realizar un movimiento, para permitirle escoger con que forma desean pagar. Para utilizar una tarjeta, puede tener varias formas, en caso de que tenga la tarjeta en el móvil, puede pagarse con la aplicación. También se pueden introducir los datos de la tarjeta manualmente. Al igual que con la tarjeta, se puede enlazar una cuenta bancaria con la aplicación para realizar gastos a partir de la cuenta, o se le puede ingresar cierta cantidad de dinero para utilizarlo como saldo. No solo se podrán utilizar los pagos para las actividades, si no que también se espera poder pagar utilizando los distintos métodos las deudas de un <rem:ref oid="GLO-0013">usuario</rem:ref>.</rem:description>
 </rem:nonFunctionalRequirement>
 <rem:nonFunctionalRequirement
  oid = "NFR-0006">
@@ -3556,7 +3727,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-permitir la internacionalización. Los usuarios podrán configurar su idioma de preferencia, que se aplicará en todas las interacciones. Todos los idiomas permitidos se implementarán siguiendo el mismo principio de lenguaje accesible. Se admiten caracteres especiales y diferentes tipos de alfabetos para garantizar la representación de los diversos símbolos. El contenido no asociado a la interfaz como mensajes o reseñas contará con una herramienta de traducción automática para facilitar al usuario su comprensión. Según la demanda de los usuarios, se incorporarán nuevos idiomas y se actualizarán los implementados en cuanto a los errores presentes</rem:description>
+permitir la internacionalización. Los usuarios podrán configurar su idioma de preferencia, que se aplicará en todas las interacciones. Todos los idiomas permitidos se implementarán siguiendo el mismo principio de lenguaje accesible. Se admiten caracteres especiales y diferentes tipos de alfabetos para garantizar la representación de los diversos símbolos. El contenido no asociado a la interfaz como mensajes o reseñas contará con una herramienta de traducción automática para facilitar al <rem:ref oid="GLO-0013">usuario</rem:ref> su comprensión. Según la demanda de los usuarios, se incorporarán nuevos idiomas y se actualizarán los implementados en cuanto a los errores presentes</rem:description>
 </rem:nonFunctionalRequirement>
 </rem:section>
 </rem:section>
@@ -4394,7 +4565,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Practicas</rem:place>
 <rem:results>Establecidos los objetivos principales de la práctica y comentado el material relacionado con ella en el aula.<br/></rem:results>
-	<rem:attenders stakeholders ="STK-0002 STK-0003 STK-0004 "/>
+	<rem:attenders stakeholders ="STK-0004 STK-0002 STK-0003 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0001">
@@ -4424,12 +4595,12 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Practicas</rem:place>
 <rem:results>Creación del documento base y reparto de funciones entre los miembros del grupo.</rem:results>
-	<rem:attenders stakeholders ="STK-0002 STK-0003 STK-0004 "/>
+	<rem:attenders stakeholders ="STK-0004 STK-0002 STK-0003 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0003">
 <rem:name>
-Segunda Sesion</rem:name>
+Segunda Sesión</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -4454,7 +4625,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Practicas</rem:place>
 <rem:results>Se comentan los apartados desarrollados durante el transcurso de la semana y se ponen en común en un único archivo. Se  establecen los objetivos para los próximos días de cara a organizar el trabajo de todos los miembros del equipo.</rem:results>
-	<rem:attenders stakeholders ="STK-0002 STK-0003 STK-0004 "/>
+	<rem:attenders stakeholders ="STK-0004 STK-0002 STK-0003 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0005">
@@ -4484,7 +4655,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Prácticas</rem:place>
 <rem:results>se continúa trabajando de manera individual en las tareas asiganadas y se resuelven las dudas originadas durante el transcurso de la semana.</rem:results>
-	<rem:attenders stakeholders ="STK-0002 STK-0003 STK-0004 STK-0005 "/>
+	<rem:attenders stakeholders ="STK-0004 STK-0005 STK-0002 STK-0003 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0004">
@@ -4514,8 +4685,406 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula de trabajo ETSE</rem:place>
 <rem:results>Reunión final del grupo para finalizar los apartados restantes del proyecto y poner en común todo el trabajo realizado hasta ahora. Se lleva a cabo también una última revisión y se deja el documento listo para su entrega.</rem:results>
-	<rem:attenders stakeholders ="STK-0002 STK-0003 STK-0004 STK-0005 "/>
+	<rem:attenders stakeholders ="STK-0004 STK-0005 STK-0002 STK-0003 "/>
 </rem:meeting>
+</rem:section>
+<rem:section
+ oid = "SEC-0027">
+<rem:name>
+Priorización de requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>B </rem:number>
+<rem:section
+ oid = "SEC-0029">
+<rem:name>
+Lista inicial de requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>B.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0020">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Basándonos en los casos de uso diseñados en este documento, elaboramos una lista inicial de requisitos que consideramos prioritarios frente al resto a la hora de desarrollar la herramienta que nuestro cliente busca. A partir de la lista, aplicaremos sobre estos requisitos la metodología PAJ (Proceso Analítico Jerárquico) para establecer unas métricas relativas entre los mismos, basándonos en su valor para el <rem:ref oid="GLO-0013">usuario</rem:ref>/cliente y el coste de implementación para la empresa. Con esto se pretende obtener un orden de requisitos basado en su prioridad de desarrollo e implementación que facilite al equipo las labores de decisión durante el transcurso del proyecto.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0009">
+<rem:name>
+Lista de requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Imagenes\lista_requisitos_PJA.PNG]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0028">
+<rem:name>
+Matrices de prioridad para coste y valor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>B.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0021">
+<rem:name>
+Introducción matrices</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Para identificar relaciones entre requisitos construimos una matriz 15x15 cuyos elementos se corresponderán con las comparaciones de valor o coste entre pares a través de una escala 1-9 en la que 1 representa igualdad en valor y 9 representa la mayor prevalencia posible de un requisito sobre otro. Tras realizar las estimaciones pertinentes, obtenemos las siguientes matrices de prioridad para Valor y para Coste, respectivamente.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0010">
+<rem:name>
+Matriz de prioridad para valor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Imagenes\matriz_valor_PJA.PNG]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0011">
+<rem:name>
+Matriz de prioridad para coste</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Imagenes\matriz_coste_PJA.PNG]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0030">
+<rem:name>
+Índices de consistencia</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>B.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0022">
+<rem:name>
+Introducción índices</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Los índices de consistencia (IC) nos muestran la robustez de las relaciones transitivas entre los requisitos estudiados. A partir de las matrices de prioridad se obtienen estos índices calculando sus autovalores, para posteriormente compararlos con los índices aleatorios. Estos últimos se generan a partir de matrices recíprocas aleatorias con valores en la escala 1-9 y funcionan de medidor para la consistencia de los resultados obtenidos. Para calcular los IC de las matrices de valor y coste utilizamos el autovalor principal máximo y lo comparamos con el número de requisitos según la siguiente fórmula: CI=((Lambda-n))/((n-1)). Cuanto más se acerque lambda a n, más consistente será el resultado.</rem:text>
+</rem:paragraph>
+<rem:section
+ oid = "SEC-0031">
+<rem:name>
+Índice de consistencia para valor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>B.3.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0023">
+<rem:name>
+Explicación índice valor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En el análisis de la matriz de valor, comenzamos con un valor máximo de lambda de 17.46, que conduce a un CI de 0.18. Para evaluar la aceptabilidad de este índice, calculamos el Ratio de Consistencia (RC) usando el Índice Aleatorio (RI) correspondiente a una matriz de 15x15, que es 1.59. El RC se obtiene dividiendo el CI por el RI, resultando en este caso en 0.11 (CI/RI = 0.11). Según los criterios establecidos, un RC de 0.10 o menos se considera aceptable. Aunque el RC obtenido de 0.11 excede ligeramente este umbral, se considera suficientemente cercano para validar las comparaciones entre pares realizadas en la matriz, especialmente en el contexto de priorizar requisitos basados en el valor percibido por el cliente.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0032">
+<rem:name>
+Índice de consistencia para coste</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>B.3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0024">
+<rem:name>
+Explicación índice coste</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En el análisis de la matriz de valor, comenzamos con un valor máximo de lambda de 17.46, que conduce a un CI de 0.18. Para evaluar la aceptabilidad de este índice, calculamos el Ratio de Consistencia (RC) usando el Índice Aleatorio (RI) correspondiente a una matriz de 15x15, que es 1.59. El RC se obtiene dividiendo el CI por el RI, resultando en este caso en 0.11 (CI/RI = 0.11). Según los criterios establecidos, un RC de 0.10 o menos se considera aceptable. Aunque el RC obtenido de 0.11 excede ligeramente este umbral, se considera suficientemente cercano para validar las comparaciones entre pares realizadas en la matriz, especialmente en el contexto de priorizar requisitos basados en el valor percibido por el cliente.</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0033">
+<rem:name>
+Diagrama Coste-Valor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>B.4 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0012">
+<rem:name>
+Diagrama Coste-Valor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Imagenes\diagrama_PJA.PNG]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0025">
+<rem:name>
+Análisis diagrama</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Como podemos observar, la mayoría de los requisitos quedan comprendidos entre los límites establecidos de la gráfica, exceptuando a R1, R2, R12 y R15. En especial, R1 y R2 son aquellos requisitos que muestran mayor valor para el <rem:ref oid="GLO-0013">usuario</rem:ref>, además de presentar un coste muy reducido para la empresa, alcanzando así el mayor grado de importancia. Por otro lado, R12 y R15 representan aquellos requisitos que tendrán menor prioridad, debido a su elevado coste para la empresa y su valor mínimo para el <rem:ref oid="GLO-0013">usuario</rem:ref>.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0034">
+<rem:name>
+Lista priorizada de requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>B.5 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0013">
+<rem:name>
+Lista priorizada de requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Imagenes\lista_requisitos_priorizada_PJA.PNG]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0026">
+<rem:name>
+Análisis lista priorizada</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>12</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En nuestra decisión final, hemos dado prioridad a los requisitos que son fundamentales para las funcionalidades básicas de la herramienta. A pesar de que la creación de un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref> (R11) es esencial para registrar un <rem:ref oid="GLO-0018">pago</rem:ref>, añadir un <rem:ref oid="GLO-0015">gasto</rem:ref> o calcular el balance (R10, R6, R9), hemos decidido enfocarnos primero en el diseño e implementación de estas últimas acciones. Esta decisión se basa en el hecho de que dichas acciones constituyen la esencia de la herramienta. Además, esta priorización toma en cuenta el análisis de coste/valor realizado previamente, asegurando que nuestras elecciones respaldan tanto la funcionalidad esencial como la eficiencia en términos de coste y valor.<br/>La decisión de asignar la menor prioridad al desarrollo del chat entre usuarios (R12), a pesar de ser una funcionalidad especificada por el cliente, se fundamenta en la naturaleza esencial de la aplicación como herramienta de gestión de gastos. Consideramos que la capacidad de la aplicación para manejar gastos de manera efectiva es primordial. En comparación, el chat se identifica como una funcionalidad adicional y no esencial, ya que existen otras alternativas externas. Además, el alto coste de implementar un sistema de chat robusto y eficiente también contribuye a su baja prioridad en nuestra lista. Por tanto, hemos decidido concentrar nuestros recursos en mejorar y perfeccionar las funciones centrales de gestión de gastos, relegando el desarrollo del chat a una fase posterior del proyecto.<br/>Finalmente, la máxima prioridad en nuestra aplicación se asigna al registro de usuarios y al inicio de sesión, ya que son fundamentales para acceder a cualquier funcionalidad interna. Estos procesos son clave para la seguridad y personalización del <rem:ref oid="GLO-0013">usuario</rem:ref>. Además, tienen un valor evidente y un bajo coste de implementación, lo que los convierte en una opción lógica a la par que acertada para iniciar el desarrollo.<br/></rem:text>
+</rem:paragraph>
+</rem:section>
 </rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
@@ -4563,25 +5132,22 @@ Ninguno
 Ninguno
 </rem:comments>
 </rem:changeRequestsSpecification>
-<rem:trace source = "NFR-0002"  target = "OBJ-0005" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0002"  target = "OBJ-0001" >
+<rem:trace source = "OBJ-0005"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "FRQ-0002"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0002"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "OBJ-0005"  target = "OBJ-0004" >
+<rem:trace source = "FRQ-0003"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0001"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "FRQ-0003"  target = "OBJ-0004" >
+<rem:trace source = "NFR-0005"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0006"  target = "NFR-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0001"  target = "OBJ-0002" >
@@ -4590,127 +5156,88 @@ Ninguno
 <rem:trace source = "NFR-0002"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0002"  target = "OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0002"  target = "IRQ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0005"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "FRQ-0004"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "UC-0015"  target = "UC-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0006"  target = "NFR-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0003"  target = "OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "UC-0015"  target = "UC-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0003"  target = "IRQ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0003"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0003"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0006"  target = "IRQ-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0005"  target = "FRQ-0002" >
+<rem:trace source = "NFR-0005"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0007"  target = "NFR-0006" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "FRQ-0001"  target = "OBJ-0002" >
+<rem:trace source = "NFR-0003"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0002" >
+<rem:trace source = "NFR-0002"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0002"  target = "OBJ-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0003"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0003"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0002"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0003"  target = "OBJ-0005" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0005"  target = "OBJ-0001" >
+<rem:trace source = "NFR-0004"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0002"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0004"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0004"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0003"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0004"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0005"  target = "FRQ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0001"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0007"  target = "NFR-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "CRQ-0001"  target = "IRQ-0001" >
+<rem:trace source = "CRQ-0002"  target = "IRQ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "CRQ-0005"  target = "IRQ-0007" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0003"  target = "OBJ-0004" >
+<rem:trace source = "CRQ-0006"  target = "IRQ-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "IRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0015"  target = "UC-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0001"  target = "IRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0015"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0004"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "CRQ-0004"  target = "IRQ-0006" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
-<rem:predefinedValueType
- oid = "PVT-0002">
-<rem:name>
-Integer</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type</rem:comments>
-<rem:description>
-Integer numbers</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0006">
-<rem:name>
-Time</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type (non-standard)</rem:comments>
-<rem:description>
-Hour:minutes:seconds</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
 <rem:predefinedValueType
  oid = "PVT-0001">
 <rem:name>
@@ -4733,6 +5260,27 @@ Real numbers</rem:description>
 </rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType
+ oid = "PVT-0002">
+<rem:name>
+Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Integer numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
  oid = "PVT-0004">
 <rem:name>
 String</rem:name>
@@ -4749,6 +5297,27 @@ String</rem:name>
 Predefined OCL type</rem:comments>
 <rem:description>
 Alphanumeric strings</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0006">
+<rem:name>
+Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Hour:minutes:seconds</rem:description>
 <rem:definition>
 (null)
 </rem:definition>
@@ -4797,24 +5366,27 @@ Dates</rem:description>
 </rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0002">
 <rem:name>pendiente de análisis</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0005">
-<rem:name>verificado</rem:name>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0006">
 <rem:name>rechazado</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0004">
-<rem:name>pendiente de realización</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0003">
-<rem:name>pendiente de aprobar/rechazar</rem:name>
-</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
 </rem:conflictStatusValue>
@@ -4824,55 +5396,46 @@ Dates</rem:description>
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0004">
-<rem:name>resuelto</rem:name>
-</rem:conflictStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
-</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
-</rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0003">
-<rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0016">
-<rem:name>No rastreabilidad</rem:name>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0017">
-<rem:name>Organización incorrecta</rem:name>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0015">
-<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0023">
-<rem:name>Otro</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0008">
@@ -4887,24 +5450,6 @@ Dates</rem:description>
 <![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0005">
-<rem:name>No verificabilidad</rem:name>
-<rem:description>
-<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
-</rem:description>
-</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0010">
 <rem:name>Redundancia</rem:name>
 <rem:description>
@@ -4917,28 +5462,16 @@ Dates</rem:description>
 <![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0004">
-<rem:name>Incomprensibilidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
 <rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0007">
-<rem:name>No implementabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0014">
@@ -4947,8 +5480,44 @@ Dates</rem:description>
 <![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0002">
-<rem:name>vital</rem:name>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
 </rem:importanceValue>
 <rem:importanceValue oid = "IMV-0003">
 <rem:name>importante</rem:name>
@@ -4956,21 +5525,24 @@ Dates</rem:description>
 <rem:importanceValue oid = "IMV-0004">
 <rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
-<rem:importanceValue oid = "IMV-0001">
-<rem:name>PD</rem:name>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0002">
-<rem:name>baja</rem:name>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0003">
 <rem:name>media</rem:name>
 </rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
+</rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0004">
 <rem:name>alta</rem:name>
 </rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0001">
-<rem:name>PD</rem:name>
-</rem:stabilityValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
 <rem:statusValue oid = "STV-0001">
 <rem:name>PD</rem:name>
 </rem:statusValue>
@@ -4980,47 +5552,44 @@ Dates</rem:description>
 <rem:statusValue oid = "STV-0003">
 <rem:name>pendiente de verificación</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0005">
-<rem:name>validado</rem:name>
-</rem:statusValue>
 <rem:statusValue oid = "STV-0004">
 <rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
+</rem:terminationValue>
 <rem:terminationValue oid = "TEV-0003">
 <rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0002">
 <rem:name>continúa</rem:name>
 </rem:terminationValue>
-<rem:terminationValue oid = "TEV-0001">
-<rem:name>PD</rem:name>
-</rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0001">
-<rem:name>PD</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0011">
-<rem:name>segundo(s)</rem:name>
-</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0005">
 <rem:name>mes(es)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0002">
-<rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0012">
-<rem:name>décima(s) de segundo</rem:name>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0008">
 <rem:name>día(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0007">
-<rem:name>semana(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0010">
 <rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0014">
 <rem:name>milisegundo(s)</rem:name>
@@ -5028,17 +5597,17 @@ Dates</rem:description>
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0001">
 <rem:name>PD</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
-</rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0004">
-<rem:name>puede esperar</rem:name>
-</rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0003">
-<rem:name>hay presión</rem:name>
 </rem:urgencyValue>
 </rem:predefinedValues>
 </rem:requirementsProject>
