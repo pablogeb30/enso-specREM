@@ -811,7 +811,7 @@ Ninguno</td>
 <h2 align="left">2.3 
 Alcance de la solución</h2><a name="GRF-0001" />
 <p align="center">
-<img src="" title="" />
+<img src=".\Imagenes\diagrama_contexto.jpg" title=".\Imagenes\diagrama_contexto.jpg" />
 </p>
 <p align="center">
 <b>Figura 1</b>:
@@ -1212,7 +1212,7 @@ Ninguno</td>
 <p />
 <a name="GRF-0004" />
 <p align="center">
-<img src="" title="" />
+<img src=".\Imagenes\casos_de_uso_usuario.jpg" title=".\Imagenes\casos_de_uso_usuario.jpg" />
 </p>
 <p align="center">
 <b>Figura 1</b>:
@@ -1234,13 +1234,25 @@ Registrarse en el sistema</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Aarón García Filgueira</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+José Ángel Taboada Gonzalez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1254,47 +1266,120 @@ Registrarse en el sistema</th>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+un nuevo usuario desea darse de alta en la aplicación.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario debe de poseer una versión válida de la aplicación instalada en su sistema.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="6">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STP-0070" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+abre la aplcación y selecciona la opción "Registrarse" en el panel de bienvenida.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0072" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+acepta los términos y condiciones de uso de la aplicación y los sistemas integrados, así como las polírticas de privacidad establecidas.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0071" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+introduce los datos requeridos por el sistema, como el nombre completo, la fecha de nacimiento, el nombre de usuario y la contraseña.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0073" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+valida los datos introducidos a través de una autentificación de dos factores (correo electrónico o SMS).</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0074" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+ingresa al sistema y comienza a usar los servicios.</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema registra los datos del nuevo usuario y lo añade a la base de datos.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="left" valign="top" rowspan="4">Excepciones</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0010" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+el usuario no acepta los términos y condiciones de uso o las condiciones de privacidad,
+                            </em>el
+     
+    sistema<em>
+lo devulve al panel de bienvenida y mustra un mensaje de error</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0011" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+el usuario introduce algún dato no válido ,
+                            </em>el
+     
+    sistema<em>
+lanza un mensaje de error indicando el campo que contiene información incorrecta y solicita que se modifique</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0012" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+el usario introduce un codigo incorrecto para la verficación de dos pasos,
+                            </em>el
+     
+    sistema<em>
+solicita que se introduzca un código válido y recarga la pantalla</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
@@ -1312,32 +1397,26 @@ Registrarse en el sistema</th>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+100
+veces por
+                         
+                        día(s)</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -1362,13 +1441,25 @@ Iniciar sesión el sistema</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Aarón García Filgueira</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+José Ángel Taboada Gonzalez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1382,34 +1473,62 @@ Iniciar sesión el sistema</th>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+un usuario ya registrado desea ingresar a la aplicación</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario debe de estar registrado en el sistema y en la base de datos</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STP-0076" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+abre la aplicación y selecciona la opción "Inicar sesión" en el panel de bienvenida</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0077" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+Introduce su usuario y contraseña en los campos donde se solicita</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0078" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+ingresa de manera satisfactoria al sistema</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0079" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+registra que el usuario está ahora conectado</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario gana acceso a los servicios de la aplicación</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -1417,12 +1536,18 @@ Iniciar sesión el sistema</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0013" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+se introducen datos incorrectos en los campos usuario o contraseña,
+                            </em>el
+     
+    sistema<em>
+indica que hay un error y que se deben volver a introducir los datos con errores</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
@@ -1440,32 +1565,26 @@ Iniciar sesión el sistema</th>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+500
+veces por
+                         
+                        día(s)</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -1490,13 +1609,25 @@ Editar Perfil</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Aarón García Filgueira</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+José Ángel Taboada Gonzalez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1510,34 +1641,63 @@ Editar Perfil</th>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+el usuario desea modificar configuraciones personales de su cuenta</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario debe de estar registrado en la aplicación.
+<br />El ussuario debe de haber iniciado sesión de manera satisfactoria.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STP-0080" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona la opción de "Editar perfil" dentro del menú de ajustes de la aplicación</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0081" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+modifica aquellos campos en los que desea actualizar los datos, ya sea información personal como el teléfono o el email, o configuraciones de privacidad.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0082" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+guarda los cambios realizados y pulsa sobre la opción de confirmar</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0083" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+registra los cambios y los almacena en la base de datos</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema almacena los cambios indicados y actualiza la información pertinente.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -1545,12 +1705,18 @@ Editar Perfil</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0014" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+alguno de los datos introducidos por el usuario no es válido porque viola alguna restricción,
+                            </em>el
+     
+    sistema<em>
+lanza un mensaje de error y limpia el que campo que se estaba tratando de modificar para que se introduzca un valor válido</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
@@ -1568,32 +1734,26 @@ Editar Perfil</th>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+25
+veces por
+                         
+                        día(s)</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -1618,13 +1778,25 @@ Configurar métodos de pago</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Aarón García Filgueira</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+José Ángel Taboada Gonzalez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1638,34 +1810,53 @@ Configurar métodos de pago</th>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+se selecciona manualmente la opción de registrar un método de pago o se pretende llevar a cabo un pago sin tener un método de pago definido.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario debe de estar registrado en el sistema.
+<br />El usuario debe de haber inicado sesión y estar conectado.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="4">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STP-0092" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona la opción de añadir un nuevo método de pago en el apartado de configuración del perfil.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0093" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+elige cual de los métodos de pago que están disponibles es el que desea usar para abonar los pagos que vaya a realizar mediante la aplicación.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0094" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+valida los datos introducidos y los almacena en la base de datos para poder emplearlos en la realización de cobros y recargos asociados al usuario.</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema almacena la información suministrada por el cliente en la base de datos del sistema.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -1673,12 +1864,18 @@ Configurar métodos de pago</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0016" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+el método de pago seleccionado es gestionado por una plataforma/empresa externa y no por una entidad bancaria (por ejemplo PayPal o AliPay),
+                            </em>el
+     
+    sistema<em>
+redireccionará al usuario al sistema de incio de sesión de la plataforma correspondiente para poder validar los datos</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
@@ -1696,32 +1893,26 @@ Configurar métodos de pago</th>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+15
+veces por
+                         
+                        día(s)</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -1746,13 +1937,25 @@ Cerrar sesión</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Aarón García Filgueira</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+José Ángel Taboada Gonzalez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1766,34 +1969,63 @@ Cerrar sesión</th>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+la opción de cerrar sesión es invocada desde el menú de configuración de la aplicación por parte de un usuario.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario debe de estar registrado en el sistema.
+<br />El usuario debe de haber iniciado sesión en la aplicación y estar conectado de manera activa.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STP-0084" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+se dirije al apartado de configuración desde el menú de la aplicación.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0085" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona la opción para cerrar sesión en el dispositivo actual.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0086" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+confirma la acción en el banner pop-up que solicita una segunda confirmación.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0087" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+redirige al usuario a la página de inicio de la aplicación.</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema registra que el usuario ya no se encuentra activo.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -1801,12 +2033,18 @@ Cerrar sesión</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0015" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+el usuario rechaza el cierre de sesión en la ventana emergente de confirmación,
+                            </em>el
+     
+    sistema<em>
+anula el cierre de sesión y devuelve al usuario al menú de configuración en el que se encontraba anteriormente</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
@@ -1824,32 +2062,26 @@ Cerrar sesión</th>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+30
+veces por
+                         
+                        día(s)</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -1906,34 +2138,63 @@ José Ángel Taboada Gonzalez</a>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+un usuario experimenta algún problema o inconveniente y desea reportarlo al equipo de desarrollo/control.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario debe de estar registrado.
+<br />El usuario debe de estar activo.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STP-0088" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona la opción de notificar incidencia desde el menú de la aplicación.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0089" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+completa los datos requeridos por el sistema para conocer cual es el motivo del reporte: Descripción del problema, repercusiones o consecuencias y cualquier archivo adjunto que pueda servir como prueba o apoyo.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0090" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al viajero de la compañía o a cualquier usuario general de la aplicación.">
+Usuario (ACT-0001)
+    </a>
+<em>
+confirma los datos introducidos y selecciona la opción de "Enviar reporte"</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0091" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+clasifica el reporte según los datos proporcionados por el usuario, le asigna una prioridad apróximada y envía una notificación al equipo responsable de su revisión.</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sisitema almacena la incidencia y crea un log con la fecha y el usuario correspondientes.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -1964,32 +2225,26 @@ José Ángel Taboada Gonzalez</a>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+5
+veces por
+                         
+                        semana(s)</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -3069,7 +3324,7 @@ Ninguno</td>
 <p />
 <a name="GRF-0008" />
 <p align="center">
-<img src="" title="" />
+<img src=".\Imagenes\casos_de_uso_chats.jpg" title=".\Imagenes\casos_de_uso_chats.jpg" />
 </p>
 <p align="center">
 <b>Figura 1</b>:
@@ -3426,7 +3681,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0014</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Eliminar miembro del grupo</th>
+Eliminar grupo de gasto</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3437,13 +3692,25 @@ Eliminar miembro del grupo</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Aarón García Filgueira</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+José Ángel Taboada Gonzalez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -3457,34 +3724,65 @@ Eliminar miembro del grupo</th>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+un administrador desea eliminar por completo un grupo de gasto que ha creado con anterioridad</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El usuario que desea realizar la acción debe de tener el rol de administrador.
+<br />Debe de existir un grupo de gasto que pueda ser eliminado.
+<br />El grupo  de gasto debe tener todas sus deudas saldadas.
+<br />No deben quedar actividades grupales en curso o pendientes de realización.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STP-0095" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa el rol que adquiere un usuario en relación a un grupo de gasto creado por él.">
+Administrador (ACT-0002)
+    </a>
+<em>
+selecciona el grupo de gasto que desea eliminar manteniendo pulsado su icono correspondiente en la interfaz de la aplicación.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0096" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa el rol que adquiere un usuario en relación a un grupo de gasto creado por él.">
+Administrador (ACT-0002)
+    </a>
+<em>
+selecciona la opción "Eliminar grupo" desde el menú desplegabe que aparece.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0097" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa el rol que adquiere un usuario en relación a un grupo de gasto creado por él.">
+Administrador (ACT-0002)
+    </a>
+<em>
+confirma la eliminación del grupo de manera permanente e irreversible.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0098" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+actualiza la información relativa a los grupos de gasto existentes y las entradas correspondientes de la base de datos</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El grupo de gasto desaparace para todos los usuarios miebros y la información relativa a él desaparece del sistema.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -3492,12 +3790,18 @@ Eliminar miembro del grupo</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0017" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+no se cumple alguna de las condiciones necesarias para poder eliminar el grupo del sistema,
+                            </em>el
+     
+    sistema<em>
+lanza un mensaje de error e impide llevar a cabo la acción deseada</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
@@ -3515,32 +3819,26 @@ Eliminar miembro del grupo</th>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+25
+veces por
+                         
+                        semana(s)</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -3565,13 +3863,25 @@ Organizar actividad grupal</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Aarón García Filgueira</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+José Ángel Taboada Gonzalez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -3582,6 +3892,11 @@ Organizar actividad grupal</th>
                                 [UC-0006] 
 Crear actividad</a>
 </li>
+<li>
+<a href="#UC-0010" title="Consultar calendario">
+                                [UC-0010] 
+Consultar calendario</a>
+</li>
 </td>
 </tr>
 <tr>
@@ -3591,15 +3906,13 @@ Crear actividad</a>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+un administrador desea organizar una actividad que incluya a todos los miembros del grupo actual</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El grupo debe contener al menos un miembro más a parte del propio administrador.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Secuencia normal</th>
@@ -3617,8 +3930,7 @@ Crear actividad</a>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+La actividad queda registrada en los calendarios individuales y se almacena en el sistema</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -4636,16 +4948,6 @@ José Ángel Taboada Gonzalez</a>
 Sistema de gestión de usuarios</a>
 </li>
 <li>
-<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
-                                [OBJ-0003] 
-Sistema de gestión de chats y grupos</a>
-</li>
-<li>
-<a href="#OBJ-0004" title="Sistema de gestión de actividades">
-                                [OBJ-0004] 
-Sistema de gestión de actividades</a>
-</li>
-<li>
 <a href="#OBJ-0001" title="Sistema de gestión de gastos">
                                 [OBJ-0001] 
 Sistema de gestión de gastos</a>
@@ -4654,6 +4956,16 @@ Sistema de gestión de gastos</a>
 <a href="#OBJ-0005" title="Sistema de recomendaciones automáticas">
                                 [OBJ-0005] 
 Sistema de recomendaciones automáticas</a>
+</li>
+<li>
+<a href="#OBJ-0004" title="Sistema de gestión de actividades">
+                                [OBJ-0004] 
+Sistema de gestión de actividades</a>
+</li>
+<li>
+<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
+                                [OBJ-0003] 
+Sistema de gestión de chats y grupos</a>
 </li>
 </td>
 </tr>
@@ -4729,16 +5041,6 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#OBJ-0005" title="Sistema de recomendaciones automáticas">
-                                [OBJ-0005] 
-Sistema de recomendaciones automáticas</a>
-</li>
-<li>
-<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
-                                [OBJ-0002] 
-Sistema de gestión de usuarios</a>
-</li>
-<li>
 <a href="#OBJ-0001" title="Sistema de gestión de gastos">
                                 [OBJ-0001] 
 Sistema de gestión de gastos</a>
@@ -4749,9 +5051,19 @@ Sistema de gestión de gastos</a>
 Sistema de gestión de chats y grupos</a>
 </li>
 <li>
+<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
+                                [OBJ-0002] 
+Sistema de gestión de usuarios</a>
+</li>
+<li>
 <a href="#OBJ-0004" title="Sistema de gestión de actividades">
                                 [OBJ-0004] 
 Sistema de gestión de actividades</a>
+</li>
+<li>
+<a href="#OBJ-0005" title="Sistema de recomendaciones automáticas">
+                                [OBJ-0005] 
+Sistema de recomendaciones automáticas</a>
 </li>
 </td>
 </tr>
@@ -4827,24 +5139,24 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#OBJ-0001" title="Sistema de gestión de gastos">
-                                [OBJ-0001] 
-Sistema de gestión de gastos</a>
-</li>
-<li>
 <a href="#OBJ-0004" title="Sistema de gestión de actividades">
                                 [OBJ-0004] 
 Sistema de gestión de actividades</a>
 </li>
 <li>
-<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
-                                [OBJ-0003] 
-Sistema de gestión de chats y grupos</a>
+<a href="#OBJ-0001" title="Sistema de gestión de gastos">
+                                [OBJ-0001] 
+Sistema de gestión de gastos</a>
 </li>
 <li>
 <a href="#OBJ-0002" title="Sistema de gestión de usuarios">
                                 [OBJ-0002] 
 Sistema de gestión de usuarios</a>
+</li>
+<li>
+<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
+                                [OBJ-0003] 
+Sistema de gestión de chats y grupos</a>
 </li>
 </td>
 </tr>
@@ -4920,6 +5232,11 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
+<a href="#OBJ-0001" title="Sistema de gestión de gastos">
+                                [OBJ-0001] 
+Sistema de gestión de gastos</a>
+</li>
+<li>
 <a href="#OBJ-0002" title="Sistema de gestión de usuarios">
                                 [OBJ-0002] 
 Sistema de gestión de usuarios</a>
@@ -4928,11 +5245,6 @@ Sistema de gestión de usuarios</a>
 <a href="#FRQ-0002" title="Gestionar gastos">
                                 [FRQ-0002] 
 Gestionar gastos</a>
-</li>
-<li>
-<a href="#OBJ-0001" title="Sistema de gestión de gastos">
-                                [OBJ-0001] 
-Sistema de gestión de gastos</a>
 </li>
 </td>
 </tr>
@@ -5086,14 +5398,14 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#NFR-0004" title="Interfaz fácil de usar y entender">
-                                [NFR-0004] 
-Interfaz fácil de usar y entender</a>
-</li>
-<li>
 <a href="#NFR-0006" title="Lenguaje accesible">
                                 [NFR-0006] 
 Lenguaje accesible</a>
+</li>
+<li>
+<a href="#NFR-0004" title="Interfaz fácil de usar y entender">
+                                [NFR-0004] 
+Interfaz fácil de usar y entender</a>
 </li>
 </td>
 </tr>
@@ -5175,7 +5487,7 @@ TFEA</th>
 </tr>
 <tr>
 <th align="left" valign="top">Hora</th>
-<td align="left" valign="top" colspan="1">14:25</td>
+<td align="left" valign="top" colspan="1">11:35</td>
 </tr>
 <tr>
 <th align="left" valign="top">Lugar</th>
@@ -5225,7 +5537,7 @@ Creación del documento</th>
 </tr>
 <tr>
 <th align="left" valign="top">Hora</th>
-<td align="left" valign="top" colspan="1">14:23</td>
+<td align="left" valign="top" colspan="1">13:20</td>
 </tr>
 <tr>
 <th align="left" valign="top">Lugar</th>
@@ -5300,6 +5612,110 @@ Pablo Guerrica-Echevarría Basterrechea </a>
 <tr>
 <th align="left" valign="top">Resultados</th>
 <td align="left" valign="top" colspan="1">Se comentan los apartados desarrollados durante el transcurso de la semana y se ponen en común en un único archivo. Se  establecen los objetivos para los próximos días de cara a organizar el trabajo de todos los miembros del equipo.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="MET-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Reunión</th>
+<th align="left" valign="top" width="100%">
+Tercera Sesión</th>
+</tr>
+<tr>
+<th align="left" valign="top">Fecha</th>
+<td align="left" valign="top" colspan="1">19/12/2023</td>
+</tr>
+<tr>
+<th align="left" valign="top">Hora</th>
+<td align="left" valign="top" colspan="1">11:45</td>
+</tr>
+<tr>
+<th align="left" valign="top">Lugar</th>
+<td align="left" valign="top" colspan="1">Aula Prácticas</td>
+</tr>
+<tr><th align="left" valign="top">Asistentes</th>
+<td align="left" valign="top">
+<ul>
+<li>
+<a href="#STK-0004" title="Aarón García Filgueira">
+Aarón García Filgueira</a>
+</li>
+<li>
+<a href="#STK-0005" title="Antón Lence Martínez">
+Antón Lence Martínez</a>
+</li>
+<li>
+<a href="#STK-0003" title="Pablo García Fuentes">
+Pablo García Fuentes</a>
+</li>
+<li>
+<a href="#STK-0002" title="Pablo Guerrica-Echevarría Basterrechea">
+Pablo Guerrica-Echevarría Basterrechea </a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Resultados</th>
+<td align="left" valign="top" colspan="1">se continúa trabajando de manera individual en las tareas asiganadas y se resuelven las dudas originadas durante el transcurso de la semana.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="MET-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Reunión</th>
+<th align="left" valign="top" width="100%">
+Reunión final</th>
+</tr>
+<tr>
+<th align="left" valign="top">Fecha</th>
+<td align="left" valign="top" colspan="1">19/12/2023</td>
+</tr>
+<tr>
+<th align="left" valign="top">Hora</th>
+<td align="left" valign="top" colspan="1">16:00</td>
+</tr>
+<tr>
+<th align="left" valign="top">Lugar</th>
+<td align="left" valign="top" colspan="1">Aula de trabajo ETSE</td>
+</tr>
+<tr><th align="left" valign="top">Asistentes</th>
+<td align="left" valign="top">
+<ul>
+<li>
+<a href="#STK-0004" title="Aarón García Filgueira">
+Aarón García Filgueira</a>
+</li>
+<li>
+<a href="#STK-0005" title="Antón Lence Martínez">
+Antón Lence Martínez</a>
+</li>
+<li>
+<a href="#STK-0003" title="Pablo García Fuentes">
+Pablo García Fuentes</a>
+</li>
+<li>
+<a href="#STK-0002" title="Pablo Guerrica-Echevarría Basterrechea">
+Pablo Guerrica-Echevarría Basterrechea </a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Resultados</th>
+<td align="left" valign="top" colspan="1">Reunión final del grupo para finalizar los apartados restantes del proyecto y poner en común todo el trabajo realizado hasta ahora. Se lleva a cabo también una última revisión y se deja el documento listo para su entrega.</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
