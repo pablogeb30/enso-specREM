@@ -907,7 +907,7 @@ Requisitos</h1><a name="SEC-0017" />
 <h2 align="left">3.1 
 Requisitos de información</h2><a name="GRF-0002" />
 <p align="center">
-<img src="" title="" />
+<img src=".\Imagenes\diagrama_ER.png" title=".\Imagenes\diagrama_ER.png" />
 </p>
 <p align="center">
 <b>Figura 1</b>:
@@ -960,7 +960,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-gastos en el sistema de pagos de la aplicación.
+gastos en el sistema de pagos de la aplicación. Un <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> documenta cualquier tipo de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> en una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> por parte de uno o varios integrantes del grupo. Además permiten ser justificados adjuntando imágenes de recibos, tickets o facturas.
 				</em>
     En concreto:
 </td>
@@ -971,13 +971,16 @@ gastos en el sistema de pagos de la aplicación.
 <ul>
 <li>
 <a name="DAT-0102" />
-Documentan cualquier tipo de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> en una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> por parte de uno o varios integrantes del grupo.</li>
+id: identificador único para que sea más sencillo diferenciar diferentes gastos (String).</li>
 <li>
 <a name="DAT-0103" />
-Permiten ser justificados adjuntando imágenes de recibos, tickets o facturas.</li>
+fecha: data de realización del <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> (Date).</li>
 <li>
 <a name="DAT-0104" />
-Se calcula automáticamente el saldo de cada integrante, repartiendo equitativamente los gastos entre los miembros del grupo.</li>
+documento: recibo o ticket identificativo del <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> en cuestión (Image).</li>
+<li>
+<a name="DAT-0137" />
+cantidad: cuantía monetaria del <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a> correspondiente (Float).</li>
 </ul>
 </td>
 </tr>
@@ -1071,7 +1074,7 @@ Pablo Guerrica-Echevarría Basterrechea </a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-clientes de la empresa en la aplicación.
+clientes de la empresa en la aplicación. Objeto utilizado en la mayoría de las operaciones de la aplicación. Se pueden crear a partir de credenciales de autenticación: nombre de <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>, correo electrónico y contraseña. Un cliente puede entrar en grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada.
 				</em>
     En concreto:
 </td>
@@ -1082,13 +1085,19 @@ clientes de la empresa en la aplicación.
 <ul>
 <li>
 <a name="DAT-0105" />
-Objeto utilizado en la mayoría de las operaciones de la aplicación.</li>
+dni: documento para identificar de forma única a todos los usuarios de la aplicación (String).</li>
 <li>
 <a name="DAT-0106" />
-Se pueden crear a partir de credenciales de autenticación: nombre de <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a>, correo electrónico y contraseña.</li>
+nombre: nombre completo del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> (String)</li>
 <li>
 <a name="DAT-0107" />
-Pueden entrar en grupos de <a href="#GLO-0015" title="Concepto presente en la aplicación que hace referencia a cualquier tipo de compra o desembolso que un usuario realice y desee registrar para solicitar la aportación económica de otros usuarios">gasto</a>, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada.</li>
+correo: correo electrónico del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> (String)</li>
+<li>
+<a name="DAT-0138" />
+teléfono: número de teléfono del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> (String)</li>
+<li>
+<a name="DAT-0139" />
+saldo: saldo actual del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> (Float)</li>
 </ul>
 </td>
 </tr>
@@ -1182,7 +1191,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-actividades registradas por usuarios en la aplicación.
+actividades registradas por usuarios en la aplicación. Se pueden asociar a gastos imputados por los participantes. Además cada <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> puede tener múltiples gastos asociados con diferentes integrantes en los mismos. Se asocia a una ubicación y se puede agregar como evento en el calendario.
 				</em>
     En concreto:
 </td>
@@ -1193,16 +1202,13 @@ actividades registradas por usuarios en la aplicación.
 <ul>
 <li>
 <a name="DAT-0108" />
-Se pueden asociar a gastos imputados por los participantes.</li>
+id: identificador único de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> (String)</li>
 <li>
 <a name="DAT-0109" />
-Permiten publicar reseñas sobre las mismas y ser puntuadas por los participantes.</li>
+ubicación: localización de la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> en cuestión (Location).</li>
 <li>
 <a name="DAT-0110" />
-Cada <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> puede tener múltiples gastos asociados con diferentes integrantes en los mismos.</li>
-<li>
-<a name="DAT-0111" />
-Se asocia a una ubicación y se puede agregar como evento en el calendario.</li>
+fecha: data en la que tendrá lugar la <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> (Date).</li>
 </ul>
 </td>
 </tr>
@@ -1295,7 +1301,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-grupos de viaje formados en la aplicación.
+grupos de viaje formados en la aplicación. Agrupan a los usuarios que participen en una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> o compartan gastos. Por otra parte, los grupos soportan la publicación de avisos a través de un sistema de notificación desde el anfitrión a cada miembro del grupo.
 				</em>
     En concreto:
 </td>
@@ -1306,15 +1312,10 @@ grupos de viaje formados en la aplicación.
 <ul>
 <li>
 <a name="DAT-0112" />
-Agrupan a los usuarios que participen en una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> o compartan gastos.
-<br />
-</li>
+id: identificador del grupo (String)</li>
 <li>
 <a name="DAT-0113" />
-Permiten la gestión eficiente de los gastos entre los miembros del grupo.</li>
-<li>
-<a name="DAT-0114" />
-Soportan la publicación de avisos a través de un sistema de notificación desde el anfitrión a cada miembro del grupo.</li>
+admin: referencia al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> al que se le asigna este rol (<a href="#GLO-0013" title="Persona física que utiliza la aplicación">Usuario</a>)</li>
 </ul>
 </td>
 </tr>
@@ -1345,116 +1346,6 @@ Soportan la publicación de avisos a través de un sistema de notificación desde e
 <tr>
 <th align="left" valign="top">Urgencia</th>
 <td align="left" valign="top" colspan="2">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de validación</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">media</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="IRQ-0005" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">IRQ-0005</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Notificación</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0 
-			( 20/12/2023 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0002">
-Pablo Guerrica-Echevarría Basterrechea </a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-José Ángel Taboada Gonzalez</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá almacenar la información correspondiente a 
-<em>
-notificaciones enviadas y recibidas en la aplicación.
-				</em>
-    En concreto:
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Datos específicos</th>
-<td colspan="2" align="left" valign="top">
-<ul>
-<li>
-<a name="DAT-0115" />
-Se distinguen notificaciones push para dispositivos móviles y notificaciones de escritorio para ordenadores.</li>
-<li>
-<a name="DAT-0116" />
-Informan al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> sobre eventos comunes o programados, como por ejemplo el comienzo de una <a href="#GLO-0019" title="Evento al que acuden diversos usuarios pertencientes a un mismo grupo de gasto">actividad</a> o su final, si necesita hacer un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> a otra persona, etc.</li>
-<li>
-<a name="DAT-0117" />
-También incluyen mensajes enviados por anfitriones del grupo, así como avisos de eventos y mensajes entre usuarios.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>2 
-                        hora(s)</td>
-<td>1 
-                        día(s)</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>69000</td>
-<td>100000</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">puede esperar</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
@@ -1517,7 +1408,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-reseñas de los usuarios sobre la aplicación.
+reseñas de los usuarios sobre la aplicación. Están diseñadas para realizar una valoración acerca del rendimiento de la aplicación. Además proporcionan un feedback sobre aspectos positivos y negativos de la aplicación, dándole a los desarrolladores un margen de mejora de la aplicación.
 				</em>
     En concreto:
 </td>
@@ -1528,13 +1419,13 @@ reseñas de los usuarios sobre la aplicación.
 <ul>
 <li>
 <a name="DAT-0118" />
-Diseñadas para realizar una valoración acerca del rendimiento de la aplicación.</li>
+id: identificador único de la reseña (String).</li>
 <li>
 <a name="DAT-0119" />
-Proporcionan un feedback sobre aspectos positivos y negativos de la aplicación, dándole a los desarrolladores un margen de mejora de la aplicación.</li>
+texto: campo de texto en el que el <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> escribe su reseña (String).</li>
 <li>
 <a name="DAT-0120" />
-Aumenta la fiabilidad acerca de la calidad de la aplicación al ofrecer diversos testimonios sobre la aplicación.</li>
+valoración: número entre 1 y 5 que se representará con estrellas en la reseña (Integer).</li>
 </ul>
 </td>
 </tr>
@@ -1627,7 +1518,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-mensajes enviados y recibidos en la aplicación.
+mensajes enviados y recibidos en la aplicación. Es la herramienta básica de comunicación entre usuarios de la aplicación.
 				</em>
     En concreto:
 </td>
@@ -1638,7 +1529,19 @@ mensajes enviados y recibidos en la aplicación.
 <ul>
 <li>
 <a name="DAT-0121" />
-Herramienta básica de comunicación entre usuarios de la aplicación.</li>
+id: identificador único del mensaje (String).</li>
+<li>
+<a name="DAT-0142" />
+fecha: data en la que se envía el mensaje (Date).</li>
+<li>
+<a name="DAT-0143" />
+tipo: tipo del mensaje en cuestión, ya sea texto plano, imagen, audio, vídeo, etc. (String).</li>
+<li>
+<a name="DAT-0140" />
+emisor: referencia al <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> emisor del mensaje (<a href="#GLO-0013" title="Persona física que utiliza la aplicación">Usuario</a>).</li>
+<li>
+<a name="DAT-0141" />
+receptor: referencia al receptor del mensaje (<a href="#GLO-0013" title="Persona física que utiliza la aplicación">Usuario</a>).</li>
 </ul>
 </td>
 </tr>
@@ -1732,7 +1635,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-pagos registrados en la aplicación.
+pagos registrados en la aplicación. Pueden ser creados por los usuarios especificando la cantidad correspondiente y el beneficiario. Además, permiten saldar deudas entre usuarios dentro de un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>. La aplicación debe calcular automáticamente los saldos individuales y actualizar los registros de pagos entre usuarios.
 				</em>
     En concreto:
 </td>
@@ -1743,16 +1646,13 @@ pagos registrados en la aplicación.
 <ul>
 <li>
 <a name="DAT-0122" />
-Pueden ser creados por los usuarios especificando la cantidad correspondiente y el beneficiario.</li>
+id: identificador del <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> (String).</li>
 <li>
 <a name="DAT-0123" />
-Permiten saldar deudas entre usuarios dentro de un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>.</li>
+fecha: data en la que se registra el <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> en la aplicación (Date).</li>
 <li>
 <a name="DAT-0124" />
-Se permite realizar un <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a> a través de la aplicación con diferentes métodos de <a href="#GLO-0018" title="Saldo de una deuda entre dos usuarios">pago</a>.</li>
-<li>
-<a name="DAT-0125" />
-La aplicación debe calcular automáticamente los saldos individuales y actualizar los registros de pagos entre usuarios.</li>
+cantidad: cuantía monetaria pagada (Float).</li>
 </ul>
 </td>
 </tr>
@@ -1845,7 +1745,7 @@ José Ángel Taboada Gonzalez</a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-chats de cada <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> en la aplicación.
+chats de cada <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> en la aplicación. Es la plataforma de intercambio de mensajes entre usuarios. Además permite enviar información en múltiples formatos (incluye conversaciones privadas y grupos).
 				</em>
     En concreto:
 </td>
@@ -1856,10 +1756,13 @@ chats de cada <a href="#GLO-0013" title="Persona física que utiliza la aplicació
 <ul>
 <li>
 <a name="DAT-0126" />
-Plataforma de intercambio de mensajes entre usuarios.</li>
+imagen: imagen del chat correspondiente (Image).</li>
+<li>
+<a name="DAT-0144" />
+nombre: nombre del chat, normalmente la persona con la que hablas o otra cosa diferente si es un grupo (String).</li>
 <li>
 <a name="DAT-0127" />
-Permite enviar información en múltiples formatos (incluye conversaciones privadas y grupos).</li>
+participantes [n]: array de referencias a usuarios pertenecientes a ese grupo (Usuarios[n]).</li>
 </ul>
 </td>
 </tr>
@@ -1898,116 +1801,6 @@ Permite enviar información en múltiples formatos (incluye conversaciones privada
 <tr>
 <th align="left" valign="top">Estabilidad</th>
 <td align="left" valign="top" colspan="2">media</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="IRQ-0010" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">IRQ-0010</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Saldo</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0 
-			( 20/12/2023 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0002">
-Pablo Guerrica-Echevarría Basterrechea </a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-José Ángel Taboada Gonzalez</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá almacenar la información correspondiente a 
-<em>
-saldos de los usuarios de la aplicación.
-				</em>
-    En concreto:
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Datos específicos</th>
-<td colspan="2" align="left" valign="top">
-<ul>
-<li>
-<a name="DAT-0128" />
-Refleja el estado financiero individual de cada <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> en un <a href="#GLO-0014" title="Concepto presente en la aplicación que hace referencia a un conjunto de usuarios asociados entre ellos que pueden gestionar gastos">grupo de gasto</a>.</li>
-<li>
-<a name="DAT-0129" />
-Incluye todas las deudas y cobros individuales del <a href="#GLO-0013" title="Persona física que utiliza la aplicación">usuario</a> con otros usuarios.</li>
-<li>
-<a name="DAT-0130" />
-Deben representarse de forma clara las deudas y cobros pendientes.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>2 
-                        año(s)</td>
-<td>3 
-                        año(s)</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>35000</td>
-<td>50000</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de validación</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -5354,14 +5147,14 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#UC-0010" title="Consultar calendario">
-                                [UC-0010] 
-Consultar calendario</a>
-</li>
-<li>
 <a href="#UC-0006" title="Crear actividad">
                                 [UC-0006] 
 Crear actividad</a>
+</li>
+<li>
+<a href="#UC-0010" title="Consultar calendario">
+                                [UC-0010] 
+Consultar calendario</a>
 </li>
 </td>
 </tr>
@@ -6454,9 +6247,14 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
-                                [OBJ-0003] 
-Sistema de gestión de chats y grupos</a>
+<a href="#OBJ-0001" title="Sistema de gestión de gastos">
+                                [OBJ-0001] 
+Sistema de gestión de gastos</a>
+</li>
+<li>
+<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
+                                [OBJ-0002] 
+Sistema de gestión de usuarios</a>
 </li>
 <li>
 <a href="#OBJ-0004" title="Sistema de gestión de actividades">
@@ -6469,14 +6267,9 @@ Sistema de gestión de actividades</a>
 Sistema de recomendaciones automáticas</a>
 </li>
 <li>
-<a href="#OBJ-0001" title="Sistema de gestión de gastos">
-                                [OBJ-0001] 
-Sistema de gestión de gastos</a>
-</li>
-<li>
-<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
-                                [OBJ-0002] 
-Sistema de gestión de usuarios</a>
+<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
+                                [OBJ-0003] 
+Sistema de gestión de chats y grupos</a>
 </li>
 </td>
 </tr>
@@ -6552,14 +6345,14 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#OBJ-0004" title="Sistema de gestión de actividades">
-                                [OBJ-0004] 
-Sistema de gestión de actividades</a>
-</li>
-<li>
 <a href="#OBJ-0001" title="Sistema de gestión de gastos">
                                 [OBJ-0001] 
 Sistema de gestión de gastos</a>
+</li>
+<li>
+<a href="#OBJ-0004" title="Sistema de gestión de actividades">
+                                [OBJ-0004] 
+Sistema de gestión de actividades</a>
 </li>
 <li>
 <a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
@@ -6567,14 +6360,14 @@ Sistema de gestión de gastos</a>
 Sistema de gestión de chats y grupos</a>
 </li>
 <li>
-<a href="#OBJ-0005" title="Sistema de recomendaciones automáticas">
-                                [OBJ-0005] 
-Sistema de recomendaciones automáticas</a>
-</li>
-<li>
 <a href="#OBJ-0002" title="Sistema de gestión de usuarios">
                                 [OBJ-0002] 
 Sistema de gestión de usuarios</a>
+</li>
+<li>
+<a href="#OBJ-0005" title="Sistema de recomendaciones automáticas">
+                                [OBJ-0005] 
+Sistema de recomendaciones automáticas</a>
 </li>
 </td>
 </tr>
@@ -6650,9 +6443,9 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#OBJ-0001" title="Sistema de gestión de gastos">
-                                [OBJ-0001] 
-Sistema de gestión de gastos</a>
+<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
+                                [OBJ-0003] 
+Sistema de gestión de chats y grupos</a>
 </li>
 <li>
 <a href="#OBJ-0002" title="Sistema de gestión de usuarios">
@@ -6660,14 +6453,14 @@ Sistema de gestión de gastos</a>
 Sistema de gestión de usuarios</a>
 </li>
 <li>
-<a href="#OBJ-0003" title="Sistema de gestión de chats y grupos">
-                                [OBJ-0003] 
-Sistema de gestión de chats y grupos</a>
-</li>
-<li>
 <a href="#OBJ-0004" title="Sistema de gestión de actividades">
                                 [OBJ-0004] 
 Sistema de gestión de actividades</a>
+</li>
+<li>
+<a href="#OBJ-0001" title="Sistema de gestión de gastos">
+                                [OBJ-0001] 
+Sistema de gestión de gastos</a>
 </li>
 </td>
 </tr>
@@ -6745,9 +6538,9 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
-                                [OBJ-0002] 
-Sistema de gestión de usuarios</a>
+<a href="#FRQ-0002" title="Gestionar gastos">
+                                [FRQ-0002] 
+Gestionar gastos</a>
 </li>
 <li>
 <a href="#OBJ-0001" title="Sistema de gestión de gastos">
@@ -6755,9 +6548,9 @@ Sistema de gestión de usuarios</a>
 Sistema de gestión de gastos</a>
 </li>
 <li>
-<a href="#FRQ-0002" title="Gestionar gastos">
-                                [FRQ-0002] 
-Gestionar gastos</a>
+<a href="#OBJ-0002" title="Sistema de gestión de usuarios">
+                                [OBJ-0002] 
+Sistema de gestión de usuarios</a>
 </li>
 </td>
 </tr>
@@ -6911,14 +6704,14 @@ José Ángel Taboada Gonzalez</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="1">
 <li>
-<a href="#NFR-0006" title="Lenguaje accesible">
-                                [NFR-0006] 
-Lenguaje accesible</a>
-</li>
-<li>
 <a href="#NFR-0004" title="Interfaz fácil de usar y entender">
                                 [NFR-0004] 
 Interfaz fácil de usar y entender</a>
+</li>
+<li>
+<a href="#NFR-0006" title="Lenguaje accesible">
+                                [NFR-0006] 
+Lenguaje accesible</a>
 </li>
 </td>
 </tr>
@@ -6983,7 +6776,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Usuario\Documents\ENSO\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7000,7 +6793,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #FRQ-0002" title="Gestionar gastos">FRQ-0002</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Usuario\Documents\ENSO\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7029,7 +6822,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Usuario\Documents\ENSO\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7046,7 +6839,7 @@ Matrices de trazabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Users\Pablo\Documents\EnxeÃ±arÃ­a InformÃ¡tica\Terceiro\1Âº Cuatrimestre\EnxeÃ±arÃ­a do Software\PrÃ¡cticas\Practica5_2_REM\REM\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Users\Usuario\Documents\ENSO\REM\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7147,23 +6940,6 @@ Requisitos funcionales frente a objetivos</p>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0005" title="Notificación">IRQ-0005</a>
-</th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-</tr>
-<tr>
-<th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #IRQ-0006" title="Reseña">IRQ-0006</a>
 </th>
 <td align="center" valign="top">
@@ -7216,23 +6992,6 @@ Requisitos funcionales frente a objetivos</p>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #IRQ-0009" title="Chat">IRQ-0009</a>
-</th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-</tr>
-<tr>
-<th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0010" title="Saldo">IRQ-0010</a>
 </th>
 <td align="center" valign="top">
                 -
@@ -7269,9 +7028,6 @@ Requisitos de información frente a requisitos funcionales</p>
 <a href="&#xA;                        #IRQ-0004" title="Grupo">IRQ-0004</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0005" title="Notificación">IRQ-0005</a>
-</th>
-<th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #IRQ-0006" title="Reseña">IRQ-0006</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
@@ -7282,9 +7038,6 @@ Requisitos de información frente a requisitos funcionales</p>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #IRQ-0009" title="Chat">IRQ-0009</a>
-</th>
-<th align="center" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0010" title="Saldo">IRQ-0010</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #CRQ-0001" title="Pagador de un gasto">CRQ-0001</a>
@@ -7342,12 +7095,6 @@ Requisitos de información frente a requisitos funcionales</p>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0003" title="Añadir gasto">UC-0003</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -7503,23 +7250,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0005" title="Asociar actividad">UC-0005</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -7675,23 +7410,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0007" title="Calcular balance">UC-0007</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -7847,23 +7570,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0009" title="Añadir reseña">UC-0009</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -8019,23 +7730,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0011" title="Consultar actividad">UC-0011</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -8191,23 +7890,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0013" title="Chat entre usuarios/grupal">UC-0013</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -8363,23 +8050,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0015" title="Organizar actividad grupal">UC-0015</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -8535,23 +8210,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0017" title="Iniciar sesión el sistema">UC-0017</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -8707,23 +8370,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0019" title="Configurar métodos de pago">UC-0019</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -8879,23 +8530,11 @@ Requisitos de información frente a requisitos funcionales</p>
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #UC-0021" title="Notificar incidencia">UC-0021</a>
 </th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
 <td align="center" valign="top">
                 -
             </td>

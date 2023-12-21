@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Users\Pablo\Documents\Enxeñaría Informática\Terceiro\1º Cuatrimestre\Enxeñaría do Software\Prácticas\Practica5_2_REM\REM\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Users\Usuario\Documents\ENSO\REM\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>ENSO_CountApp</rem:name>
@@ -636,7 +636,7 @@ Sistema de gestión de usuarios</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0004 STK-0003 "/>
+<rem:authors stakeholders ="STK-0003 STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -660,7 +660,7 @@ Sistema de gestión de gastos</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0004 STK-0003 "/>
+<rem:authors stakeholders ="STK-0003 STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -684,7 +684,7 @@ Sistema de gestión de chats y grupos</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0004 STK-0003 "/>
+<rem:authors stakeholders ="STK-0003 STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -708,7 +708,7 @@ Sistema de gestión de actividades</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0004 STK-0003 "/>
+<rem:authors stakeholders ="STK-0003 STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -731,7 +731,7 @@ Sistema de recomendaciones automáticas</rem:name>
 <rem:day>12</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0004 STK-0003 "/>
+<rem:authors stakeholders ="STK-0003 STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -853,7 +853,7 @@ Diagrama E.R.</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[]]>
+<![CDATA[.\Imagenes\diagrama_ER.png]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:informationRequirement
@@ -878,7 +878,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-gastos en el sistema de pagos de la aplicación</rem:relevantConcept>
+gastos en el sistema de pagos de la aplicación. Un <rem:ref oid="GLO-0015">gasto</rem:ref> documenta cualquier tipo de <rem:ref oid="GLO-0018">pago</rem:ref> en una <rem:ref oid="GLO-0019">actividad</rem:ref> por parte de uno o varios integrantes del grupo. Además permiten ser justificados adjuntando imágenes de recibos, tickets o facturas</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>1</rem:value>
 <rem:timeUnit value = "TUV-0007"/>
@@ -893,19 +893,25 @@ gastos en el sistema de pagos de la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0102">
 <rem:description>
-Documentan cualquier tipo de <rem:ref oid="GLO-0018">pago</rem:ref> en una <rem:ref oid="GLO-0019">actividad</rem:ref> por parte de uno o varios integrantes del grupo.</rem:description>
+id: identificador único para que sea más sencillo diferenciar diferentes gastos (String).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0103">
 <rem:description>
-Permiten ser justificados adjuntando imágenes de recibos, tickets o facturas.</rem:description>
+fecha: data de realización del <rem:ref oid="GLO-0015">gasto</rem:ref> (Date).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0104">
 <rem:description>
-Se calcula automáticamente el saldo de cada integrante, repartiendo equitativamente los gastos entre los miembros del grupo.</rem:description>
+documento: recibo o ticket identificativo del <rem:ref oid="GLO-0015">gasto</rem:ref> en cuestión (Image).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0137">
+<rem:description>
+cantidad: cuantía monetaria del <rem:ref oid="GLO-0015">gasto</rem:ref> correspondiente (Float).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -932,7 +938,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-clientes de la empresa en la aplicación</rem:relevantConcept>
+clientes de la empresa en la aplicación. Objeto utilizado en la mayoría de las operaciones de la aplicación. Se pueden crear a partir de credenciales de autenticación: nombre de <rem:ref oid="GLO-0013">usuario</rem:ref>, correo electrónico y contraseña. Un cliente puede entrar en grupos de <rem:ref oid="GLO-0015">gasto</rem:ref>, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>18</rem:value>
 <rem:timeUnit value = "TUV-0005"/>
@@ -947,19 +953,31 @@ clientes de la empresa en la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0105">
 <rem:description>
-Objeto utilizado en la mayoría de las operaciones de la aplicación.</rem:description>
+dni: documento para identificar de forma única a todos los usuarios de la aplicación (String).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0106">
 <rem:description>
-Se pueden crear a partir de credenciales de autenticación: nombre de <rem:ref oid="GLO-0013">usuario</rem:ref>, correo electrónico y contraseña.</rem:description>
+nombre: nombre completo del <rem:ref oid="GLO-0013">usuario</rem:ref> (String)</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0107">
 <rem:description>
-Pueden entrar en grupos de <rem:ref oid="GLO-0015">gasto</rem:ref>, crear actividades, publicar reseñas, intercambiar mensajes en grupos y con otros usuarios de forma privada.</rem:description>
+correo: correo electrónico del <rem:ref oid="GLO-0013">usuario</rem:ref> (String)</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0138">
+<rem:description>
+teléfono: número de teléfono del <rem:ref oid="GLO-0013">usuario</rem:ref> (String)</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0139">
+<rem:description>
+saldo: saldo actual del <rem:ref oid="GLO-0013">usuario</rem:ref> (Float)</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -986,7 +1004,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:relevantConcept>
-actividades registradas por usuarios en la aplicación</rem:relevantConcept>
+actividades registradas por usuarios en la aplicación. Se pueden asociar a gastos imputados por los participantes. Además cada <rem:ref oid="GLO-0019">actividad</rem:ref> puede tener múltiples gastos asociados con diferentes integrantes en los mismos. Se asocia a una ubicación y se puede agregar como evento en el calendario</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>1</rem:value>
 <rem:timeUnit value = "TUV-0008"/>
@@ -1001,25 +1019,19 @@ actividades registradas por usuarios en la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0108">
 <rem:description>
-Se pueden asociar a gastos imputados por los participantes.</rem:description>
+id: identificador único de la <rem:ref oid="GLO-0019">actividad</rem:ref> (String)</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0109">
 <rem:description>
-Permiten publicar reseñas sobre las mismas y ser puntuadas por los participantes.</rem:description>
+ubicación: localización de la <rem:ref oid="GLO-0019">actividad</rem:ref> en cuestión (Location).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0110">
 <rem:description>
-Cada <rem:ref oid="GLO-0019">actividad</rem:ref> puede tener múltiples gastos asociados con diferentes integrantes en los mismos.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0111">
-<rem:description>
-Se asocia a una ubicación y se puede agregar como evento en el calendario.</rem:description>
+fecha: data en la que tendrá lugar la <rem:ref oid="GLO-0019">actividad</rem:ref> (Date).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1046,7 +1058,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-grupos de viaje formados en la aplicación</rem:relevantConcept>
+grupos de viaje formados en la aplicación. Agrupan a los usuarios que participen en una <rem:ref oid="GLO-0019">actividad</rem:ref> o compartan gastos. Por otra parte, los grupos soportan la publicación de avisos a través de un sistema de notificación desde el anfitrión a cada miembro del grupo</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>8</rem:value>
 <rem:timeUnit value = "TUV-0005"/>
@@ -1061,73 +1073,13 @@ grupos de viaje formados en la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0112">
 <rem:description>
-Agrupan a los usuarios que participen en una <rem:ref oid="GLO-0019">actividad</rem:ref> o compartan gastos.<br/></rem:description>
+id: identificador del grupo (String)</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0113">
 <rem:description>
-Permiten la gestión eficiente de los gastos entre los miembros del grupo.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0114">
-<rem:description>
-Soportan la publicación de avisos a través de un sistema de notificación desde el anfitrión a cada miembro del grupo.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-</rem:informationRequirement>
-<rem:informationRequirement
- oid = "IRQ-0005">
-<rem:name>
-Notificación</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2023</rem:year>
-<rem:month>12</rem:month>
-<rem:day>20</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0001 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0004"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0003"/>
-<rem:relevantConcept>
-notificaciones enviadas y recibidas en la aplicación</rem:relevantConcept>
-<rem:averageLifeTime>
-<rem:value>2</rem:value>
-<rem:timeUnit value = "TUV-0009"/>
-</rem:averageLifeTime>
-<rem:maximumLifeTime>
-<rem:value>1</rem:value>
-<rem:timeUnit value = "TUV-0008"/>
-</rem:maximumLifeTime>
-<rem:averageOcurrences><rem:value>69000</rem:value>
-</rem:averageOcurrences>
-<rem:maximumOcurrences><rem:value>100000</rem:value>
-</rem:maximumOcurrences>
-<rem:specificData oid = "DAT-0115">
-<rem:description>
-Se distinguen notificaciones push para dispositivos móviles y notificaciones de escritorio para ordenadores.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0116">
-<rem:description>
-Informan al <rem:ref oid="GLO-0013">usuario</rem:ref> sobre eventos comunes o programados, como por ejemplo el comienzo de una <rem:ref oid="GLO-0019">actividad</rem:ref> o su final, si necesita hacer un <rem:ref oid="GLO-0018">pago</rem:ref> a otra persona, etc.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0117">
-<rem:description>
-También incluyen mensajes enviados por anfitriones del grupo, así como avisos de eventos y mensajes entre usuarios.</rem:description>
+admin: referencia al <rem:ref oid="GLO-0013">usuario</rem:ref> al que se le asigna este rol (<rem:ref oid="GLO-0013">Usuario</rem:ref>)</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1154,7 +1106,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0002"/>
 <rem:relevantConcept>
-reseñas de los usuarios sobre la aplicación</rem:relevantConcept>
+reseñas de los usuarios sobre la aplicación. Están diseñadas para realizar una valoración acerca del rendimiento de la aplicación. Además proporcionan un feedback sobre aspectos positivos y negativos de la aplicación, dándole a los desarrolladores un margen de mejora de la aplicación</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>6</rem:value>
 <rem:timeUnit value = "TUV-0005"/>
@@ -1169,19 +1121,19 @@ reseñas de los usuarios sobre la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0118">
 <rem:description>
-Diseñadas para realizar una valoración acerca del rendimiento de la aplicación.</rem:description>
+id: identificador único de la reseña (String).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0119">
 <rem:description>
-Proporcionan un feedback sobre aspectos positivos y negativos de la aplicación, dándole a los desarrolladores un margen de mejora de la aplicación.</rem:description>
+texto: campo de texto en el que el <rem:ref oid="GLO-0013">usuario</rem:ref> escribe su reseña (String).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0120">
 <rem:description>
-Aumenta la fiabilidad acerca de la calidad de la aplicación al ofrecer diversos testimonios sobre la aplicación.</rem:description>
+valoración: número entre 1 y 5 que se representará con estrellas en la reseña (Integer).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1208,7 +1160,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:relevantConcept>
-mensajes enviados y recibidos en la aplicación</rem:relevantConcept>
+mensajes enviados y recibidos en la aplicación. Es la herramienta básica de comunicación entre usuarios de la aplicación</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>8</rem:value>
 <rem:timeUnit value = "TUV-0009"/>
@@ -1223,7 +1175,31 @@ mensajes enviados y recibidos en la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0121">
 <rem:description>
-Herramienta básica de comunicación entre usuarios de la aplicación.</rem:description>
+id: identificador único del mensaje (String).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0142">
+<rem:description>
+fecha: data en la que se envía el mensaje (Date).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0143">
+<rem:description>
+tipo: tipo del mensaje en cuestión, ya sea texto plano, imagen, audio, vídeo, etc. (String).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0140">
+<rem:description>
+emisor: referencia al <rem:ref oid="GLO-0013">usuario</rem:ref> emisor del mensaje (<rem:ref oid="GLO-0013">Usuario</rem:ref>).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0141">
+<rem:description>
+receptor: referencia al receptor del mensaje (<rem:ref oid="GLO-0013">Usuario</rem:ref>).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1250,7 +1226,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-pagos registrados en la aplicación</rem:relevantConcept>
+pagos registrados en la aplicación. Pueden ser creados por los usuarios especificando la cantidad correspondiente y el beneficiario. Además, permiten saldar deudas entre usuarios dentro de un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>. La aplicación debe calcular automáticamente los saldos individuales y actualizar los registros de pagos entre usuarios</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>14</rem:value>
 <rem:timeUnit value = "TUV-0005"/>
@@ -1265,25 +1241,19 @@ pagos registrados en la aplicación</rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0122">
 <rem:description>
-Pueden ser creados por los usuarios especificando la cantidad correspondiente y el beneficiario.</rem:description>
+id: identificador del <rem:ref oid="GLO-0018">pago</rem:ref> (String).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0123">
 <rem:description>
-Permiten saldar deudas entre usuarios dentro de un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>.</rem:description>
+fecha: data en la que se registra el <rem:ref oid="GLO-0018">pago</rem:ref> en la aplicación (Date).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0124">
 <rem:description>
-Se permite realizar un <rem:ref oid="GLO-0018">pago</rem:ref> a través de la aplicación con diferentes métodos de <rem:ref oid="GLO-0018">pago</rem:ref>.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0125">
-<rem:description>
-La aplicación debe calcular automáticamente los saldos individuales y actualizar los registros de pagos entre usuarios.</rem:description>
+cantidad: cuantía monetaria pagada (Float).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1310,7 +1280,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-chats de cada <rem:ref oid="GLO-0013">usuario</rem:ref> en la aplicación</rem:relevantConcept>
+chats de cada <rem:ref oid="GLO-0013">usuario</rem:ref> en la aplicación. Es la plataforma de intercambio de mensajes entre usuarios. Además permite enviar información en múltiples formatos (incluye conversaciones privadas y grupos)</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>9</rem:value>
 <rem:timeUnit value = "TUV-0005"/>
@@ -1325,67 +1295,19 @@ chats de cada <rem:ref oid="GLO-0013">usuario</rem:ref> en la aplicación</rem:re
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0126">
 <rem:description>
-Plataforma de intercambio de mensajes entre usuarios.</rem:description>
+imagen: imagen del chat correspondiente (Image).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0144">
+<rem:description>
+nombre: nombre del chat, normalmente la persona con la que hablas o otra cosa diferente si es un grupo (String).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0127">
 <rem:description>
-Permite enviar información en múltiples formatos (incluye conversaciones privadas y grupos).</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-</rem:informationRequirement>
-<rem:informationRequirement
- oid = "IRQ-0010">
-<rem:name>
-Saldo</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2023</rem:year>
-<rem:month>12</rem:month>
-<rem:day>20</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0001 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0004"/>
-<rem:relevantConcept>
-saldos de los usuarios de la aplicación</rem:relevantConcept>
-<rem:averageLifeTime>
-<rem:value>2</rem:value>
-<rem:timeUnit value = "TUV-0002"/>
-</rem:averageLifeTime>
-<rem:maximumLifeTime>
-<rem:value>3</rem:value>
-<rem:timeUnit value = "TUV-0002"/>
-</rem:maximumLifeTime>
-<rem:averageOcurrences><rem:value>35000</rem:value>
-</rem:averageOcurrences>
-<rem:maximumOcurrences><rem:value>50000</rem:value>
-</rem:maximumOcurrences>
-<rem:specificData oid = "DAT-0128">
-<rem:description>
-Refleja el estado financiero individual de cada <rem:ref oid="GLO-0013">usuario</rem:ref> en un <rem:ref oid="GLO-0014">grupo de gasto</rem:ref>.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0129">
-<rem:description>
-Incluye todas las deudas y cobros individuales del <rem:ref oid="GLO-0013">usuario</rem:ref> con otros usuarios.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0130">
-<rem:description>
-Deben representarse de forma clara las deudas y cobros pendientes.</rem:description>
+participantes [n]: array de referencias a usuarios pertenecientes a ese grupo (Usuarios[n]).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1600,7 +1522,7 @@ Ninguno</rem:comments>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0004 STK-0003 "/>
+<rem:authors stakeholders ="STK-0003 STK-0004 "/>
 <rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3859,13 +3781,6 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
-<rem:th oid ="IRQ-0005"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="IRQ-0006"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -3888,13 +3803,6 @@ Ninguno</rem:comments>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0009"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
-<rem:th oid ="IRQ-0010"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -3924,12 +3832,10 @@ Ninguno</rem:comments>
 <rem:th oid ="IRQ-0002"/>
 <rem:th oid ="IRQ-0003"/>
 <rem:th oid ="IRQ-0004"/>
-<rem:th oid ="IRQ-0005"/>
 <rem:th oid ="IRQ-0006"/>
 <rem:th oid ="IRQ-0007"/>
 <rem:th oid ="IRQ-0008"/>
 <rem:th oid ="IRQ-0009"/>
-<rem:th oid ="IRQ-0010"/>
 <rem:th oid ="CRQ-0001"/>
 <rem:th oid ="CRQ-0002"/>
 <rem:th oid ="CRQ-0003"/>
@@ -3950,8 +3856,6 @@ Ninguno</rem:comments>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0003"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4005,13 +3909,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0005"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4065,13 +3965,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0007"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4125,13 +4021,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0009"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4185,13 +4077,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0011"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4245,13 +4133,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0013"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4305,13 +4189,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0015"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4365,13 +4245,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0017"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4425,13 +4301,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0019"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4485,13 +4357,9 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0021"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4565,7 +4433,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Practicas</rem:place>
 <rem:results>Establecidos los objetivos principales de la práctica y comentado el material relacionado con ella en el aula.<br/></rem:results>
-	<rem:attenders stakeholders ="STK-0004 STK-0002 STK-0003 "/>
+	<rem:attenders stakeholders ="STK-0003 STK-0002 STK-0004 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0001">
@@ -4595,7 +4463,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Practicas</rem:place>
 <rem:results>Creación del documento base y reparto de funciones entre los miembros del grupo.</rem:results>
-	<rem:attenders stakeholders ="STK-0004 STK-0002 STK-0003 "/>
+	<rem:attenders stakeholders ="STK-0003 STK-0002 STK-0004 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0003">
@@ -4625,7 +4493,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Practicas</rem:place>
 <rem:results>Se comentan los apartados desarrollados durante el transcurso de la semana y se ponen en común en un único archivo. Se  establecen los objetivos para los próximos días de cara a organizar el trabajo de todos los miembros del equipo.</rem:results>
-	<rem:attenders stakeholders ="STK-0004 STK-0002 STK-0003 "/>
+	<rem:attenders stakeholders ="STK-0003 STK-0002 STK-0004 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0005">
@@ -4655,7 +4523,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula Prácticas</rem:place>
 <rem:results>se continúa trabajando de manera individual en las tareas asiganadas y se resuelven las dudas originadas durante el transcurso de la semana.</rem:results>
-	<rem:attenders stakeholders ="STK-0004 STK-0005 STK-0002 STK-0003 "/>
+	<rem:attenders stakeholders ="STK-0003 STK-0005 STK-0002 STK-0004 "/>
 </rem:meeting>
 <rem:meeting
  oid = "MET-0004">
@@ -4685,7 +4553,7 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>Aula de trabajo ETSE</rem:place>
 <rem:results>Reunión final del grupo para finalizar los apartados restantes del proyecto y poner en común todo el trabajo realizado hasta ahora. Se lleva a cabo también una última revisión y se deja el documento listo para su entrega.</rem:results>
-	<rem:attenders stakeholders ="STK-0004 STK-0005 STK-0002 STK-0003 "/>
+	<rem:attenders stakeholders ="STK-0003 STK-0005 STK-0002 STK-0004 "/>
 </rem:meeting>
 </rem:section>
 <rem:section
@@ -5132,34 +5000,88 @@ Ninguno
 Ninguno
 </rem:comments>
 </rem:changeRequestsSpecification>
-<rem:trace source = "OBJ-0005"  target = "OBJ-0004" >
+<rem:trace source = "CRQ-0001"  target = "IRQ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "FRQ-0002"  target = "OBJ-0001" >
+<rem:trace source = "NFR-0004"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "FRQ-0003"  target = "OBJ-0004" >
+<rem:trace source = "NFR-0004"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0001"  target = "OBJ-0001" >
+<rem:trace source = "NFR-0004"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0005"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0006"  target = "NFR-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0001"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0002"  target = "OBJ-0003" >
+<rem:trace source = "NFR-0005"  target = "FRQ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0005"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source = "NFR-0007"  target = "NFR-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0004"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source = "NFR-0007"  target = "NFR-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0005"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0001"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0006"  target = "NFR-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0015"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0015"  target = "UC-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0004"  target = "IRQ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0002"  target = "IRQ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0005"  target = "IRQ-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "IRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0006"  target = "IRQ-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0002"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0001"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0001"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0002"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0002"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0003"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "OBJ-0005"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0004"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "NFR-0003"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0003"  target = "OBJ-0004" >
@@ -5171,73 +5093,40 @@ Ninguno
 <rem:trace source = "NFR-0002"  target = "OBJ-0005" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0003"  target = "OBJ-0001" >
+<rem:trace source = "NFR-0002"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0003"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0002"  target = "OBJ-0001" >
+<rem:trace source = "NFR-0003"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "NFR-0003"  target = "OBJ-0005" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0002"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0003"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0004"  target = "OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0005"  target = "FRQ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "FRQ-0001"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "NFR-0007"  target = "NFR-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0002"  target = "IRQ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0005"  target = "IRQ-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0006"  target = "IRQ-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0003"  target = "IRQ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "UC-0015"  target = "UC-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0001"  target = "IRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "UC-0015"  target = "UC-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "FRQ-0004"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0004"  target = "IRQ-0006" >
-<rem:isChecked/>
-</rem:trace>
 <rem:predefinedValueTypes>
+<rem:predefinedValueType
+ oid = "PVT-0006">
+<rem:name>
+Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Hour:minutes:seconds</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
 <rem:predefinedValueType
  oid = "PVT-0001">
 <rem:name>
@@ -5281,48 +5170,6 @@ Integer numbers</rem:description>
 </rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType
- oid = "PVT-0004">
-<rem:name>
-String</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type</rem:comments>
-<rem:description>
-Alphanumeric strings</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0006">
-<rem:name>
-Time</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type (non-standard)</rem:comments>
-<rem:description>
-Hour:minutes:seconds</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType
  oid = "PVT-0003">
 <rem:name>
 Natural</rem:name>
@@ -5339,6 +5186,27 @@ Natural</rem:name>
 Predefined OCL type</rem:comments>
 <rem:description>
 Natural numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0004">
+<rem:name>
+String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Alphanumeric strings</rem:description>
 <rem:definition>
 (null)
 </rem:definition>
@@ -5366,12 +5234,6 @@ Dates</rem:description>
 </rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
-<rem:changeRequestStatusValue oid = "CRV-0004">
-<rem:name>pendiente de realización</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0005">
-<rem:name>verificado</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
@@ -5381,105 +5243,39 @@ Dates</rem:description>
 <rem:changeRequestStatusValue oid = "CRV-0003">
 <rem:name>pendiente de aprobar/rechazar</rem:name>
 </rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0006">
 <rem:name>rechazado</rem:name>
 </rem:changeRequestStatusValue>
-<rem:conflictStatusValue oid = "CSV-0004">
-<rem:name>resuelto</rem:name>
-</rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
-</rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0002">
-<rem:name>no resuelto</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
-</rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0004">
-<rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0004">
-<rem:name>Incomprensibilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0005">
-<rem:name>No verificabilidad</rem:name>
-<rem:description>
-<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0007">
-<rem:name>No implementabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0009">
-<rem:name>Dependiente del diseño</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0010">
-<rem:name>Redundancia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0014">
-<rem:name>Estabilidad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
-</rem:description>
-</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0015">
 <rem:name>Nivel incorrecto de detalle</rem:name>
 <rem:description>
@@ -5498,16 +5294,64 @@ Dates</rem:description>
 <![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0023">
 <rem:name>Otro</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0001">
@@ -5516,21 +5360,42 @@ Dates</rem:description>
 <![CDATA[Por Determinar]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
+<rem:description>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:importanceValue oid = "IMV-0001">
 <rem:name>PD</rem:name>
-</rem:importanceValue>
-<rem:importanceValue oid = "IMV-0003">
-<rem:name>importante</rem:name>
-</rem:importanceValue>
-<rem:importanceValue oid = "IMV-0004">
-<rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
 <rem:importanceValue oid = "IMV-0002">
 <rem:name>vital</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0001">
-<rem:name>PD</rem:name>
-</rem:stabilityValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
 <rem:stabilityValue oid = "SBV-0003">
 <rem:name>media</rem:name>
 </rem:stabilityValue>
@@ -5540,41 +5405,41 @@ Dates</rem:description>
 <rem:stabilityValue oid = "SBV-0004">
 <rem:name>alta</rem:name>
 </rem:stabilityValue>
-<rem:statusValue oid = "STV-0005">
-<rem:name>validado</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0001">
+<rem:stabilityValue oid = "SBV-0001">
 <rem:name>PD</rem:name>
-</rem:statusValue>
+</rem:stabilityValue>
 <rem:statusValue oid = "STV-0002">
 <rem:name>en construcción</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0003">
-<rem:name>pendiente de verificación</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0004">
 <rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
+</rem:statusValue>
 <rem:terminationValue oid = "TEV-0001">
 <rem:name>PD</rem:name>
-</rem:terminationValue>
-<rem:terminationValue oid = "TEV-0003">
-<rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0002">
 <rem:name>continúa</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
-</rem:timeUnitValue>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
+</rem:terminationValue>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0007">
-<rem:name>semana(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0001">
-<rem:name>PD</rem:name>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0008">
 <rem:name>día(s)</rem:name>
@@ -5582,32 +5447,35 @@ Dates</rem:description>
 <rem:timeUnitValue oid = "TUV-0002">
 <rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0011">
-<rem:name>segundo(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0012">
 <rem:name>décima(s) de segundo</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0014">
-<rem:name>milisegundo(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
 <rem:urgencyValue oid = "URV-0003">
 <rem:name>hay presión</rem:name>
-</rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0004">
-<rem:name>puede esperar</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0001">
 <rem:name>PD</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
 </rem:urgencyValue>
 </rem:predefinedValues>
 </rem:requirementsProject>
